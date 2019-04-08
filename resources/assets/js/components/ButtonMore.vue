@@ -3,7 +3,9 @@
     <!-- <div class="container" > -->
     <div class="container" v-on:click="fireParentEvent">
       <!-- <router-link to="/" class="button is-medium custom-btn"> -->
-        <strong><span class="button is-medium custom-btn">{{btn_name}}</span></strong>
+      <strong>
+        <span class="button is-medium custom-btn">{{btn_name}}</span>
+      </strong>
       <!-- </router-link> -->
     </div>
   </section>
@@ -19,7 +21,7 @@ export default {
   methods: {
     fireParentEvent() {
       console.log("console_fireParentEvent");
-      this.$emit('click');
+      this.$emit("click");
     }
   }
 };
@@ -49,6 +51,12 @@ section {
       width: 90%;
       border-color: #3b5998;
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .custom-btn {
+    margin: 2rem;
+    font-size: 1.3rem;
   }
 }
 </style>

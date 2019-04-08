@@ -165,16 +165,21 @@ section {
       }
     }
   }
-.u-img-p{
-  display: none;
-}
-@media screen and (max-width:768px) { 
-  .u-img-p{
-    display: block;
-  }
-  .u-img-p-pc{
+  .u-img-p {
     display: none;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .u-img-p {
+    display: block;
+  }
+  .u-img-p-pc {
+    display: none;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }
 </style>

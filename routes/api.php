@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 
 // 設定情報をWEBで確認できる
+
 // phpinfo();exit;
 
 Route::group(['prefix'=>'v1','middleware' => 'api'],function(){

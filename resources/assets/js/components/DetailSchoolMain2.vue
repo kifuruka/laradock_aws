@@ -82,10 +82,12 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  section .container {
-    margin-bottom: 0px;
+  section {
+    margin-top: 0px !important;
+    .container {
+      margin-bottom: 0px;
+    }
   }
-
   .school_text {
     margin: 0 5% 2.5% 5%;
   }

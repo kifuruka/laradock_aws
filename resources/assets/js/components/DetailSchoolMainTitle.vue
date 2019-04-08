@@ -1,7 +1,7 @@
 <template>
   <section v-if="isSchoolStatus">
     <div class="container">
-      <p>{{school.school_name}}について</p>
+      <p>私たちの学校について</p>
     </div>
   </section>
 </template>
@@ -30,6 +30,12 @@ section {
       font-size: 1.5rem;
       font-weight: bold;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    margin-top: 0;
   }
 }
 </style>

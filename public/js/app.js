@@ -1880,6 +1880,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1912,6 +1919,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     addvalues: function addvalues() {
       this.count += 3;
+    },
+    routerPush: function routerPush(router) {
+      // 画面丈夫へ移動するためのもの
+      window.scrollTo(0, 0);
+      this.$router.push(router);
     }
   })
 });
@@ -1938,6 +1950,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1947,7 +1961,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     fireParentEvent: function fireParentEvent() {
       console.log("console_fireParentEvent");
-      this.$emit('click');
+      this.$emit("click");
     }
   }
 });
@@ -4422,7 +4436,7 @@ __webpack_require__.r(__webpack_exports__);
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  flex-wrap: wrap;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 8px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n}\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  flex-wrap: wrap;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 8px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n    padding-top: 0;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n}\n.mediasize[data-v-5e0b4614] {\n    padding: 0;\n}\n}", ""]);
 
 
 
@@ -4437,7 +4451,7 @@ exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-3fb7e0c4] {\n  padding-top: 40px;\n}\nsection .container[data-v-3fb7e0c4] {\n  max-width: 1160px;\n  text-align: center;\n}\nsection .container .custom-btn[data-v-3fb7e0c4] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 2em;\n  width: 6.3em;\n  border-color: #ffe035;\n}\nsection .container .facebook[data-v-3fb7e0c4] {\n  background-color: #3b5998;\n  color: white;\n  width: 90%;\n  border-color: #3b5998;\n}", ""]);
+exports.push([module.i, "section[data-v-3fb7e0c4] {\n  padding-top: 40px;\n}\nsection .container[data-v-3fb7e0c4] {\n  max-width: 1160px;\n  text-align: center;\n}\nsection .container .custom-btn[data-v-3fb7e0c4] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 2em;\n  width: 6.3em;\n  border-color: #ffe035;\n}\nsection .container .facebook[data-v-3fb7e0c4] {\n  background-color: #3b5998;\n  color: white;\n  width: 90%;\n  border-color: #3b5998;\n}\n@media screen and (max-width: 768px) {\n.custom-btn[data-v-3fb7e0c4] {\n    margin: 2rem;\n    font-size: 1.3rem;\n}\n}", ""]);
 
 
 
@@ -4452,7 +4466,7 @@ exports.push([module.i, "section[data-v-3fb7e0c4] {\n  padding-top: 40px;\n}\nse
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-a8116b20] {\n  background-color: #808080;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-a8116b20] {\n  padding: 16px;\n  font-size: 2rem;\n  color: #f2f2f2;\n  text-align: center;\n}\nsection .container div[data-v-a8116b20] {\n  margin: 0 auto;\n}\nsection .container div p[data-v-a8116b20] {\n  font-size: 1.6rem;\n  color: #f2f2f2;\n  padding: 8px;\n  text-align: right;\n}\nsection .container div p span[data-v-a8116b20] {\n  padding-left: 16px;\n}\nsection .container div .custom-btn[data-v-a8116b20] {\n  background-color: #db6b6b;\n  color: white;\n  border-radius: 2em;\n  width: 7.2em;\n  border-color: #db6b6b;\n  margin-top: 12px;\n  margin-left: 16px;\n}\n@media screen and (max-width: 768px) {\nsection .container div[data-v-a8116b20] {\n    text-align: center;\n}\nsection .container div p[data-v-a8116b20] {\n    text-align: center;\n}\nsection .container div p span[data-v-a8116b20] {\n    display: none;\n}\nsection .container div .custom-btn[data-v-a8116b20] {\n    background-color: #db6b6b;\n    color: white;\n    border-radius: 2em;\n    width: 60%;\n    border-color: #db6b6b;\n    margin-top: 12px;\n    margin-left: 16px;\n}\n}", ""]);
+exports.push([module.i, "section[data-v-a8116b20] {\n  background-color: #808080;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-a8116b20] {\n  padding: 16px;\n  font-size: 2rem;\n  color: #f2f2f2;\n  text-align: center;\n}\nsection .container div[data-v-a8116b20] {\n  margin: 0 auto;\n}\nsection .container div p[data-v-a8116b20] {\n  font-size: 1.6rem;\n  color: #f2f2f2;\n  padding: 8px;\n  text-align: right;\n}\nsection .container div p span[data-v-a8116b20] {\n  padding-left: 16px;\n}\nsection .container div .custom-btn[data-v-a8116b20] {\n  background-color: #db6b6b;\n  color: white;\n  border-radius: 2em;\n  width: 7.2em;\n  border-color: #db6b6b;\n  margin-top: 12px;\n  margin-left: 16px;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-a8116b20] {\n    margin-top: 16px;\n    margin-bottom: 32px;\n}\nsection .container h2[data-v-a8116b20] {\n    padding-bottom: 0;\n}\nsection .container div[data-v-a8116b20] {\n    text-align: center;\n}\nsection .container div p[data-v-a8116b20] {\n    font-size: 1.2rem;\n    color: #f2f2f2;\n    padding-top: 10px;\n    padding-bottom: 20px;\n    text-align: center;\n}\nsection .container div p span[data-v-a8116b20] {\n    display: none;\n}\nsection .container div .custom-btn[data-v-a8116b20] {\n    background-color: #db6b6b;\n    color: white;\n    border-radius: 2em;\n    width: 60%;\n    border-color: #db6b6b;\n    margin: 0 auto;\n}\n}", ""]);
 
 
 
@@ -4467,7 +4481,7 @@ exports.push([module.i, "section[data-v-a8116b20] {\n  background-color: #808080
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-aeadbbb4] {\n  padding-top: 3%;\n  padding-bottom: 3%;\n  background-color: #fffdf3;\n}\nsection .container[data-v-aeadbbb4] {\n  max-width: 1160px;\n}\nsection .container p[data-v-aeadbbb4] {\n  text-align: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n}", ""]);
+exports.push([module.i, "section[data-v-aeadbbb4] {\n  padding-top: 3%;\n  padding-bottom: 3%;\n  background-color: #fffdf3;\n}\nsection .container[data-v-aeadbbb4] {\n  max-width: 1160px;\n}\nsection .container p[data-v-aeadbbb4] {\n  text-align: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-aeadbbb4] {\n    margin-top: 0 !important;\n}\n}", ""]);
 
 
 
@@ -4482,7 +4496,7 @@ exports.push([module.i, "section[data-v-aeadbbb4] {\n  padding-top: 3%;\n  paddi
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section .container[data-v-ecd96268] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-ecd96268] {\n  font-size: 1.5rem;\n  font-weight: bold;\n  text-align: left;\n  padding-bottom: 2%;\n}\nimg[data-v-ecd96268] {\n  vertical-align: bottom;\n}\n@media screen and (max-width: 768px) {\nsection .container[data-v-ecd96268] {\n    margin-bottom: 0px;\n}\nsection h2[data-v-ecd96268] {\n    margin: 0 5%;\n}\n.school_text[data-v-ecd96268] {\n    margin: 0 5% 2.5% 5%;\n}\n}", ""]);
+exports.push([module.i, "section .container[data-v-ecd96268] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-ecd96268] {\n  font-size: 1.5rem;\n  font-weight: bold;\n  text-align: left;\n  padding-bottom: 2%;\n}\nimg[data-v-ecd96268] {\n  vertical-align: bottom;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-ecd96268] {\n    margin-top: 0;\n}\n.container[data-v-ecd96268] {\n    margin-top: 32px !important;\n    margin-bottom: 0px !important;\n}\nsection h2[data-v-ecd96268] {\n    margin: 0 5%;\n}\n.school_text[data-v-ecd96268] {\n    margin: 0 5% 2.5% 5%;\n}\n}", ""]);
 
 
 
@@ -4497,7 +4511,7 @@ exports.push([module.i, "section .container[data-v-ecd96268] {\n  max-width: 116
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-ecbd3366] {\n  padding-top: 0.5%;\n  padding-bottom: 0.5%;\n  background-color: #fffdf3;\n}\nsection .container[data-v-ecbd3366] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-ecbd3366] {\n  font-size: 1.5rem;\n  font-weight: bold;\n  text-align: left;\n  padding-bottom: 2%;\n}\nimg[data-v-ecbd3366] {\n  vertical-align: bottom;\n}\n@media screen and (max-width: 768px) {\n.is-parent[data-v-ecbd3366] {\n    display: flex;\n}\n.is-parent[data-v-ecbd3366] {\n    flex-direction: column;\n}\n.order-1[data-v-ecbd3366] {\n    order: 1;\n}\n.order-2[data-v-ecbd3366] {\n    order: 2;\n}\n.order-3[data-v-ecbd3366] {\n    order: 3;\n}\n}\n@media screen and (max-width: 768px) {\nsection .container[data-v-ecbd3366] {\n    margin-bottom: 0px;\n}\n.school_text[data-v-ecbd3366] {\n    margin: 0 5% 2.5% 5%;\n}\n.school_text[data-v-ecbd3366] {\n    margin: 0 5% 2.5% 5%;\n}\n}", ""]);
+exports.push([module.i, "section[data-v-ecbd3366] {\n  padding-top: 0.5%;\n  padding-bottom: 0.5%;\n  background-color: #fffdf3;\n}\nsection .container[data-v-ecbd3366] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-ecbd3366] {\n  font-size: 1.5rem;\n  font-weight: bold;\n  text-align: left;\n  padding-bottom: 2%;\n}\nimg[data-v-ecbd3366] {\n  vertical-align: bottom;\n}\n@media screen and (max-width: 768px) {\n.is-parent[data-v-ecbd3366] {\n    display: flex;\n}\n.is-parent[data-v-ecbd3366] {\n    flex-direction: column;\n}\n.order-1[data-v-ecbd3366] {\n    order: 1;\n}\n.order-2[data-v-ecbd3366] {\n    order: 2;\n}\n.order-3[data-v-ecbd3366] {\n    order: 3;\n}\n}\n@media screen and (max-width: 768px) {\nsection[data-v-ecbd3366] {\n    margin-top: 0px !important;\n}\nsection .container[data-v-ecbd3366] {\n    margin-bottom: 0px;\n}\n.school_text[data-v-ecbd3366] {\n    margin: 0 5% 2.5% 5%;\n}\n.school_text[data-v-ecbd3366] {\n    margin: 0 5% 2.5% 5%;\n}\n}", ""]);
 
 
 
@@ -4512,7 +4526,7 @@ exports.push([module.i, "section[data-v-ecbd3366] {\n  padding-top: 0.5%;\n  pad
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-eca10464] {\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container[data-v-eca10464] {\n  max-width: 1160px;\n}\nsection .container h2[data-v-eca10464] {\n  font-size: 1.5rem;\n  font-weight: bold;\n  text-align: left;\n  padding-bottom: 2%;\n}\nimg[data-v-eca10464] {\n  vertical-align: bottom;\n}\n@media screen and (max-width: 768px) {\nsection h2[data-v-eca10464] {\n    margin: 0 5%;\n}\n.school_text[data-v-eca10464] {\n    margin: 0 5% 2.5% 5%;\n}\n}", ""]);
+exports.push([module.i, "section[data-v-eca10464] {\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container[data-v-eca10464] {\n  max-width: 1160px;\n}\nsection .container h2[data-v-eca10464] {\n  font-size: 1.5rem;\n  font-weight: bold;\n  text-align: left;\n  padding-bottom: 2%;\n}\nimg[data-v-eca10464] {\n  vertical-align: bottom;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-eca10464] {\n    margin-bottom: 24px !important;\n    margin-top: 24px !important;\n}\nh2[data-v-eca10464] {\n    margin: 0 5%;\n}\n.school_text[data-v-eca10464] {\n    margin: 0 5% 2.5% 5%;\n}\n}", ""]);
 
 
 
@@ -4527,7 +4541,7 @@ exports.push([module.i, "section[data-v-eca10464] {\n  margin-top: 80px;\n  marg
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-c8b3a85a] {\n  padding-top: 3%;\n  padding-bottom: 3%;\n  background-color: #fffdf3;\n}\nsection .container[data-v-c8b3a85a] {\n  max-width: 1160px;\n}\nsection .container p[data-v-c8b3a85a] {\n  text-align: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n}", ""]);
+exports.push([module.i, "section[data-v-c8b3a85a] {\n  padding-top: 3%;\n  padding-bottom: 3%;\n  background-color: #fffdf3;\n}\nsection .container[data-v-c8b3a85a] {\n  max-width: 1160px;\n}\nsection .container p[data-v-c8b3a85a] {\n  text-align: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-c8b3a85a] {\n    margin-top: 0;\n}\n}", ""]);
 
 
 
@@ -4542,7 +4556,7 @@ exports.push([module.i, "section[data-v-c8b3a85a] {\n  padding-top: 3%;\n  paddi
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section .container[data-v-79d7a1ee] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 160px;\n}\n.school-right-flame[data-v-79d7a1ee] {\n  padding: 5%;\n}\n.school-right-flame p[data-v-79d7a1ee] {\n  font-size: 1.8rem;\n}\n.school-right-flame div[data-v-79d7a1ee] {\n  text-align: right;\n}\n.school-right-flame div a[data-v-79d7a1ee] {\n  font-weight: bold;\n  font-size: 1.6rem;\n}\n.school_name[data-v-79d7a1ee] {\n  padding-top: 40%;\n  padding-left: 5%;\n}\n.btn-flame[data-v-79d7a1ee] {\n  text-align: center;\n  margin-top: 16px;\n}\n.btn-flame .custom-btn[data-v-79d7a1ee] {\n  background-color: #ffe035;\n  color: #333333;\n  height: 4rem;\n  font-weight: bold;\n  font-size: 1.6rem;\n  width: 100%;\n  border-color: #ffe035;\n}\n.img-flame[data-v-79d7a1ee] {\n  padding: 24px;\n}\nimg[data-v-79d7a1ee] {\n  vertical-align: bottom;\n}\n.logo_img[data-v-79d7a1ee] {\n  padding-top: 40%;\n}\n.under[data-v-79d7a1ee] {\n  background: linear-gradient(transparent 70%, #ffe035 70%);\n  font-size: 2.5rem;\n  font-weight: bold;\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\nsection .container[data-v-79d7a1ee] {\n    margin-bottom: 80px;\n}\n.school-right-flame[data-v-79d7a1ee] {\n    padding: 5%;\n    display: none;\n}\n.school_name[data-v-79d7a1ee] {\n    padding-top: 0%;\n    padding-left: 5%;\n}\n.img-flame[data-v-79d7a1ee] {\n    padding: 0px;\n}\n.img-flame-sp[data-v-79d7a1ee] {\n    padding-top: 5%;\n}\n.is-child p[data-v-79d7a1ee] {\n    margin: 0 5%;\n}\n.is-child p[data-v-79d7a1ee] {\n    margin: 0 5%;\n}\n}", ""]);
+exports.push([module.i, "section .container[data-v-79d7a1ee] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 160px;\n}\n.school-right-flame[data-v-79d7a1ee] {\n  padding: 5%;\n}\n.school-right-flame p[data-v-79d7a1ee] {\n  font-size: 1.8rem;\n}\n.school-right-flame div[data-v-79d7a1ee] {\n  text-align: right;\n}\n.school-right-flame div a[data-v-79d7a1ee] {\n  font-weight: bold;\n  font-size: 1.6rem;\n}\n.school_name[data-v-79d7a1ee] {\n  padding-top: 40%;\n  padding-left: 5%;\n}\n.btn-flame[data-v-79d7a1ee] {\n  text-align: center;\n  margin-top: 16px;\n}\n.btn-flame .custom-btn[data-v-79d7a1ee] {\n  background-color: #ffe035;\n  color: #333333;\n  height: 4rem;\n  font-weight: bold;\n  font-size: 1.6rem;\n  width: 100%;\n  border-color: #ffe035;\n}\n.img-flame[data-v-79d7a1ee] {\n  padding: 24px;\n}\nimg[data-v-79d7a1ee] {\n  vertical-align: bottom;\n}\n.logo_img[data-v-79d7a1ee] {\n  padding-top: 40%;\n}\n.under[data-v-79d7a1ee] {\n  background: linear-gradient(transparent 70%, #ffe035 70%);\n  font-size: 2.5rem;\n  font-weight: bold;\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-79d7a1ee] {\n    margin-top: 0;\n}\n.container[data-v-79d7a1ee] {\n    margin-bottom: 24px !important;\n}\n.school-right-flame[data-v-79d7a1ee] {\n    padding: 5%;\n    display: none;\n}\n.school_name[data-v-79d7a1ee] {\n    padding-top: 0%;\n    padding-left: 5%;\n}\n.img-flame[data-v-79d7a1ee] {\n    padding: 0px;\n}\n.img-flame-sp[data-v-79d7a1ee] {\n    padding-top: 5%;\n}\n.is-child p[data-v-79d7a1ee] {\n    margin: 0 5%;\n}\n.is-child p[data-v-79d7a1ee] {\n    margin: 0 5%;\n}\n}", ""]);
 
 
 
@@ -4602,7 +4616,7 @@ exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-5f0c731f] {\n  max-
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-8d3e665e] {\n  margin-bottom: 80px;\n  margin: 0 5%;\n}\nsection .container[data-v-8d3e665e] {\n  max-width: 1160px;\n}\nsection .container .info-title[data-v-8d3e665e] {\n  max-width: 1120px;\n  margin: 0 auto;\n  margin-top: 56px;\n  font-size: 2rem;\n}\nsection .container .info-title h1[data-v-8d3e665e] {\n  text-align: center;\n}\nsection .container .info-flame[data-v-8d3e665e] {\n  max-width: 1120px;\n  margin: 0 auto;\n  margin-top: 32px;\n  font-size: 1.4rem;\n}\nsection .story-flame[data-v-8d3e665e] {\n  margin-top: 32px;\n  font-size: 1.4rem;\n}\nsection .story-flame div .flame[data-v-8d3e665e] {\n  margin: 0 auto;\n}\nsection .story-flame div .flame div .u-img[data-v-8d3e665e] {\n  width: 100%;\n  height: 100% !important;\n}\nsection .u-img-p[data-v-8d3e665e] {\n  display: none;\n}\n@media screen and (max-width: 768px) {\nsection .u-img-p[data-v-8d3e665e] {\n    display: block;\n}\nsection .u-img-p-pc[data-v-8d3e665e] {\n    display: none;\n}\n}", ""]);
+exports.push([module.i, "section[data-v-8d3e665e] {\n  margin-bottom: 80px;\n  margin: 0 5%;\n}\nsection .container[data-v-8d3e665e] {\n  max-width: 1160px;\n}\nsection .container .info-title[data-v-8d3e665e] {\n  max-width: 1120px;\n  margin: 0 auto;\n  margin-top: 56px;\n  font-size: 2rem;\n}\nsection .container .info-title h1[data-v-8d3e665e] {\n  text-align: center;\n}\nsection .container .info-flame[data-v-8d3e665e] {\n  max-width: 1120px;\n  margin: 0 auto;\n  margin-top: 32px;\n  font-size: 1.4rem;\n}\nsection .story-flame[data-v-8d3e665e] {\n  margin-top: 32px;\n  font-size: 1.4rem;\n}\nsection .story-flame div .flame[data-v-8d3e665e] {\n  margin: 0 auto;\n}\nsection .story-flame div .flame div .u-img[data-v-8d3e665e] {\n  width: 100%;\n  height: 100% !important;\n}\nsection .u-img-p[data-v-8d3e665e] {\n  display: none;\n}\n@media screen and (max-width: 768px) {\n.u-img-p[data-v-8d3e665e] {\n    display: block;\n}\n.u-img-p-pc[data-v-8d3e665e] {\n    display: none;\n}\np[data-v-8d3e665e] {\n    font-size: 1.2rem;\n}\n}", ""]);
 
 
 
@@ -4677,7 +4691,7 @@ exports.push([module.i, "section .container[data-v-087cd353] {\n  max-width: 116
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 56px;\n}\nsection .has-addons[data-v-7cdae69f] {\n  max-width: 560px;\n  height: 56px;\n  margin: 0 auto;\n}\nsection .has-addons .find-frame[data-v-7cdae69f] {\n  width: 448px;\n}\nsection .has-addons .find-frame input[data-v-7cdae69f] {\n  height: 56px;\n  font-size: 1.5rem;\n  background-color: #f2f2f2;\n}\nsection .has-addons .button-frame a[data-v-7cdae69f] {\n  width: 112px;\n  height: 56px;\n  background-color: #ffe035;\n  font-size: 1.5rem;\n  color: #222222;\n}\n.container[data-v-7cdae69f] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-7cdae69f] {\n  width: 80%;\n}\n.test1[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.thiscontainer[data-v-7cdae69f] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.mobile-container[data-v-7cdae69f] {\n  margin: auto;\n}\n.topspace[data-v-7cdae69f] {\n  margin-top: 30px;\n}\n.test2[data-v-7cdae69f] {\n  margin: auto;\n}", ""]);
+exports.push([module.i, "section[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 56px;\n}\nsection .has-addons[data-v-7cdae69f] {\n  max-width: 560px;\n  height: 56px;\n  margin: 0 auto;\n}\nsection .has-addons .find-frame[data-v-7cdae69f] {\n  width: 448px;\n}\nsection .has-addons .find-frame input[data-v-7cdae69f] {\n  height: 56px;\n  font-size: 1.5rem;\n  background-color: #f2f2f2;\n}\nsection .has-addons .button-frame a[data-v-7cdae69f] {\n  width: 112px;\n  height: 56px;\n  background-color: #ffe035;\n  font-size: 1.5rem;\n  color: #222222;\n}\n.container[data-v-7cdae69f] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-7cdae69f] {\n  width: 80%;\n}\n.test1[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.thiscontainer[data-v-7cdae69f] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.mobile-container[data-v-7cdae69f] {\n  margin: auto;\n}\n.topspace[data-v-7cdae69f] {\n  margin-top: 30px;\n}\n.test2[data-v-7cdae69f] {\n  margin: auto;\n}\n@media screen and (max-width: 768px) {\nsection .has-addons[data-v-7cdae69f] {\n    padding: 0 1rem;\n}\ninput[data-v-7cdae69f] {\n    font-size: 1.2rem !important;\n}\n.media_a[data-v-7cdae69f] {\n    font-size: 1.2rem !important;\n}\n}", ""]);
 
 
 
@@ -33183,49 +33197,72 @@ var render = function() {
             "div",
             { key: value.id, staticClass: "card-box column is-one-third" },
             [
-              _c("div", { staticClass: "card" }, [
-                _c(
-                  "div",
-                  {
-                    staticStyle: { position: "relative" },
-                    attrs: { calss: "card_image_container" }
-                  },
-                  [
-                    _c("div", { staticClass: "card-image item item--first" }, [
-                      _c("figure", { staticClass: "image is-4by3" }, [
-                        _c("img", {
-                          staticClass: "card-img-top",
-                          attrs: {
-                            src: value.activity_img,
-                            alt: "Placeholder image"
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "school_msg has-text-centered" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "card",
+                  on: {
+                    click: function($event) {
+                      return _vm.routerPush({
+                        name: "DetailActivity",
+                        params: { id: value.id }
+                      })
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticStyle: { position: "relative" },
+                      attrs: { calss: "card_image_container" }
+                    },
+                    [
                       _c(
-                        "p",
-                        {
-                          staticClass: "title is-7 is-size-7-mobile school_name"
-                        },
-                        [_vm._v(_vm._s(value.school.school_name))]
+                        "div",
+                        { staticClass: "card-image item item--first" },
+                        [
+                          _c("figure", { staticClass: "image is-4by3" }, [
+                            _c("img", {
+                              staticClass: "card-img-top",
+                              attrs: {
+                                src: value.activity_img,
+                                alt: "Placeholder image"
+                              }
+                            })
+                          ])
+                        ]
                       ),
                       _vm._v(" "),
                       _c(
-                        "p",
-                        {
-                          staticClass:
-                            "subtitle is-6 is-size-7-mobile school_message"
-                        },
-                        [_vm._v(_vm._s(value.activity_name))]
+                        "div",
+                        { staticClass: "school_msg has-text-centered" },
+                        [
+                          _c(
+                            "p",
+                            {
+                              staticClass:
+                                "title is-7 is-size-7-mobile school_name"
+                            },
+                            [_vm._v(_vm._s(value.school.school_name))]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "p",
+                            {
+                              staticClass:
+                                "subtitle is-6 is-size-7-mobile school_message"
+                            },
+                            [_vm._v(_vm._s(value.activity_name))]
+                          )
+                        ]
                       )
-                    ])
-                  ]
-                )
-              ]),
+                    ]
+                  )
+                ]
+              ),
               _vm._v(" "),
-              _c("div", { staticClass: "card-content" }, [
+              _c("div", { staticClass: "card-content mediasize" }, [
                 _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
                   _vm._v(_vm._s(value.school_name))
                 ])
@@ -33358,46 +33395,41 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", [
-    _c("div", { staticClass: "container" }, [
-      _c("h2", [_vm._v("法人・企業の皆様へ")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "tile is-ancestor" }, [
-        _c("div", { staticClass: "tile is-vertical is-12 flame" }, [
-          _c("div", { staticClass: "tile" }, [
-            _c(
-              "div",
-              { staticClass: "tile is-parent" },
-              [
-                _vm._m(0),
-                _vm._v(" "),
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "button is-medium custom-btn",
-                    attrs: { to: "/login" }
-                  },
-                  [_c("strong", [_vm._v("法人寄付")])]
-                )
-              ],
-              1
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("p", [
-      _vm._v(
-        "\n              法人・企業の皆様の寄付はこちらから\n              "
-      ),
-      _c("span", [_vm._v("→")])
+    return _c("section", { staticClass: "cdsection" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("h2", [_vm._v("法人・企業の皆様へ")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "tile is-ancestor" }, [
+          _c("div", { staticClass: "tile is-vertical is-12 flame" }, [
+            _c("div", { staticClass: "tile" }, [
+              _c("div", { staticClass: "tile is-parent" }, [
+                _c("p", [
+                  _vm._v(
+                    "\n              法人・企業の皆様の寄付はこちらから\n              "
+                  ),
+                  _c("span", [_vm._v("→")])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "button is-medium custom-btn",
+                    attrs: { href: "https://www.shigaku.go.jp/" }
+                  },
+                  [_c("strong", [_vm._v("法人寄付")])]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
     ])
   }
 ]
@@ -33425,7 +33457,7 @@ var render = function() {
   return _vm.isSchoolStatus
     ? _c("section", [
         _c("div", { staticClass: "container" }, [
-          _c("p", [_vm._v(_vm._s(_vm.school.school_name) + "の活動について")])
+          _c("p", [_vm._v(_vm._s(_vm.school.school_name) + "の活動")])
         ])
       ])
     : _vm._e()
@@ -33612,15 +33644,18 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm.isSchoolStatus
-    ? _c("section", [
-        _c("div", { staticClass: "container" }, [
-          _c("p", [_vm._v(_vm._s(_vm.school.school_name) + "について")])
-        ])
-      ])
-    : _vm._e()
+  return _vm.isSchoolStatus ? _c("section", [_vm._m(0)]) : _vm._e()
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("p", [_vm._v("私たちの学校について")])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -35119,7 +35154,7 @@ var render = function() {
                   expression: "searchWord"
                 }
               ],
-              staticClass: "input",
+              staticClass: "input mediainput",
               attrs: { type: "text", placeholder: "キーワードから探す" },
               domProps: { value: _vm.searchWord },
               on: {
@@ -35137,7 +35172,7 @@ var render = function() {
             _c(
               "a",
               {
-                staticClass: "button",
+                staticClass: "button media_a",
                 on: {
                   click: function($event) {
                     return _vm.setSearchWord(_vm.searchWord)
@@ -55379,6 +55414,7 @@ var routes = [{
   component: _pages_Login__WEBPACK_IMPORTED_MODULE_5__["default"]
 }, {
   path: '/activity/:id',
+  name: 'DetailActivity',
   component: _pages_Activity__WEBPACK_IMPORTED_MODULE_6__["default"],
   props: function props(route) {
     return {
