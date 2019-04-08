@@ -62,7 +62,6 @@ export default {
       count: 3
     };
   },
-
   computed: {
     ...mapGetters({
       fetchActivity: "activity/getAllActivities"
@@ -76,7 +75,6 @@ export default {
   created() {
     this.getActivities();
   },
-
   methods: {
     ...mapActions({
       getAllActivities: "activity/getAllActivities"
@@ -84,7 +82,6 @@ export default {
     getActivities() {
       this.getAllActivities;
     },
-
     addvalues() {
       this.count += 3;
     }
@@ -103,15 +100,12 @@ section {
   margin: 0 auto;
   max-width: 1160px;
 }
-
 .is-multiline {
   flex-wrap: wrap;
 }
-
 // .card-box {
 //   width: 80%;
 // }
-
 .card {
   // margin: 0 24px;
   margin: 0 8px;
@@ -120,13 +114,11 @@ section {
 .card_image_container {
   position: relative;
 }
-
 .item {
   position: relative;
   overflow: hidden;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
 }
-
 .item:after {
   /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/
   content: "";
@@ -138,7 +130,6 @@ section {
   left: 0;
   opacity: 0.5; /*下に配置する画像が見えるよう、疑似要素は透過しておく*/
 }
-
 .item--first:after {
   background-image: linear-gradient(
     to bottom,
@@ -147,7 +138,6 @@ section {
     #212529
   );
 }
-
 .school_msg {
   position: absolute;
   color: white;
@@ -159,7 +149,6 @@ section {
   margin: 0;
   padding: 0;
 }
-
 .school_name {
   position: relative;
   display: inline-block;
@@ -170,7 +159,6 @@ section {
   margin-bottom: 3em;
   font-size: 0.5rem;
 }
-
 .school_message {
   color: white;
 }
@@ -179,21 +167,17 @@ section {
   /* border-bottom:dotted; 
     border-bottom-width: 10%; */
 }
-
 .detail {
   padding: -0.5rem;
   display: flex;
 }
-
 .card-text {
   color: #707070;
 }
-
 .btn-box {
   margin: 3% auto;
   text-align: center;
 }
-
 .btn-add {
   background-color: transparent;
   border: none;
@@ -213,16 +197,13 @@ section {
   font-weight: bold;
   padding: 0.3%;
 }
-
 @media screen and (max-width: 768px) {
   section {
     margin: 0 5%;
   }
-
   .container {
     display: block;
   }
-
   .card {
     width: 100%;
     margin: 10% auto;
