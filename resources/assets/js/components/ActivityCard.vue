@@ -2,7 +2,13 @@
   <section>
     <div class="container columns is-multiline">
       <div v-for="value in sliceValues" :key="value.id" class="card-box column is-one-third">
-        <div class="card">
+        <div
+          class="card"
+          @click="routerPush({
+                name:'DetailActivity',
+                params:{id:value.id}
+                })"
+        >
           <div calss="card_image_container" style="position: relative;">
             <div class="card-image item item--first">
               <figure class="image is-4by3">
@@ -15,7 +21,8 @@
             </div>
           </div>
         </div>
-        <div class="card-content">
+
+        <div class="card-content mediasize">
           <p class="subtitle is-6 has-text-centered">{{value.school_name}}</p>
         </div>
         <div class="columns detail">
@@ -84,6 +91,12 @@ export default {
     },
     addvalues() {
       this.count += 3;
+    },
+
+    routerPush(router) {
+      // 画面丈夫へ移動するためのもの
+      window.scrollTo(0, 0);
+      this.$router.push(router);
     }
   }
 };
@@ -200,6 +213,7 @@ section {
 @media screen and (max-width: 768px) {
   section {
     margin: 0 5%;
+    padding-top: 0;
   }
   .container {
     display: block;
@@ -207,6 +221,9 @@ section {
   .card {
     width: 100%;
     margin: 10% auto;
+  }
+  .mediasize {
+    padding: 0;
   }
 }
 </style>

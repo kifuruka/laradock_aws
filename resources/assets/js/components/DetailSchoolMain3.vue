@@ -45,8 +45,8 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    margin-top: 80px;
-    margin-bottom: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   .container {
     max-width: 1160px;
     h2 {
@@ -58,20 +58,20 @@ section {
   }
 }
 
-img{
+img {
   vertical-align: bottom;
 }
 
-
-@media screen and (max-width:768px) { 
-
-section h2 {
+@media screen and (max-width: 768px) {
+  section {
+    margin-bottom: 24px !important;
+    margin-top: 24px !important;
+  }
+  h2 {
     margin: 0 5%;
-    }
-.school_text{
+  }
+  .school_text {
     margin: 0 5% 2.5% 5%;
-    }
-
-
+  }
 }
 </style>

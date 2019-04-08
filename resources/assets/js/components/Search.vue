@@ -2,10 +2,10 @@
   <section>
     <div v-if="isAllStatus" class="field has-addons">
       <div class="control find-frame">
-        <input class="input" type="text" v-model="searchWord" placeholder="キーワードから探す">
+        <input class="input mediainput" type="text" v-model="searchWord" placeholder="キーワードから探す">
       </div>
       <div class="control button-frame">
-        <a class="button" @click="setSearchWord(searchWord)">検索</a>
+        <a class="button media_a" @click="setSearchWord(searchWord)">検索</a>
       </div>
     </div>
     <table class="test2">
@@ -125,5 +125,20 @@ section {
 
 .test2 {
   margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    .has-addons {
+      padding: 0 1rem;
+    }
+  }
+
+  input {
+    font-size: 1.2rem !important;
+  }
+  .media_a {
+    font-size: 1.2rem !important;
+  }
 }
 </style>

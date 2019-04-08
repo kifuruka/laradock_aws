@@ -123,8 +123,11 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  section .container {
-    margin-bottom: 80px;
+  section {
+    margin-top: 0;
+  }
+  .container {
+    margin-bottom: 24px !important;
   }
 
   .school-right-flame {

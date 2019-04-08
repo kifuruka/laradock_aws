@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="cdsection">
     <div class="container">
       <h2>法人・企業の皆様へ</h2>
       <div class="tile is-ancestor">
@@ -10,9 +10,9 @@
                 法人・企業の皆様の寄付はこちらから
                 <span>→</span>
               </p>
-              <router-link to="/login" class="button is-medium custom-btn">
+              <a href="https://www.shigaku.go.jp/" class="button is-medium custom-btn">
                 <strong>法人寄付</strong>
-              </router-link>
+              </a>
             </div>
           </div>
         </div>
@@ -59,11 +59,30 @@ section {
       }
     }
   }
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    margin-top: 16px;
+    margin-bottom: 32px;
+
+    // .cdsection {
+    //   margin-bottom: 20px;
+    //   margin-top: 0;
+    // }
+
     .container {
+      h2 {
+        padding-bottom: 0;
+      }
       div {
         text-align: center;
         p {
+          font-size: 1.2rem;
+          color: #f2f2f2;
+          padding-top: 10px;
+          padding-bottom: 20px;
+
           text-align: center;
           span {
             display: none;
@@ -75,8 +94,9 @@ section {
           border-radius: 2em;
           width: 60%;
           border-color: #db6b6b;
-          margin-top: 12px;
-          margin-left: 16px;
+          // margin-top: 12px;
+          // margin-left: 16px;
+          margin: 0 auto;
         }
       }
     }

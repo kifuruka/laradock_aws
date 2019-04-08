@@ -32,6 +32,7 @@ const routes = [
     },
     {
         path: '/activity/:id',
+        name: 'DetailActivity',
         component: Activity,
         props: route => ({
             id: Number(route.params.id)
