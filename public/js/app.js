@@ -3657,6 +3657,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   methods: {
     dropdownToggle: function dropdownToggle() {
       this.dropdownActive = !this.dropdownActive;
+      window.scrollTo(0, 0);
+    },
+    roadUp: function roadUp() {
+      window.scrollTo(0, 0);
     }
   }
 });
@@ -3980,8 +3984,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
 
  // import LoginForm from "../components/LoginForm";
 
@@ -4019,9 +4021,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
               case 2:
                 // console.log(this.state.data);
+                window.scrollTo(0, 0);
                 this.$router.push("/");
 
-              case 3:
+              case 4:
               case "end":
                 return _context.stop();
             }
@@ -4214,8 +4217,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -4252,9 +4253,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 });
 
               case 2:
+                window.scrollTo(0, 0);
                 this.$router.push("/");
 
-              case 3:
+              case 4:
               case "end":
                 return _context.stop();
             }
@@ -4655,7 +4657,7 @@ exports.push([module.i, "section[data-v-8d3e665e] {\n  margin-bottom: 80px;\n  m
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-4b8e7fc8] {\n  padding-top: 63px;\n  top: 53px;\n}\nsection div[data-v-4b8e7fc8] {\n  top: 63px;\n}\nsection div h1[data-v-4b8e7fc8] {\n  background-color: #fffdf3;\n  padding: 24px;\n  text-align: center;\n  line-height: 24px;\n  padding-top: 24px;\n  font-size: 1.6rem;\n  letter-spacing: 0.3em;\n}", ""]);
+exports.push([module.i, "section[data-v-4b8e7fc8] {\n  padding-top: 63px;\n  top: 53px;\n}\nsection div[data-v-4b8e7fc8] {\n  top: 63px;\n}\nsection div h1[data-v-4b8e7fc8] {\n  background-color: #fffdf3;\n  padding: 24px;\n  text-align: center;\n  line-height: 24px;\n  padding-top: 24px;\n  font-size: 1.6rem;\n  letter-spacing: 0.3em;\n}\n@media screen and (max-width: 1024px) {\nsection[data-v-4b8e7fc8] {\n    padding-top: 0;\n}\n}", ""]);
 
 
 
@@ -4745,7 +4747,7 @@ exports.push([module.i, "@charset \"UTF-8\";\nimg[data-v-5b38624f] {\n  border-r
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\nfooter[data-v-bbf831ae] {\n  background-color: #ffe035;\n  font-weight: bold;\n  padding: 24px 32px;\n  bottom: 0;\n  /*下に固定*/\n  width: 100%;\n}\n@media (max-width: 767px) {\nfooter[data-v-bbf831ae] {\n    padding: 8px;\n    width: 100%;\n    display: block;\n    font-size: 0.8rem;\n}\nfooter p[data-v-bbf831ae] {\n    text-align: center;\n}\nfooter .level-right[data-v-bbf831ae] {\n    text-align: center;\n    margin-top: 0.5rem;\n}\n}", ""]);
+exports.push([module.i, "footer[data-v-bbf831ae] {\n  background-color: #ffe035;\n  font-weight: bold;\n  padding: 24px 32px;\n}\n@media (max-width: 767px) {\nfooter[data-v-bbf831ae] {\n    padding: 8px;\n    width: 100%;\n    display: block;\n    font-size: 0.8rem;\n}\nfooter p[data-v-bbf831ae] {\n    text-align: center;\n}\nfooter .level-right[data-v-bbf831ae] {\n    text-align: center;\n    margin-top: 0.5rem;\n}\n}", ""]);
 
 
 
@@ -4805,7 +4807,7 @@ exports.push([module.i, "section[data-v-3a435e4e] {\n  max-width: 1160px;\n  mar
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".section[data-v-5b96cafc] {\n  padding: 128px 24px;\n}\n@media screen and (min-width: 1024px) {\n.section .form__container[data-v-5b96cafc] {\n    padding: 0 400px;\n}\n}\n.section .form__container .btn-line[data-v-5b96cafc] {\n  color: white;\n}\n.section .form__container .login__title[data-v-5b96cafc] {\n  padding-top: 10px;\n  padding-bottom: 15px;\n  font-weight: bold;\n  font-size: 24px;\n}\n.section .form__container .label[data-v-5b96cafc] {\n  font-size: 12px;\n  font-weight: normal;\n}\n.section .form__container .btn__container[data-v-5b96cafc] {\n  margin-top: 24px;\n  text-align: center;\n}\n.section .form__container .btn__container .button[data-v-5b96cafc] {\n  background-color: #ffe035;\n  border: 1px solid #ffe035;\n  font-size: 1rem;\n  width: 50%;\n}\n.section .form__container .reset__password[data-v-5b96cafc] {\n  margin-top: 15px;\n  text-align: center;\n}\nform[data-v-5b96cafc] {\n  max-width: 680px;\n  margin: 0 auto;\n}\n.login__title[data-v-5b96cafc] {\n  padding-top: 10px;\n  padding-bottom: 15px;\n  font-weight: bold;\n  font-size: 24px;\n}\n.str_size.lavel[data-v-5b96cafc] {\n  font-size: 20px !important;\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n.section[data-v-5b96cafc] {\n  padding: 128px 24px;\n  padding-bottom: 310px;\n}\n@media screen and (min-width: 1024px) {\n.section .form__container[data-v-5b96cafc] {\n    padding: 0 400px;\n}\n}\n.section .form__container .btn-line[data-v-5b96cafc] {\n  color: white;\n}\n.section .form__container .login__title[data-v-5b96cafc] {\n  padding-top: 10px;\n  padding-bottom: 15px;\n  font-weight: bold;\n  font-size: 24px;\n}\n.section .form__container .label[data-v-5b96cafc] {\n  font-size: 12px;\n  font-weight: normal;\n}\n.section .form__container .str_size[data-v-5b96cafc] {\n  margin-top: 34px;\n}\n.section .form__container .btn__container[data-v-5b96cafc] {\n  margin-top: 24px;\n  text-align: center;\n}\n.section .form__container .btn__container .button[data-v-5b96cafc] {\n  background-color: #ffe035;\n  border: 1px solid #ffe035;\n  font-size: 1rem;\n  width: 50%;\n}\n.section .form__container .btn__container .ctm_btn[data-v-5b96cafc] {\n  margin-top: 36px;\n}\n.section .form__container .reset__password[data-v-5b96cafc] {\n  margin-top: 15px;\n  text-align: center;\n}\nform[data-v-5b96cafc] {\n  max-width: 680px;\n  margin: 0 auto;\n}\n.login__title[data-v-5b96cafc] {\n  padding-top: 10px;\n  padding-bottom: 15px;\n  font-weight: bold;\n  font-size: 24px;\n}\n.str_size.lavel[data-v-5b96cafc] {\n  font-size: 20px !important;\n}\n.footer[data-v-5b96cafc] {\n  position: absolute;\n  /*←絶対位置*/\n  bottom: 0;\n  /*下に固定*/\n  width: 100%;\n}\n@media screen and (max-width: 1024px) {\n.section[data-v-5b96cafc] {\n    padding-top: 70px;\n    padding-bottom: 90px;\n}\n.mobtitle[data-v-5b96cafc] {\n    display: none;\n}\n}", ""]);
 
 
 
@@ -4820,7 +4822,7 @@ exports.push([module.i, ".section[data-v-5b96cafc] {\n  padding: 128px 24px;\n}\
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-0f409c60] {\n  padding: 128px 24px;\n}\n@media screen and (min-width: 1024px) {\nsection .form__container[data-v-0f409c60] {\n    padding: 0 300px;\n}\n}\nsection .form__container .btn-line[data-v-0f409c60] {\n  background-color: #00c300;\n  border: 1px solid #00c300;\n  color: white;\n}\nsection .form__container .login__title[data-v-0f409c60] {\n  padding-top: 10px;\n  padding-bottom: 15px;\n  font-weight: bold;\n  font-size: 18px;\n}\nsection .form__container .label[data-v-0f409c60] {\n  font-size: 12px;\n  font-weight: normal;\n}\nsection .form__container .btn__container[data-v-0f409c60] {\n  margin-top: 24px;\n  text-align: center;\n}\nsection .form__container .btn__container .button[data-v-0f409c60] {\n  background-color: #ffe035;\n  border: 1px solid #ffe035;\n  font-size: 1rem;\n}\nsection .form__container .reset__password[data-v-0f409c60] {\n  margin-top: 15px;\n  text-align: center;\n}", ""]);
+exports.push([module.i, ".custom_section[data-v-0f409c60] {\n  padding: 128px 46px;\n}\n@media screen and (min-width: 1024px) {\n.custom_section .form__container[data-v-0f409c60] {\n    padding: 0 300px;\n}\n}\n.custom_section .form__container .btn-line[data-v-0f409c60] {\n  background-color: #00c300;\n  border: 1px solid #00c300;\n  color: white;\n}\n.custom_section .form__container .login__title[data-v-0f409c60] {\n  padding-top: 10px;\n  padding-bottom: 15px;\n  font-weight: bold;\n  font-size: 18px;\n}\n.custom_section .form__container .label[data-v-0f409c60] {\n  font-size: 12px;\n  font-weight: normal;\n}\n.custom_section .form__container .btn__container[data-v-0f409c60] {\n  margin-top: 24px;\n  text-align: center;\n}\n.custom_section .form__container .btn__container .button[data-v-0f409c60] {\n  background-color: #ffe035;\n  border: 1px solid #ffe035;\n  font-size: 1rem;\n}\n.custom_section .form__container .reset__password[data-v-0f409c60] {\n  margin-top: 15px;\n  text-align: center;\n}\n.message[data-v-0f409c60] {\n  margin-top: 2rem;\n}\n.message-body[data-v-0f409c60] {\n  font-size: 1.2rem;\n}\n.last_message[data-v-0f409c60] {\n  padding-top: 1.2rem;\n  font-size: 1.2rem;\n  margin: 0 1rem;\n}\n@media screen and (max-width: 1024px) {\n.custom_section[data-v-0f409c60] {\n    padding-top: 24px;\n    padding-bottom: 24px;\n}\n.cst_message[data-v-0f409c60] {\n    margin-top: 60px;\n}\n.mobtitle[data-v-0f409c60] {\n    display: none;\n}\n.message[data-v-0f409c60] {\n    margin-top: 2rem;\n}\n.message-body[data-v-0f409c60] {\n    font-size: 0.7rem;\n}\n.last_message[data-v-0f409c60] {\n    padding-top: 1.2rem;\n    font-size: 0.7rem;\n    margin: 0 1rem;\n}\n}", ""]);
 
 
 
@@ -35461,7 +35463,7 @@ var render = function() {
       [
         _c(
           "div",
-          { staticClass: "navbar-brand" },
+          { staticClass: "navbar-brand", on: { click: _vm.roadUp } },
           [
             _c(
               "router-link",
@@ -35513,7 +35515,7 @@ var render = function() {
           [
             _c(
               "div",
-              { staticClass: "navbar-end" },
+              { staticClass: "navbar-end", on: { click: _vm.dropdownToggle } },
               [
                 _c(
                   "router-link",
@@ -35807,104 +35809,55 @@ var render = function() {
     [
       _c("message-title", { attrs: { message: _vm.message } }),
       _vm._v(" "),
-      [
-        _c("div", [
-          _c("section", { staticClass: "section" }, [
-            _c("div", { staticClass: "form__container" }, [
-              _c(
-                "p",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value: _vm.isError,
-                      expression: "isError"
-                    }
-                  ]
-                },
-                [_vm._v("認証に失敗しました。")]
-              ),
+      _c("div", [
+        _c("section", { staticClass: "section" }, [
+          _c("div", { staticClass: "form__container" }, [
+            _c(
+              "p",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.isError,
+                    expression: "isError"
+                  }
+                ]
+              },
+              [_vm._v("認証に失敗しました。")]
+            ),
+            _vm._v(" "),
+            _c("form", [
+              _c("p", { staticClass: "login__title mobtitle" }, [
+                _vm._v("ログイン")
+              ]),
               _vm._v(" "),
-              _c("form", [
-                _c("p", { staticClass: "login__title" }, [_vm._v("ログイン")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "field str_size" }, [
-                  _c("label", { staticClass: "label" }, [
-                    _vm._v("メールアドレス")
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "control has-icons-left has-icons-right" },
-                    [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.user.email,
-                            expression: "user.email"
-                          }
-                        ],
-                        staticClass: "input",
-                        attrs: {
-                          type: "email",
-                          placeholder: "半角英数",
-                          required: "",
-                          autofocus: ""
-                        },
-                        domProps: { value: _vm.user.email },
-                        on: {
-                          keyup: function($event) {
-                            if (
-                              !$event.type.indexOf("key") &&
-                              _vm._k(
-                                $event.keyCode,
-                                "enter",
-                                13,
-                                $event.key,
-                                "Enter"
-                              )
-                            ) {
-                              return null
-                            }
-                            return _vm.login($event)
-                          },
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(_vm.user, "email", $event.target.value)
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _vm._m(0)
-                    ]
-                  )
+              _c("div", { staticClass: "field str_size" }, [
+                _c("label", { staticClass: "label" }, [
+                  _vm._v("メールアドレス")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "field str_size" }, [
-                  _c("label", { staticClass: "label" }, [_vm._v("パスワード")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "control has-icons-left" }, [
+                _c(
+                  "div",
+                  { staticClass: "control has-icons-left has-icons-right" },
+                  [
                     _c("input", {
                       directives: [
                         {
                           name: "model",
                           rawName: "v-model",
-                          value: _vm.user.password,
-                          expression: "user.password"
+                          value: _vm.user.email,
+                          expression: "user.email"
                         }
                       ],
                       staticClass: "input",
                       attrs: {
-                        type: "password",
+                        type: "email",
                         placeholder: "半角英数",
-                        required: ""
+                        required: "",
+                        autofocus: ""
                       },
-                      domProps: { value: _vm.user.password },
+                      domProps: { value: _vm.user.email },
                       on: {
                         keyup: function($event) {
                           if (
@@ -35925,48 +35878,97 @@ var render = function() {
                           if ($event.target.composing) {
                             return
                           }
-                          _vm.$set(_vm.user, "password", $event.target.value)
+                          _vm.$set(_vm.user, "email", $event.target.value)
                         }
                       }
                     }),
                     _vm._v(" "),
-                    _vm._m(1)
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "btn__container" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "button is-large is-rounded",
-                      on: {
-                        click: function($event) {
-                          $event.preventDefault()
-                          return _vm.handlelogin($event)
-                        }
-                      }
-                    },
-                    [_vm._v("ログインする")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "reset__password" },
-                  [
-                    _c("router-link", { attrs: { to: "/register" } }, [
-                      _vm._v("新規登録の方はこちら")
-                    ])
-                  ],
-                  1
+                    _vm._m(0)
+                  ]
                 )
-              ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field str_size" }, [
+                _c("label", { staticClass: "label" }, [_vm._v("パスワード")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "control has-icons-left" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.user.password,
+                        expression: "user.password"
+                      }
+                    ],
+                    staticClass: "input",
+                    attrs: {
+                      type: "password",
+                      placeholder: "半角英数",
+                      required: ""
+                    },
+                    domProps: { value: _vm.user.password },
+                    on: {
+                      keyup: function($event) {
+                        if (
+                          !$event.type.indexOf("key") &&
+                          _vm._k(
+                            $event.keyCode,
+                            "enter",
+                            13,
+                            $event.key,
+                            "Enter"
+                          )
+                        ) {
+                          return null
+                        }
+                        return _vm.login($event)
+                      },
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.user, "password", $event.target.value)
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  _vm._m(1)
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "btn__container" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "button is-large is-rounded ctm_btn",
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.handlelogin($event)
+                      }
+                    }
+                  },
+                  [_vm._v("ログインする")]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "reset__password" },
+                [
+                  _c("router-link", { attrs: { to: "/register" } }, [
+                    _vm._v("新規登録の方はこちら")
+                  ])
+                ],
+                1
+              )
             ])
           ])
         ])
-      ]
+      ])
     ],
-    2
+    1
   )
 }
 var staticRenderFns = [
@@ -36034,20 +36036,23 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "cst_message" },
     [
       _c("message-title", { attrs: { message: _vm.message } }),
       _vm._v(" "),
-      [
-        _c("section", { staticClass: "section" }, [
+      _c("div", [
+        _c("section", { staticClass: "custom_section" }, [
           _c("div", { staticClass: "form__container" }, [
-            _c("p", [
+            _c("p", { staticClass: "mobtitle" }, [
               _vm._v(
                 "\n          下記情報をご入力いただき、「ご利用規約」をご確認いただいたうえで「利用規約に同意してメールアドレス確認メールを送信」をクリックしてください。\n          ご入力いただいたメールアドレスに会員登録用のURLを送信します。\n        "
               )
             ]),
             _vm._v(" "),
             _c("form", [
-              _c("p", { staticClass: "login__title" }, [_vm._v("新規登録")]),
+              _c("p", { staticClass: "login__title mobtitle" }, [
+                _vm._v("新規登録")
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "field" }, [
                 _c("label", { staticClass: "label" }, [_vm._v("アカウント名")]),
@@ -36281,16 +36286,12 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "\n          ※携帯電話でドメイン指定受信をされている場合は「@kifuruka.com」の受信設定をお願い致します。\n          ※メールアドレスを間違えますと、会員登録が続けられませんのでご注意ください。\n        "
-              )
-            ])
+            _vm._m(5)
           ])
         ])
-      ]
+      ])
     ],
-    2
+    1
   )
 }
 var staticRenderFns = [
@@ -36351,6 +36352,20 @@ var staticRenderFns = [
         ),
         _c("br")
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "last_message" }, [
+      _vm._v(
+        "\n          ※携帯電話でドメイン指定受信をされている場合は、@kifuruka.comの受信設定をお願い致します。\n          "
+      ),
+      _c("br"),
+      _vm._v(
+        "※メールアドレスを間違えますと、会員登録が続けられませんのでご注意ください。\n        "
+      )
     ])
   }
 ]

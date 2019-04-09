@@ -35,4 +35,10 @@ section {
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  section {
+    padding-top: 0;
+  }
+}
 </style>
