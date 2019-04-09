@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <div class="cst_message">
     <message-title :message="message"/>
-    <template>
-      <section class="section">
+    <div>
+      <section class="custom_section">
         <div class="form__container">
-          <p>
+          <p class="mobtitle">
             下記情報をご入力いただき、「ご利用規約」をご確認いただいたうえで「利用規約に同意してメールアドレス確認メールを送信」をクリックしてください。
             ご入力いただいたメールアドレスに会員登録用のURLを送信します。
           </p>
           <form>
-            <p class="login__title">新規登録</p>
+            <p class="login__title mobtitle">新規登録</p>
             <div class="field">
               <label class="label">アカウント名</label>
               <div class="control has-icons-left has-icons-right">
@@ -95,15 +95,13 @@
               >利用規約に同意して登録する</button>
             </div>
           </form>
-          <p>
-            ※携帯電話でドメイン指定受信をされている場合は「@kifuruka.com」の受信設定をお願い致します。
-            ※メールアドレスを間違えますと、会員登録が続けられませんのでご注意ください。
+          <p class="last_message">
+            ※携帯電話でドメイン指定受信をされている場合は、@kifuruka.comの受信設定をお願い致します。
+            <br>※メールアドレスを間違えますと、会員登録が続けられませんのでご注意ください。
           </p>
         </div>
       </section>
-    </template>
-  </div>
-</template>
+    </div>
   </div>
 </template>
 
@@ -137,6 +135,7 @@ export default {
         email: this.user.email,
         password: this.user.password
       });
+      window.scrollTo(0, 0);
       this.$router.push("/");
     },
     async handleRegister() {
@@ -154,8 +153,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
-  padding: 128px 24px;
+.custom_section {
+  padding: 128px 46px;
   .form__container {
     @media screen and (min-width: 1024px) {
       padding: 0 300px;
@@ -189,6 +188,44 @@ section {
       margin-top: 15px;
       text-align: center;
     }
+  }
+}
+.message {
+  margin-top: 2rem;
+}
+.message-body {
+  font-size: 1.2rem;
+}
+
+.last_message {
+  padding-top: 1.2rem;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .custom_section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .cst_message {
+    margin-top: 60px;
+    // padding-bottom: 90px;
+  }
+  .mobtitle {
+    display: none;
+  }
+  .message {
+    margin-top: 2rem;
+  }
+  .message-body {
+    font-size: 0.7rem;
+  }
+
+  .last_message {
+    padding-top: 1.2rem;
+    font-size: 0.7rem;
+    margin: 0 1rem;
   }
 }
 </style>

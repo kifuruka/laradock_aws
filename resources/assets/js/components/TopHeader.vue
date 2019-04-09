@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
+      <div class="navbar-brand" @click="roadUp">
         <router-link to="/" class="navbar-item">
           <img src="../store/images/kifuruka_logo.png" alt="がっこう寄付納税サイト【きふるか】" decoding="async">
         </router-link>
@@ -22,7 +22,7 @@
         </a>
       </div>
       <div id="navbarHomeHeader" class="navbar-menu" :class="{'is-active': dropdownActive}">
-        <div class="navbar-end">
+        <div class="navbar-end" @click="dropdownToggle">
           <router-link to="/mypage" class="navbar-item flex3 buttons">
             <strong>マイページ</strong>
           </router-link>
@@ -67,6 +67,11 @@ export default {
   methods: {
     dropdownToggle() {
       this.dropdownActive = !this.dropdownActive;
+      window.scrollTo(0, 0);
+    },
+
+    roadUp() {
+      window.scrollTo(0, 0);
     }
   }
 };
