@@ -19,6 +19,6 @@ export default {};
 
 <style>
 section {
-  margin-top: 200px;
+  /* margin-top: 200px; */
 }
 </style>

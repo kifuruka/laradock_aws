@@ -1887,6 +1887,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2554,6 +2558,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
 //
 //
 //
@@ -3428,6 +3433,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3506,6 +3517,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 // import { mapGetters } from "vuex";
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -3515,6 +3532,13 @@ __webpack_require__.r(__webpack_exports__);
     return {
       info: null
     };
+  },
+  methods: {
+    routerPush: function routerPush(router) {
+      // 画面丈夫へ移動するためのもの
+      window.scrollTo(0, 0);
+      this.$router.push(router);
+    }
   }
 });
 
@@ -4436,7 +4460,7 @@ __webpack_require__.r(__webpack_exports__);
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  flex-wrap: wrap;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 8px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n    padding-top: 0;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n}\n.mediasize[data-v-5e0b4614] {\n    padding: 0;\n}\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\nimg[data-v-5e0b4614] {\n  border-radius: 1%;\n}\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n  margin-bottom: 5rem;\n}\n.title[data-v-5e0b4614] {\n  text-align: center;\n}\n.title h2[data-v-5e0b4614] {\n  font-size: 1.7rem;\n  font-weight: bolder;\n}\n.title span[data-v-5e0b4614] {\n  background: linear-gradient(transparent 80%, #ffe035 70%);\n}\n.container[data-v-5e0b4614] {\n  width: 100%;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  flex-wrap: wrap;\n}\n.card-box[data-v-5e0b4614] {\n  background-color: #fff;\n  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\n}\n.column[data-v-5e0b4614] {\n  padding: 0;\n  padding-bottom: 0.75rem;\n  margin: 1%;\n  border-radius: 1%;\n}\n.column.is-one-third[data-v-5e0b4614],\n.column.is-one-third-tablet[data-v-5e0b4614] {\n  flex: none;\n  width: 31.3333%;\n}\n.card[data-v-5e0b4614] {\n  border-radius: 1%;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n    padding-top: 0;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.column[data-v-5e0b4614] {\n    padding: 0;\n    padding-bottom: 0.75rem;\n    margin: 0;\n    border-radius: 1%;\n}\n.column.is-one-third[data-v-5e0b4614],\n.column.is-one-third-tablet[data-v-5e0b4614] {\n    flex: none;\n    width: 100%;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n    border-radius: 1%;\n}\n.mediasize[data-v-5e0b4614] {\n    padding: 0;\n}\n}", ""]);
 
 
 
@@ -4466,7 +4490,7 @@ exports.push([module.i, "section[data-v-3fb7e0c4] {\n  padding-top: 40px;\n}\nse
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-a8116b20] {\n  background-color: #808080;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-a8116b20] {\n  padding: 16px;\n  font-size: 2rem;\n  color: #f2f2f2;\n  text-align: center;\n}\nsection .container div[data-v-a8116b20] {\n  margin: 0 auto;\n}\nsection .container div p[data-v-a8116b20] {\n  font-size: 1.6rem;\n  color: #f2f2f2;\n  padding: 8px;\n  text-align: right;\n}\nsection .container div p span[data-v-a8116b20] {\n  padding-left: 16px;\n}\nsection .container div .custom-btn[data-v-a8116b20] {\n  background-color: #db6b6b;\n  color: white;\n  border-radius: 2em;\n  width: 7.2em;\n  border-color: #db6b6b;\n  margin-top: 12px;\n  margin-left: 16px;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-a8116b20] {\n    margin-top: 16px;\n    margin-bottom: 32px;\n}\nsection .container h2[data-v-a8116b20] {\n    padding-bottom: 0;\n}\nsection .container div[data-v-a8116b20] {\n    text-align: center;\n}\nsection .container div p[data-v-a8116b20] {\n    font-size: 1.2rem;\n    color: #f2f2f2;\n    padding-top: 10px;\n    padding-bottom: 20px;\n    text-align: center;\n}\nsection .container div p span[data-v-a8116b20] {\n    display: none;\n}\nsection .container div .custom-btn[data-v-a8116b20] {\n    background-color: #db6b6b;\n    color: white;\n    border-radius: 2em;\n    width: 60%;\n    border-color: #db6b6b;\n    margin: 0 auto;\n}\n}", ""]);
+exports.push([module.i, "section[data-v-a8116b20] {\n  background-color: #808080;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-a8116b20] {\n  padding: 16px;\n  font-size: 2rem;\n  color: #f2f2f2;\n  text-align: center;\n}\nsection .container div[data-v-a8116b20] {\n  margin: 0 auto;\n}\nsection .container div p[data-v-a8116b20] {\n  font-size: 1.6rem;\n  color: #f2f2f2;\n  padding: 8px;\n  text-align: right;\n}\nsection .container div p span[data-v-a8116b20] {\n  padding-left: 16px;\n}\nsection .container div .custom-btn[data-v-a8116b20] {\n  background-color: #db6b6b;\n  color: white;\n  border-radius: 2em;\n  width: 7.2em;\n  border-color: #db6b6b;\n  margin-top: 5px;\n  margin-left: 16px;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-a8116b20] {\n    margin-top: 16px;\n    margin-bottom: 32px;\n}\nsection .container h2[data-v-a8116b20] {\n    padding-bottom: 0;\n}\nsection .container div[data-v-a8116b20] {\n    text-align: center;\n}\nsection .container div p[data-v-a8116b20] {\n    font-size: 1.2rem;\n    color: #f2f2f2;\n    padding-top: 10px;\n    padding-bottom: 20px;\n    text-align: center;\n}\nsection .container div p span[data-v-a8116b20] {\n    display: none;\n}\nsection .container div .custom-btn[data-v-a8116b20] {\n    background-color: #db6b6b;\n    color: white;\n    border-radius: 2em;\n    width: 60%;\n    border-color: #db6b6b;\n    margin: 0 auto;\n}\n}", ""]);
 
 
 
@@ -4691,7 +4715,7 @@ exports.push([module.i, "section .container[data-v-087cd353] {\n  max-width: 116
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 56px;\n}\nsection .has-addons[data-v-7cdae69f] {\n  max-width: 560px;\n  height: 56px;\n  margin: 0 auto;\n}\nsection .has-addons .find-frame[data-v-7cdae69f] {\n  width: 448px;\n}\nsection .has-addons .find-frame input[data-v-7cdae69f] {\n  height: 56px;\n  font-size: 1.5rem;\n  background-color: #f2f2f2;\n}\nsection .has-addons .button-frame a[data-v-7cdae69f] {\n  width: 112px;\n  height: 56px;\n  background-color: #ffe035;\n  font-size: 1.5rem;\n  color: #222222;\n}\n.container[data-v-7cdae69f] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-7cdae69f] {\n  width: 80%;\n}\n.test1[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.thiscontainer[data-v-7cdae69f] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.mobile-container[data-v-7cdae69f] {\n  margin: auto;\n}\n.topspace[data-v-7cdae69f] {\n  margin-top: 30px;\n}\n.test2[data-v-7cdae69f] {\n  margin: auto;\n}\n@media screen and (max-width: 768px) {\nsection .has-addons[data-v-7cdae69f] {\n    padding: 0 1rem;\n}\ninput[data-v-7cdae69f] {\n    font-size: 1.2rem !important;\n}\n.media_a[data-v-7cdae69f] {\n    font-size: 1.2rem !important;\n}\n}", ""]);
+exports.push([module.i, "section[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 56px;\n}\nsection .has-addons[data-v-7cdae69f] {\n  max-width: 560px;\n  height: 56px;\n  margin: 0 auto;\n}\nsection .has-addons .find-frame[data-v-7cdae69f] {\n  width: 448px;\n}\nsection .has-addons .find-frame input[data-v-7cdae69f] {\n  height: 56px;\n  font-size: 1.5rem;\n  background-color: #f2f2f2;\n}\nsection .has-addons .button-frame a[data-v-7cdae69f] {\n  width: 112px;\n  height: 56px;\n  background-color: #ffe035;\n  font-size: 1.5rem;\n  color: #222222;\n}\n.container[data-v-7cdae69f] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-7cdae69f] {\n  width: 80%;\n}\n.test1[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.thiscontainer[data-v-7cdae69f] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.mobile-container[data-v-7cdae69f] {\n  margin: auto;\n}\n.topspace[data-v-7cdae69f] {\n  margin-top: 30px;\n}\n.test2[data-v-7cdae69f] {\n  width: 100%;\n  margin: auto;\n}\n.is-multiline[data-v-7cdae69f] {\n  flex-wrap: wrap;\n}\n@media screen and (max-width: 768px) {\nsection .has-addons[data-v-7cdae69f] {\n    padding: 0 1rem;\n}\ninput[data-v-7cdae69f] {\n    font-size: 1.2rem !important;\n}\n.media_a[data-v-7cdae69f] {\n    font-size: 1.2rem !important;\n}\n}", ""]);
 
 
 
@@ -4706,7 +4730,7 @@ exports.push([module.i, "section[data-v-7cdae69f] {\n  max-width: 1160px;\n  mar
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-5b38624f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5b38624f] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-5b38624f] {\n  width: 80%;\n}\n.card[data-v-5b38624f] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5b38624f] {\n  position: relative;\n}\n.item[data-v-5b38624f] {\n  position: relative;\n  overflow: hidden;\n  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5b38624f]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5b38624f]:after {\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5b38624f] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5b38624f] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5b38624f] {\n  color: white;\n}\n.card-body-school_name[data-v-5b38624f] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5b38624f] {\n  padding: -0.5rem;\n  display: flex;\n}\n.card-text[data-v-5b38624f] {\n  color: #707070;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5b38624f] {\n    margin: 0 5%;\n}\n.container[data-v-5b38624f] {\n    display: block;\n}\n.card[data-v-5b38624f] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n.top[data-v-5b38624f] {\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 1rem;\n  margin: 0 8px;\n  width: 300px;\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\nimg[data-v-5b38624f] {\n  border-radius: 1%;\n}\nsection[data-v-5b38624f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5b38624f] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.column.is-one-third[data-v-5b38624f],\n.column.is-one-third-tablet[data-v-5b38624f] {\n  flex: none;\n  width: 31.3333%;\n}\n.column[data-v-5b38624f] {\n  padding: 0;\n  padding-bottom: 0.75rem;\n  margin: 1%;\n  border-radius: 1%;\n}\n.top[data-v-5b38624f] {\n  justify-content: space-between;\n  align-items: center;\n  padding: 0;\n  padding-bottom: 0.75rem;\n  margin: 1% 1%;\n  background-color: #fff;\n  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\n}\n.card-box[data-v-5b38624f] {\n  width: 80%;\n}\n.card[data-v-5b38624f] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5b38624f] {\n  position: relative;\n}\n.item[data-v-5b38624f] {\n  position: relative;\n  overflow: hidden;\n  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5b38624f]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5b38624f]:after {\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5b38624f] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5b38624f] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5b38624f] {\n  color: white;\n}\n.card-body-school_name[data-v-5b38624f] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5b38624f] {\n  padding: -0.5rem;\n  display: flex;\n}\n.card-text[data-v-5b38624f] {\n  color: #707070;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5b38624f] {\n    margin: 0 5%;\n}\n.container[data-v-5b38624f] {\n    display: block;\n}\n.top[data-v-5b38624f] {\n    margin: 5%;\n}\n.column.is-one-third[data-v-5b38624f],\n.column.is-one-third-tablet[data-v-5b38624f] {\n    flex: none;\n    width: 90%;\n}\n.card[data-v-5b38624f] {\n    width: 100%;\n    margin: 10% auto;\n}\n}", ""]);
 
 
 
@@ -4721,7 +4745,7 @@ exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-5b38624f] {\n  max-
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "footer[data-v-bbf831ae] {\n  background-color: #ffe035;\n  font-weight: bold;\n  padding: 24px 32px;\n}\n@media (max-width: 767px) {\nfooter[data-v-bbf831ae] {\n    padding: 8px;\n    width: 100%;\n    display: block;\n    font-size: 0.8rem;\n}\nfooter p[data-v-bbf831ae] {\n    text-align: center;\n}\nfooter .level-right[data-v-bbf831ae] {\n    text-align: center;\n    margin-top: 0.5rem;\n}\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\nfooter[data-v-bbf831ae] {\n  background-color: #ffe035;\n  font-weight: bold;\n  padding: 24px 32px;\n  bottom: 0;\n  /*下に固定*/\n  width: 100%;\n}\n@media (max-width: 767px) {\nfooter[data-v-bbf831ae] {\n    padding: 8px;\n    width: 100%;\n    display: block;\n    font-size: 0.8rem;\n}\nfooter p[data-v-bbf831ae] {\n    text-align: center;\n}\nfooter .level-right[data-v-bbf831ae] {\n    text-align: center;\n    margin-top: 0.5rem;\n}\n}", ""]);
 
 
 
@@ -4781,7 +4805,7 @@ exports.push([module.i, "section[data-v-3a435e4e] {\n  max-width: 1160px;\n  mar
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".section[data-v-5b96cafc] {\n  padding: 128px 24px;\n}\n@media screen and (min-width: 1024px) {\n.section .form__container[data-v-5b96cafc] {\n    padding: 0 400px;\n}\n}\n.section .form__container .btn-line[data-v-5b96cafc] {\n  color: white;\n}\n.section .form__container .login__title[data-v-5b96cafc] {\n  padding-top: 10px;\n  padding-bottom: 15px;\n  font-weight: bold;\n  font-size: 18px;\n}\n.section .form__container .label[data-v-5b96cafc] {\n  font-size: 12px;\n  font-weight: normal;\n}\n.section .form__container .btn__container[data-v-5b96cafc] {\n  margin-top: 24px;\n  text-align: center;\n}\n.section .form__container .btn__container .button[data-v-5b96cafc] {\n  background-color: #ffe035;\n  border: 1px solid #ffe035;\n  font-size: 1rem;\n  width: 50%;\n}\n.section .form__container .reset__password[data-v-5b96cafc] {\n  margin-top: 15px;\n  text-align: center;\n}", ""]);
+exports.push([module.i, ".section[data-v-5b96cafc] {\n  padding: 128px 24px;\n}\n@media screen and (min-width: 1024px) {\n.section .form__container[data-v-5b96cafc] {\n    padding: 0 400px;\n}\n}\n.section .form__container .btn-line[data-v-5b96cafc] {\n  color: white;\n}\n.section .form__container .login__title[data-v-5b96cafc] {\n  padding-top: 10px;\n  padding-bottom: 15px;\n  font-weight: bold;\n  font-size: 24px;\n}\n.section .form__container .label[data-v-5b96cafc] {\n  font-size: 12px;\n  font-weight: normal;\n}\n.section .form__container .btn__container[data-v-5b96cafc] {\n  margin-top: 24px;\n  text-align: center;\n}\n.section .form__container .btn__container .button[data-v-5b96cafc] {\n  background-color: #ffe035;\n  border: 1px solid #ffe035;\n  font-size: 1rem;\n  width: 50%;\n}\n.section .form__container .reset__password[data-v-5b96cafc] {\n  margin-top: 15px;\n  text-align: center;\n}\nform[data-v-5b96cafc] {\n  max-width: 680px;\n  margin: 0 auto;\n}\n.login__title[data-v-5b96cafc] {\n  padding-top: 10px;\n  padding-bottom: 15px;\n  font-weight: bold;\n  font-size: 24px;\n}\n.str_size.lavel[data-v-5b96cafc] {\n  font-size: 20px !important;\n}", ""]);
 
 
 
@@ -4886,7 +4910,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection {\n  margin-top: 200px;\n}\n", ""]);
+exports.push([module.i, "\nsection {\n  /* margin-top: 200px; */\n}\n", ""]);
 
 
 
@@ -33189,6 +33213,8 @@ var render = function() {
   return _c(
     "section",
     [
+      _vm._m(0),
+      _vm._v(" "),
       _c(
         "div",
         { staticClass: "container columns is-multiline" },
@@ -33303,7 +33329,7 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _vm._m(0, true)
+                _vm._m(1, true)
               ])
             ]
           )
@@ -33317,6 +33343,14 @@ var render = function() {
   )
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "title" }, [
+      _c("h2", [_c("span", [_vm._v("活動内容")])])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -34171,12 +34205,12 @@ var render = function() {
                 _c("div", { staticClass: "donaition-img-flame" }, [
                   _c("img", {
                     staticClass: "u-img",
-                    attrs: { src: _vm.activity.activitie_img, alt: "#" }
+                    attrs: { src: _vm.activity.activity_img, alt: "#" }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "donaition-text-flame" }, [
-                  _c("h1", [_vm._v(_vm._s(_vm.activity.activitie_name))]),
+                  _c("h1", [_vm._v(_vm._s(_vm.activity.activity_name))]),
                   _vm._v(" "),
                   _c("p", [_vm._v(_vm._s(_vm.activity.top_contents))])
                 ])
@@ -34238,12 +34272,8 @@ var render = function() {
                         _vm._v("公式WEBサイト")
                       ]),
                       _vm._v(" "),
-                      _c("a", { attrs: { href: _vm.activity.school.url } }, [
-                        _vm._v("https://kindai-rugby.jp/")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(1)
+                      _c("a", { attrs: { href: _vm.activity.school.url } })
+                    ])
                   ])
                 ]
               )
@@ -34265,30 +34295,6 @@ var staticRenderFns = [
         _vm._v("\n                あと\n                "),
         _c("span", { staticClass: "top-contents-data" }, [_vm._v("244")]),
         _vm._v("日\n              ")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "sns-link-flame" }, [
-      _c("div", { staticClass: "media-content btn-flame" }, [
-        _c("a", { staticClass: "button is-medium fb-btn" }, [
-          _c("strong", [_vm._v("Facebookでシェア")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "media-content btn-flame" }, [
-        _c("a", { staticClass: "button is-medium tw-btn" }, [
-          _c("strong", [_vm._v("Twitterでシェア")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "media-content btn-flame" }, [
-        _c("a", { staticClass: "button is-medium li-btn" }, [
-          _c("strong", [_vm._v("LINEでシェア")])
-        ])
       ])
     ])
   }
@@ -35158,6 +35164,15 @@ var render = function() {
               attrs: { type: "text", placeholder: "キーワードから探す" },
               domProps: { value: _vm.searchWord },
               on: {
+                keyup: function($event) {
+                  if (
+                    !$event.type.indexOf("key") &&
+                    _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+                  ) {
+                    return null
+                  }
+                  return _vm.setSearchWord(_vm.searchWord)
+                },
                 input: function($event) {
                   if ($event.target.composing) {
                     return
@@ -35201,11 +35216,11 @@ var render = function() {
         [
           _c(
             "div",
-            { staticClass: "columns mobile-container topspace" },
+            { staticClass: "columns mobile-container topspace is-multiline" },
             _vm._l(_vm.activities, function(activity) {
               return _c("search-card", {
                 key: activity.id,
-                staticClass: "column column-custom",
+                staticClass: "column column-custom is-one-third",
                 attrs: { activity: activity }
               })
             }),
@@ -35238,82 +35253,98 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "top" }, [
-    _c(
-      "div",
-      {
-        staticStyle: { position: "relative" },
-        attrs: { calss: "card_image_container" }
-      },
-      [
-        _c("div", { staticClass: "card-image item item--first" }, [
-          _c("figure", { staticClass: "image is-4by3" }, [
-            _c("img", {
-              staticClass: "card-img-top",
-              attrs: {
-                src: _vm.activity.activity_img,
-                alt: "Placeholder image"
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "school_msg has-text-centered" }, [
-          _c("p", { staticClass: "title is-7 is-size-7-mobile school_name" }, [
-            _vm._v(_vm._s(_vm.activity.activity_name))
+  return _c(
+    "div",
+    {
+      staticClass: "top",
+      on: {
+        click: function($event) {
+          return _vm.routerPush({
+            name: "DetailActivity",
+            params: { id: _vm.activity.id }
+          })
+        }
+      }
+    },
+    [
+      _c(
+        "div",
+        {
+          staticStyle: { position: "relative" },
+          attrs: { calss: "card_image_container" }
+        },
+        [
+          _c("div", { staticClass: "card-image item item--first" }, [
+            _c("figure", { staticClass: "image is-4by3" }, [
+              _c("img", {
+                staticClass: "card-img-top",
+                attrs: {
+                  src: _vm.activity.activity_img,
+                  alt: "Placeholder image"
+                }
+              })
+            ])
           ]),
           _vm._v(" "),
+          _c("div", { staticClass: "school_msg has-text-centered" }, [
+            _c(
+              "p",
+              { staticClass: "title is-7 is-size-7-mobile school_name" },
+              [_vm._v(_vm._s(_vm.activity.activity_name))]
+            ),
+            _vm._v(" "),
+            _c(
+              "p",
+              { staticClass: "subtitle is-6 is-size-7-mobile school_message" },
+              [_vm._v(_vm._s(_vm.activity.title))]
+            )
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-content" }, [
+        _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
+          _vm._v(_vm._s(_vm.activity.school_name))
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "columns detail" }, [
+        _c("div", { staticClass: "column" }, [
           _c(
             "p",
-            { staticClass: "subtitle is-6 is-size-7-mobile school_message" },
-            [_vm._v(_vm._s(_vm.activity.title))]
+            {
+              staticClass: "card-text col has-text-centered",
+              staticStyle: { "font-size": "0.9rem" }
+            },
+            [
+              _vm._v("\n        寄付金額\n        "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v(_vm._s(_vm.activity.total_donation) + "円")])
+            ]
           )
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _c("div", { staticClass: "card-content" }, [
-      _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
-        _vm._v(_vm._s(_vm.activity.school_name))
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "column" }, [
+          _c(
+            "p",
+            {
+              staticClass: "card-text col has-text-centered",
+              staticStyle: { "font-size": "0.9rem" }
+            },
+            [
+              _vm._v("\n        応募数\n        "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v(_vm._s(_vm.activity.fans) + "人")])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(0)
       ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "columns detail" }, [
-      _c("div", { staticClass: "column" }, [
-        _c(
-          "p",
-          {
-            staticClass: "card-text col has-text-centered",
-            staticStyle: { "font-size": "0.9rem" }
-          },
-          [
-            _vm._v("\n        寄付金額\n        "),
-            _c("br"),
-            _vm._v(" "),
-            _c("strong", [_vm._v(_vm._s(_vm.activity.total_donation) + "円")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
-        _c(
-          "p",
-          {
-            staticClass: "card-text col has-text-centered",
-            staticStyle: { "font-size": "0.9rem" }
-          },
-          [
-            _vm._v("\n        応募数\n        "),
-            _c("br"),
-            _vm._v(" "),
-            _c("strong", [_vm._v(_vm._s(_vm.activity.fans) + "人")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _vm._m(0)
-    ])
-  ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -35798,7 +35829,7 @@ var render = function() {
               _c("form", [
                 _c("p", { staticClass: "login__title" }, [_vm._v("ログイン")]),
                 _vm._v(" "),
-                _c("div", { staticClass: "field" }, [
+                _c("div", { staticClass: "field str_size" }, [
                   _c("label", { staticClass: "label" }, [
                     _vm._v("メールアドレス")
                   ]),
@@ -35854,7 +35885,7 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "field" }, [
+                _c("div", { staticClass: "field str_size" }, [
                   _c("label", { staticClass: "label" }, [_vm._v("パスワード")]),
                   _vm._v(" "),
                   _c("div", { staticClass: "control has-icons-left" }, [

@@ -1,5 +1,10 @@
 <template>
   <section>
+    <div class="title">
+      <h2>
+        <span>活動内容</span>
+      </h2>
+    </div>
     <div class="container columns is-multiline">
       <div v-for="value in sliceValues" :key="value.id" class="card-box column is-one-third">
         <div
@@ -21,7 +26,6 @@
             </div>
           </div>
         </div>
-
         <div class="card-content mediasize">
           <p class="subtitle is-6 has-text-centered">{{value.school_name}}</p>
         </div>
@@ -103,29 +107,72 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+img {
+  border-radius: 1%;
+}
 section {
   max-width: 1160px;
   margin: 0 auto;
   padding-top: 81px;
+  margin-bottom: 5rem;
 }
+
+// section:hover {
+//   background: rgba(250, 250, 250, 0.5);
+//   cursor: pointer;
+//   transition: 0.3s;
+// }
+
+.title {
+  text-align: center;
+}
+.title h2 {
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+.title span {
+  background: linear-gradient(transparent 80%, #ffe035 70%);
+}
+
 .container {
   // display: flex;
+  width: 100%;
   margin: 0 auto;
   max-width: 1160px;
 }
 .is-multiline {
   flex-wrap: wrap;
 }
-// .card-box {
-//   width: 80%;
-// }
+.card-box {
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  // width: 80%;
+}
+
+.column {
+  padding: 0;
+  padding-bottom: 0.75rem;
+  margin: 1%;
+  border-radius: 1%;
+}
+.column.is-one-third,
+.column.is-one-third-tablet {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  width: 31.3333%;
+}
+
 .card {
+  border-radius: 1%;
+
   // margin: 0 24px;
-  margin: 0 8px;
+  // margin: 0 8px;
   // width: 30%;
 }
 .card_image_container {
   position: relative;
+  // display: block;
 }
 .item {
   position: relative;
@@ -218,9 +265,25 @@ section {
   .container {
     display: block;
   }
+
+  .column {
+    padding: 0;
+    padding-bottom: 0.75rem;
+    margin: 0;
+    border-radius: 1%;
+  }
+
+  .column.is-one-third,
+  .column.is-one-third-tablet {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 100%;
+  }
   .card {
     width: 100%;
     margin: 10% auto;
+    border-radius: 1%;
   }
   .mediasize {
     padding: 0;

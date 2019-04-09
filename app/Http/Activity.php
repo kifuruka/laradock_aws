@@ -14,10 +14,10 @@ class Activity extends Model
      // fill()に入れるデータをここで指定している
      protected $fillable = [
         
-        'activitie_name' ,
+        'activity_name' ,
         'top_contents',
         'url',
-        'activitie_img', 
+        'activity_img', 
         'total_donation',
         'fans',
     ];

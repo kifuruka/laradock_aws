@@ -1,5 +1,11 @@
 <template>
-  <div class="top">
+  <div
+    class="top"
+    @click="routerPush({
+                name:'DetailActivity',
+                params:{id:activity.id}
+                })"
+  >
     <div calss="card_image_container" style="position: relative;">
       <div class="card-image item item--first">
         <figure class="image is-4by3">
@@ -49,20 +55,54 @@ export default {
     return {
       info: null
     };
+  },
+  methods: {
+    routerPush(router) {
+      // 画面丈夫へ移動するためのもの
+      window.scrollTo(0, 0);
+      this.$router.push(router);
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
+img {
+  border-radius: 1%;
+}
 section {
   max-width: 1160px;
   margin: 0 auto;
   padding-top: 81px;
 }
 .container {
-  display: flex;
+  // display: flex;
   margin: 0 auto;
   max-width: 1160px;
+}
+
+.column.is-one-third,
+.column.is-one-third-tablet {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  width: 31.3333%;
+}
+.column {
+  padding: 0;
+  padding-bottom: 0.75rem;
+  margin: 1%;
+  border-radius: 1%;
+}
+.top {
+  // display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  padding-bottom: 0.75rem;
+  margin: 1% 1%;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
 }
 
 .card-box {
@@ -154,19 +194,23 @@ section {
     display: block;
   }
 
+  .top {
+    // width: 90%;
+    margin: 5%;
+  }
+
+  .column.is-one-third,
+  .column.is-one-third-tablet {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    // width: 100%;
+    width: 90%;
+  }
+
   .card {
     width: 100%;
     margin: 10% auto;
   }
-}
-
-.top {
-  // display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  margin: 0 8px;
-  // width: 60%;
-  width: 300px;
 }
 </style>
