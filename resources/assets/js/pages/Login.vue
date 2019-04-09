@@ -8,7 +8,7 @@
             <p v-show="isError">認証に失敗しました。</p>
             <form>
               <p class="login__title">ログイン</p>
-              <div class="field">
+              <div class="field str_size">
                 <label class="label">メールアドレス</label>
                 <div class="control has-icons-left has-icons-right">
                   <input
@@ -25,7 +25,7 @@
                   </span>
                 </div>
               </div>
-              <div class="field">
+              <div class="field str_size">
                 <label class="label">パスワード</label>
                 <div class="control has-icons-left">
                   <input
@@ -128,7 +128,7 @@ export default {
       padding-top: 10px;
       padding-bottom: 15px;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 24px;
     }
     .label {
       font-size: 12px;
@@ -150,5 +150,22 @@ export default {
       text-align: center;
     }
   }
+}
+
+form {
+  max-width: 680px;
+  // background-color: azure;
+  margin: 0 auto;
+}
+
+.login__title {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.str_size.lavel {
+  font-size: 20px !important;
 }
 </style>

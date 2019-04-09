@@ -2,7 +2,13 @@
   <section>
     <div v-if="isAllStatus" class="field has-addons">
       <div class="control find-frame">
-        <input class="input mediainput" type="text" v-model="searchWord" placeholder="キーワードから探す">
+        <input
+          class="input mediainput"
+          type="text"
+          v-model="searchWord"
+          placeholder="キーワードから探す"
+          @keyup.enter="setSearchWord(searchWord)"
+        >
       </div>
       <div class="control button-frame">
         <a class="button media_a" @click="setSearchWord(searchWord)">検索</a>
@@ -11,7 +17,7 @@
     <table class="test2">
       <!-- <div class="thiscontainer flex-flame"> -->
       <div v-show="isLength">
-        <div class="columns mobile-container topspace">
+        <div class="columns mobile-container topspace is-multiline">
           <!-- <div>{{activities.Data}}</div> -->
           <!-- <search-card
               class="card-box column is-one-third"
@@ -20,7 +26,7 @@
               :key="activity.id"
           />-->
           <search-card
-            class="column column-custom"
+            class="column column-custom is-one-third"
             v-for="activity in activities"
             :activity="activity"
             :key="activity.id"
@@ -124,7 +130,11 @@ section {
 }
 
 .test2 {
+  width: 100%;
   margin: auto;
+}
+.is-multiline {
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {

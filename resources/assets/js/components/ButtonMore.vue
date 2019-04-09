@@ -31,6 +31,7 @@ export default {
 <style lang="scss" scoped >
 section {
   padding-top: 40px;
+
   // background-color: red;
   .container {
     max-width: 1160px;

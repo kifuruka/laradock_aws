@@ -54,7 +54,7 @@ section {
         border-radius: 2em;
         width: 7.2em;
         border-color: #db6b6b;
-        margin-top: 12px;
+        margin-top: 5px;
         margin-left: 16px;
       }
     }
