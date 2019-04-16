@@ -2522,6 +2522,29 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2537,7 +2560,55 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_3__["mapGetters"])({
     isActivity: "activity/isActivity",
     activity: "activity/getActivityData"
-  }))
+  })),
+  methods: {
+    fireParentEvent: function fireParentEvent() {
+      //寄付番号取得
+      var eventDOM = event.target;
+      console.log(eventDOM);
+      var btn = document.getElementsByClassName('test');
+      console.log(btn);
+      console.log(btn.length);
+      console.log(Array.prototype.indexOf.call(btn, event.target));
+      var btnNum = Array.prototype.indexOf.call(btn, event.target);
+      var priceArray = document.getElementsByClassName('price');
+      var dayArray = document.getElementsByClassName('day');
+      var cardArray = document.getElementsByClassName('card');
+      var modalContent = document.getElementsByClassName('modal-content');
+      console.log(priceArray[btnNum]);
+      var priceClone = priceArray[btnNum].cloneNode(true);
+      console.log("priceClone");
+      console.log(priceClone);
+      console.log(dayArray[btnNum]);
+      console.log(cardArray[btnNum]);
+      var modalContentPrice = modalContent[0].getElementsByClassName('price');
+      console.log(modalContentPrice);
+      var modalContentPriceP = modalContent[0].getElementsByClassName('price-p');
+      console.log(modalContentPriceP); // console.log(modalContent);
+
+      modalContentPriceP[0].replaceChild(priceClone, modalContentPrice[0]); // console.log(modalContent);
+
+      console.log("console_fireParentEvent"); // this.$emit("click");
+
+      var modal = document.getElementsByClassName('modal');
+      console.log(modal); // modal.classList.add("is-active");
+
+      var list = modal[0].classList.add("is-active"); // this.hello(btn)
+    },
+    //   hello: function (btn) {
+    // },      
+    closeModal: function closeModal() {
+      var modalContent = document.getElementsByClassName('modal-content');
+      console.log(modalContent); // const modalContentDiv = modalContent[0].getElementsByClassName("card");
+      // console.log(modalContentDiv);
+      // modalContent[0].removeChild(modalContentDiv[0]);
+
+      var close = document.getElementsByClassName('modal-close modal-background');
+      console.log("close");
+      var modal = document.getElementsByClassName('modal');
+      modal[0].classList.remove("is-active");
+    }
+  }
 });
 
 /***/ }),
@@ -4882,7 +4953,7 @@ exports.push([module.i, "\n.v-spinner .v-fade\n{\n    -webkit-animation: v-fadeS
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .allstyle {\n  margin-left: 12px;\n} */\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .allstyle {\r\n  margin-left: 12px;\r\n} */\r\n", ""]);
 
 
 
@@ -4897,7 +4968,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .allstyle {\n  margin-left: 12px;\n} */\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .allstyle {\r\n  margin-left: 12px;\r\n} */\r\n", ""]);
 
 
 
@@ -4912,7 +4983,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection {\n  /* margin-top: 200px; */\n}\n", ""]);
+exports.push([module.i, "\nsection {\r\n  /* margin-top: 200px; */\n}\r\n", ""]);
 
 
 
@@ -33845,18 +33916,23 @@ var render = function() {
                       _c("div", { staticClass: "media card-flame" }, [
                         _c(
                           "div",
-                          { staticClass: "media-content" },
+                          {
+                            staticClass: "media-content",
+                            on: { click: _vm.fireParentEvent }
+                          },
                           [
                             _c(
-                              "router-link",
+                              "div",
                               {
-                                staticClass: "button is-medium custom-btn",
-                                attrs: { to: "/DonationDetails" }
+                                staticClass: "button is-medium custom-btn test"
                               },
-                              [_c("strong", [_vm._v("この寄付を選ぶ")])]
+                              [
+                                _vm._v(
+                                  "\n                    この寄付を選ぶ\n                  "
+                                )
+                              ]
                             )
-                          ],
-                          1
+                          ]
                         )
                       ]),
                       _vm._v(" "),
@@ -33879,18 +33955,23 @@ var render = function() {
                       _c("div", { staticClass: "media card-flame" }, [
                         _c(
                           "div",
-                          { staticClass: "media-content" },
+                          {
+                            staticClass: "media-content",
+                            on: { click: _vm.fireParentEvent }
+                          },
                           [
                             _c(
-                              "router-link",
+                              "div",
                               {
-                                staticClass: "button is-medium custom-btn",
-                                attrs: { to: "/" }
+                                staticClass: "button is-medium custom-btn test"
                               },
-                              [_c("strong", [_vm._v("この寄付を選ぶ")])]
+                              [
+                                _vm._v(
+                                  "\n                    この寄付を選ぶ\n                  "
+                                )
+                              ]
                             )
-                          ],
-                          1
+                          ]
                         )
                       ]),
                       _vm._v(" "),
@@ -33913,18 +33994,23 @@ var render = function() {
                       _c("div", { staticClass: "media card-flame" }, [
                         _c(
                           "div",
-                          { staticClass: "media-content" },
+                          {
+                            staticClass: "media-content",
+                            on: { click: _vm.fireParentEvent }
+                          },
                           [
                             _c(
-                              "router-link",
+                              "div",
                               {
-                                staticClass: "button is-medium custom-btn",
-                                attrs: { to: "/" }
+                                staticClass: "button is-medium custom-btn test"
                               },
-                              [_c("strong", [_vm._v("この寄付を選ぶ")])]
+                              [
+                                _vm._v(
+                                  "\n                    この寄付を選ぶ\n                  "
+                                )
+                              ]
                             )
-                          ],
-                          1
+                          ]
                         )
                       ]),
                       _vm._v(" "),
@@ -33947,18 +34033,23 @@ var render = function() {
                       _c("div", { staticClass: "media card-flame" }, [
                         _c(
                           "div",
-                          { staticClass: "media-content" },
+                          {
+                            staticClass: "media-content",
+                            on: { click: _vm.fireParentEvent }
+                          },
                           [
                             _c(
-                              "router-link",
+                              "div",
                               {
-                                staticClass: "button is-medium custom-btn",
-                                attrs: { to: "/" }
+                                staticClass: "button is-medium custom-btn test"
                               },
-                              [_c("strong", [_vm._v("この寄付を選ぶ")])]
+                              [
+                                _vm._v(
+                                  "\n                    この寄付を選ぶ\n                  "
+                                )
+                              ]
                             )
-                          ],
-                          1
+                          ]
                         )
                       ]),
                       _vm._v(" "),
@@ -34001,6 +34092,50 @@ var render = function() {
               )
             ])
           ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "modal" }, [
+          _c("div", {
+            staticClass: "modal-background",
+            on: { click: _vm.closeModal }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "modal-content" }, [
+            _c("div", { staticClass: "card card-margin" }, [
+              _c("div", { staticClass: "card-content" }, [
+                _c("div", { staticClass: "media card-flame" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "media-content",
+                      on: { click: _vm.fireParentEvent }
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "button is-medium custom-btn test kessai"
+                        },
+                        [
+                          _vm._v(
+                            "\n                    決済\n                  "
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(14)
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("button", {
+            staticClass: "modal-close is-large",
+            attrs: { "aria-label": "close" },
+            on: { click: _vm.closeModal }
+          })
         ])
       ])
     : _vm._e()
@@ -34028,7 +34163,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("p", [
         _vm._v("\n                  寄付金額\n                  "),
-        _c("span", [_vm._v("¥5,000")])
+        _c("span", { staticClass: "price" }, [_vm._v("¥3,000")])
       ])
     ])
   },
@@ -34039,7 +34174,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("p", [
         _vm._v("\n                  掲載期間\n                  "),
-        _c("span", [_vm._v("2020年12月")])
+        _c("span", { staticClass: "day" }, [_vm._v("2020年6月")])
       ])
     ])
   },
@@ -34065,7 +34200,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("p", [
         _vm._v("\n                  寄付金額\n                  "),
-        _c("span", [_vm._v("¥5,000")])
+        _c("span", { staticClass: "price" }, [_vm._v("¥5,000")])
       ])
     ])
   },
@@ -34076,7 +34211,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("p", [
         _vm._v("\n                  掲載期間\n                  "),
-        _c("span", [_vm._v("2020年12月")])
+        _c("span", { staticClass: "day" }, [_vm._v("2020年8月")])
       ])
     ])
   },
@@ -34102,7 +34237,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("p", [
         _vm._v("\n                  寄付金額\n                  "),
-        _c("span", [_vm._v("¥5,000")])
+        _c("span", { staticClass: "price" }, [_vm._v("¥8,000")])
       ])
     ])
   },
@@ -34113,7 +34248,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("p", [
         _vm._v("\n                  掲載期間\n                  "),
-        _c("span", [_vm._v("2020年12月")])
+        _c("span", { staticClass: "day" }, [_vm._v("2020年10月")])
       ])
     ])
   },
@@ -34139,7 +34274,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("p", [
         _vm._v("\n                  寄付金額\n                  "),
-        _c("span", [_vm._v("¥5,000")])
+        _c("span", { staticClass: "price" }, [_vm._v("¥10,000")])
       ])
     ])
   },
@@ -34150,7 +34285,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("p", [
         _vm._v("\n                  掲載期間\n                  "),
-        _c("span", [_vm._v("2020年12月")])
+        _c("span", { staticClass: "day" }, [_vm._v("2020年12月")])
       ])
     ])
   },
@@ -34169,6 +34304,17 @@ var staticRenderFns = [
         _vm._v("\n                  法人・企業の皆様の\n                  "),
         _c("br"),
         _vm._v("寄付はこちらから\n                ")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("p", { staticClass: "price-p" }, [
+        _vm._v("\n                  寄付金額\n                  "),
+        _c("span", { staticClass: "price" }, [_vm._v("¥8,000")])
       ])
     ])
   }
@@ -56353,8 +56499,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/danizutani/workspace/develop/kifuruka03/src/resources/assets/js/app.js */"./resources/assets/js/app.js");
-module.exports = __webpack_require__(/*! /Users/danizutani/workspace/develop/kifuruka03/src/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\noda1985\Desktop\kifuruka\kifuruka04\src\resources\assets\js\app.js */"./resources/assets/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\noda1985\Desktop\kifuruka\kifuruka04\src\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -45,23 +45,23 @@
                   </figure>
                 </div>
                 <div class="media card-flame">
-                  <div class="media-content">
-                    <router-link to="/DonationDetails" class="button is-medium custom-btn">
-                      <strong>この寄付を選ぶ</strong>
-                    </router-link>
+                  <div class="media-content" v-on:click="fireParentEvent">
+                    <div class="button is-medium custom-btn test">
+                      この寄付を選ぶ
+                    </div>
                   </div>
                 </div>
                 <div class="content">これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。</div>
                 <div>
                   <p>
                     寄付金額
-                    <span>¥5,000</span>
+                    <span class="price">¥3,000</span>
                   </p>
                 </div>
                 <div>
                   <p>
                     掲載期間
-                    <span>2020年12月</span>
+                    <span class="day">2020年6月</span>
                   </p>
                 </div>
               </div>
@@ -77,23 +77,23 @@
                   </figure>
                 </div>
                 <div class="media card-flame">
-                  <div class="media-content">
-                    <router-link to="/" class="button is-medium custom-btn">
-                      <strong>この寄付を選ぶ</strong>
-                    </router-link>
+                  <div class="media-content" v-on:click="fireParentEvent">
+                    <div class="button is-medium custom-btn test">
+                      この寄付を選ぶ
+                    </div>
                   </div>
                 </div>
                 <div class="content">これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。</div>
                 <div>
                   <p>
                     寄付金額
-                    <span>¥5,000</span>
+                    <span class="price">¥5,000</span>
                   </p>
                 </div>
                 <div>
                   <p>
                     掲載期間
-                    <span>2020年12月</span>
+                    <span class="day">2020年8月</span>
                   </p>
                 </div>
               </div>
@@ -109,23 +109,23 @@
                   </figure>
                 </div>
                 <div class="media card-flame">
-                  <div class="media-content">
-                    <router-link to="/" class="button is-medium custom-btn">
-                      <strong>この寄付を選ぶ</strong>
-                    </router-link>
+                  <div class="media-content" v-on:click="fireParentEvent">
+                    <div class="button is-medium custom-btn test">
+                      この寄付を選ぶ
+                    </div>
                   </div>
                 </div>
                 <div class="content">これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。</div>
                 <div>
                   <p>
                     寄付金額
-                    <span>¥5,000</span>
+                    <span class="price">¥8,000</span>
                   </p>
                 </div>
                 <div>
                   <p>
                     掲載期間
-                    <span>2020年12月</span>
+                    <span class="day">2020年10月</span>
                   </p>
                 </div>
               </div>
@@ -141,23 +141,23 @@
                   </figure>
                 </div>
                 <div class="media card-flame">
-                  <div class="media-content">
-                    <router-link to="/" class="button is-medium custom-btn">
-                      <strong>この寄付を選ぶ</strong>
-                    </router-link>
+                  <div class="media-content" v-on:click="fireParentEvent">
+                    <div class="button is-medium custom-btn test">
+                      この寄付を選ぶ
+                    </div>
                   </div>
                 </div>
                 <div class="content">これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。</div>
                 <div>
                   <p>
                     寄付金額
-                    <span>¥5,000</span>
+                    <span class="price">¥10,000</span>
                   </p>
                 </div>
                 <div>
                   <p>
                     掲載期間
-                    <span>2020年12月</span>
+                    <span class="day">2020年12月</span>
                   </p>
                 </div>
               </div>
@@ -186,6 +186,29 @@
         </div>
       </div>
     </div>
+    <div class="modal">
+      <div class="modal-background" v-on:click="closeModal"></div>
+      <div class="modal-content">
+            <div class="card card-margin">
+              <div class="card-content">
+                <div class="media card-flame">
+                  <div class="media-content" v-on:click="fireParentEvent">
+                    <div class="button is-medium custom-btn test kessai">
+                      決済
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="price-p">
+                    寄付金額
+                    <span class="price">¥8,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"  v-on:click="closeModal"></button>
+    </div>
   </section>
 </template>
 
@@ -194,6 +217,9 @@ import DonationImg from "../../images/donation/d_kin_rag.jpg";
 import DonationImg2 from "../../images/donation/d_kin_rag2.jpg";
 import DonationImg3 from "../../images/donation/d_kin_rag3.jpg";
 import { mapGetters } from "vuex";
+
+
+
 
 export default {
   data() {
@@ -208,6 +234,65 @@ export default {
       isActivity: "activity/isActivity",
       activity: "activity/getActivityData"
     })
+  },
+  methods: {
+    fireParentEvent() {
+      //寄付番号取得
+      var eventDOM = event.target;
+      console.log(eventDOM);
+      var btn = document.getElementsByClassName('test');
+      console.log(btn);
+      console.log(btn.length);
+      console.log(Array.prototype.indexOf.call(btn, event.target));
+      const btnNum = (Array.prototype.indexOf.call(btn, event.target));
+
+      let priceArray = document.getElementsByClassName('price'); 
+      const dayArray = document.getElementsByClassName('day'); 
+      const cardArray = document.getElementsByClassName('card'); 
+      const modalContent = document.getElementsByClassName('modal-content'); 
+      console.log(priceArray[btnNum]);
+      let priceClone = priceArray[btnNum].cloneNode(true);
+      console.log("priceClone");
+      console.log(priceClone);
+      console.log(dayArray[btnNum]);
+      console.log(cardArray[btnNum]);
+      const modalContentPrice = modalContent[0].getElementsByClassName('price'); 
+            console.log(modalContentPrice);
+      const modalContentPriceP = modalContent[0].getElementsByClassName('price-p'); 
+            console.log(modalContentPriceP);
+
+      // console.log(modalContent);
+      modalContentPriceP[0].replaceChild(priceClone,modalContentPrice[0]);
+      // console.log(modalContent);
+       
+
+      console.log("console_fireParentEvent");
+      // this.$emit("click");
+      const modal = document.getElementsByClassName('modal');
+          console.log(modal);
+          // modal.classList.add("is-active");
+      const list = modal[0].classList.add("is-active");
+      
+
+
+    // this.hello(btn)
+
+    },
+    //   hello: function (btn) {
+    // },      
+    closeModal() {
+      const modalContent = document.getElementsByClassName('modal-content'); 
+      console.log(modalContent);
+      
+      // const modalContentDiv = modalContent[0].getElementsByClassName("card");
+      // console.log(modalContentDiv);
+      // modalContent[0].removeChild(modalContentDiv[0]);
+
+      const close = document.getElementsByClassName('modal-close modal-background');
+        console.log("close");
+      const modal = document.getElementsByClassName('modal');
+        modal[0].classList.remove("is-active");
+    }, 
   }
 };
 </script>
@@ -291,4 +376,58 @@ section {
     }
   }
 }
+
+// .kessai {
+// 	display: block;
+// 	cursor: pointer;
+// 	max-width: 300px;
+// 	margin: 1em auto;
+// 	padding: 20px;
+// 	border-radius: 4px;
+// 	box-sizing: border-box;
+// 	color: #fff;
+// 	text-align: center;
+// 	text-decoration: inherit;
+// 	background: #ffea73;
+// 	box-shadow: 0 6px 0 #ffe035, 0 12px 0 rgba(0,0,0,.2);
+// 	transition: color .3s, background .3s, box-shadow .3s, transform .3s;
+// }
+// .kessai:hover {
+// 	box-shadow: 0 3px 0 #ffea73, 0 6px 0 rgba(0,0,0,.2);
+// 	transform: translateY(3px);
+// 	animation: flash 1s both;
+// }
+// .kessai:active {
+// 	color: #ddd;
+// 	background: #ffea73;
+// 	box-shadow: 0 0 0 #ffe035, 0 0 0 rgba(0,0,0,.2);
+// 	transform: translateY(6px);
+// 	transition-duration: .1s;
+// }
+// @keyframes flash {
+// 	0% { background: #ffea73; }
+// 	10% { background: #fdf1aa; }
+// 	100% { background: #ffea73; }
+// }
+
+// .modal.is-active {
+//     display: flex;
+// }
+// .modal {
+//     align-items: center;
+//     display: none;
+//     flex-direction: column;
+//     justify-content: center;
+//     overflow: hidden;
+//     position: fixed;
+//     z-index: 40;
+// }
+// .box {
+//     background-color: #fff;
+//     border-radius: 6px;
+//     box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+//     color: #4a4a4a;
+//     display: block;
+//     padding: 1.25rem;
+// }
 </style>
