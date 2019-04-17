@@ -39,19 +39,19 @@
                 <div class="card-image">
                   <figure class="image is-4by3">
                     <img
-                      src="https://bulma.io/images/placeholders/1280x960.png"
+                      src="https://cdn.mainichi.jp/vol1/2019/01/03/20190103k0000m050077000p/6.jpg?1"
                       alt="Placeholder image"
                     >
                   </figure>
                 </div>
                 <div class="media card-flame">
                   <div class="media-content" v-on:click="fireParentEvent">
-                    <div class="button is-medium custom-btn test">
+                    <div class="button custom-btn test">
                       この寄付を選ぶ
                     </div>
                   </div>
                 </div>
-                <div class="content">これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。</div>
+                <div class="content">東海大学駅伝部の月次活動報告メールマガジンで送らせていただきます。学生の日々の取り組みやチームの雰囲気をより深く知ることが出来ます。駅伝部をより深く知ることで、箱根駅伝など晴れの舞台での応援も一層楽しめればなによりです。</div>
                 <div>
                   <p>
                     寄付金額
@@ -71,19 +71,19 @@
                 <div class="card-image">
                   <figure class="image is-4by3">
                     <img
-                      src="https://bulma.io/images/placeholders/1280x960.png"
+                      src="https://twave.tokai-eic.co.jp/upload/save_image/0228114056_5c774a385ae28.jpg"
                       alt="Placeholder image"
                     >
                   </figure>
                 </div>
                 <div class="media card-flame">
                   <div class="media-content" v-on:click="fireParentEvent">
-                    <div class="button is-medium custom-btn test">
+                    <div class="button custom-btn test">
                       この寄付を選ぶ
                     </div>
                   </div>
                 </div>
-                <div class="content">これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。</div>
+                <div class="content">箱根駅伝など東海大学の学生を応援するときに持っておくとより学生にエネルギーを届けられる東海大学フラッグです。学生が駆け抜けるレース会場を東海大学のフラッグで埋め尽くしましょう。</div>
                 <div>
                   <p>
                     寄付金額
@@ -103,19 +103,19 @@
                 <div class="card-image">
                   <figure class="image is-4by3">
                     <img
-                      src="https://bulma.io/images/placeholders/1280x960.png"
+                      src="https://twave.tokai-eic.co.jp/upload/save_image/komonoNo16.jpg"
                       alt="Placeholder image"
                     >
                   </figure>
                 </div>
                 <div class="media card-flame">
                   <div class="media-content" v-on:click="fireParentEvent">
-                    <div class="button is-medium custom-btn test">
+                    <div class="button custom-btn test">
                       この寄付を選ぶ
                     </div>
                   </div>
                 </div>
-                <div class="content">これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。</div>
+                <div class="content">東海大学オリジナルの手ぬぐいです。学生も使用している手ぬぐいと同じモデルであり、ご自身の生活やトレーニングにご活用いただくき、学生と一緒に自分の限界を越えていきましょう。</div>
                 <div>
                   <p>
                     寄付金額
@@ -135,19 +135,19 @@
                 <div class="card-image">
                   <figure class="image is-4by3">
                     <img
-                      src="https://bulma.io/images/placeholders/1280x960.png"
+                      src="http://daigaku-ekiden.com/syutsujyou/images/40dfcd39e8d2f42bafeabcc095bfdd84a28db5f2.jpg"
                       alt="Placeholder image"
                     >
                   </figure>
                 </div>
                 <div class="media card-flame">
                   <div class="media-content" v-on:click="fireParentEvent">
-                    <div class="button is-medium custom-btn test">
+                    <div class="button custom-btn test">
                       この寄付を選ぶ
                     </div>
                   </div>
                 </div>
-                <div class="content">これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。</div>
+                <div class="content">東海大学競走部の学生がランニング講座を開催します。学生トップレベルのランナーと一緒に走ることができ、かつ、ランニングについて指導させていただきます。</div>
                 <div>
                   <p>
                     寄付金額
@@ -377,57 +377,47 @@ section {
   }
 }
 
-// .kessai {
-// 	display: block;
-// 	cursor: pointer;
-// 	max-width: 300px;
-// 	margin: 1em auto;
-// 	padding: 20px;
-// 	border-radius: 4px;
-// 	box-sizing: border-box;
-// 	color: #fff;
-// 	text-align: center;
-// 	text-decoration: inherit;
-// 	background: #ffea73;
-// 	box-shadow: 0 6px 0 #ffe035, 0 12px 0 rgba(0,0,0,.2);
-// 	transition: color .3s, background .3s, box-shadow .3s, transform .3s;
-// }
-// .kessai:hover {
-// 	box-shadow: 0 3px 0 #ffea73, 0 6px 0 rgba(0,0,0,.2);
-// 	transform: translateY(3px);
-// 	animation: flash 1s both;
-// }
-// .kessai:active {
-// 	color: #ddd;
-// 	background: #ffea73;
-// 	box-shadow: 0 0 0 #ffe035, 0 0 0 rgba(0,0,0,.2);
-// 	transform: translateY(6px);
-// 	transition-duration: .1s;
-// }
-// @keyframes flash {
-// 	0% { background: #ffea73; }
-// 	10% { background: #fdf1aa; }
-// 	100% { background: #ffea73; }
-// }
+.modal-content, .modal-card {
+    width: 80%;
+    border-radius: 1%;
+}
 
-// .modal.is-active {
-//     display: flex;
-// }
-// .modal {
-//     align-items: center;
-//     display: none;
-//     flex-direction: column;
-//     justify-content: center;
-//     overflow: hidden;
-//     position: fixed;
-//     z-index: 40;
-// }
-// .box {
-//     background-color: #fff;
-//     border-radius: 6px;
-//     box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-//     color: #4a4a4a;
-//     display: block;
-//     padding: 1.25rem;
-// }
+.test{
+  font-weight: bold;
+}
+
+.kessai {
+	display: block;
+	cursor: pointer;
+	// max-width: 300px;
+	margin: 1em auto;
+	// padding: 20px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #4a4a4a;
+  font-weight: bold;
+	text-align: center;
+	text-decoration: inherit;
+	// background: #ffea73;
+	// box-shadow: 0 6px 0 #ffe035, 0 12px 0 rgba(0,0,0,.2);
+	transition: color .3s, background .3s, box-shadow .3s, transform .3s;
+}
+.kessai:hover {
+	// box-shadow: 0 3px 0 #ffea73, 0 6px 0 rgba(0,0,0,.2);
+	// transform: translateY(3px);
+	animation: flash 1s both;
+}
+.kessai:active {
+	color: #ddd;
+	background: #ffea73;
+	// box-shadow: 0 0 0 #ffe035, 0 0 0 rgba(0,0,0,.2);
+	// transform: translateY(6px);
+	transition-duration: .1s;
+}
+@keyframes flash {
+	0% { background: #ffea73; }
+	10% { background: #fdf1aa; }
+	100% { background: #ffea73; }
+}
+
 </style>

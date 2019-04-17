@@ -4668,7 +4668,7 @@ exports.push([module.i, "section .container[data-v-79d7a1ee] {\n  max-width: 116
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-8e3066bc] {\n  margin-top: 80px;\n  margin: 80px 5% 0 5%;\n}\nsection .container[data-v-8e3066bc] {\n  max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-8e3066bc] {\n  padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-8e3066bc] {\n  margin-bottom: 32px;\n}\n.u-img[data-v-8e3066bc] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-8e3066bc] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-8e3066bc] {\n  margin-bottom: 100px;\n}\n.child-flame .content-flame h1[data-v-8e3066bc] {\n  font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n  font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-8e3066bc] {\n  margin-top: 32px;\n}\n.company-card[data-v-8e3066bc] {\n  background-color: #828282;\n}\n.company-card p[data-v-8e3066bc] {\n  text-align: center;\n  font-size: 1.6rem;\n  margin-top: 16px;\n  color: white;\n}\n.company-card .company-btn-flame[data-v-8e3066bc] {\n  margin-top: 32px;\n  margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-8e3066bc] {\n  background-color: #db6b6b;\n  border-color: #db6b6b;\n  color: white;\n}", ""]);
+exports.push([module.i, "section[data-v-8e3066bc] {\n  margin-top: 80px;\n  margin: 80px 5% 0 5%;\n}\nsection .container[data-v-8e3066bc] {\n  max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-8e3066bc] {\n  padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-8e3066bc] {\n  margin-bottom: 32px;\n}\n.u-img[data-v-8e3066bc] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-8e3066bc] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-8e3066bc] {\n  margin-bottom: 100px;\n}\n.child-flame .content-flame h1[data-v-8e3066bc] {\n  font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n  font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-8e3066bc] {\n  margin-top: 32px;\n}\n.company-card[data-v-8e3066bc] {\n  background-color: #828282;\n}\n.company-card p[data-v-8e3066bc] {\n  text-align: center;\n  font-size: 1.6rem;\n  margin-top: 16px;\n  color: white;\n}\n.company-card .company-btn-flame[data-v-8e3066bc] {\n  margin-top: 32px;\n  margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-8e3066bc] {\n  background-color: #db6b6b;\n  border-color: #db6b6b;\n  color: white;\n}\n.modal-content[data-v-8e3066bc], .modal-card[data-v-8e3066bc] {\n  width: 80%;\n  border-radius: 1%;\n}\n.test[data-v-8e3066bc] {\n  font-weight: bold;\n}\n.kessai[data-v-8e3066bc] {\n  display: block;\n  cursor: pointer;\n  margin: 1em auto;\n  border-radius: 4px;\n  box-sizing: border-box;\n  color: #4a4a4a;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: inherit;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s, -webkit-transform 0.3s;\n}\n.kessai[data-v-8e3066bc]:hover {\n  -webkit-animation: flash-data-v-8e3066bc 1s both;\n          animation: flash-data-v-8e3066bc 1s both;\n}\n.kessai[data-v-8e3066bc]:active {\n  color: #ddd;\n  background: #ffea73;\n  transition-duration: 0.1s;\n}\n@-webkit-keyframes flash-data-v-8e3066bc {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@keyframes flash-data-v-8e3066bc {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}", ""]);
 
 
 
@@ -33923,9 +33923,7 @@ var render = function() {
                           [
                             _c(
                               "div",
-                              {
-                                staticClass: "button is-medium custom-btn test"
-                              },
+                              { staticClass: "button custom-btn test" },
                               [
                                 _vm._v(
                                   "\n                    この寄付を選ぶ\n                  "
@@ -33938,7 +33936,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("div", { staticClass: "content" }, [
                         _vm._v(
-                          "これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。"
+                          "東海大学駅伝部の月次活動報告メールマガジンで送らせていただきます。学生の日々の取り組みやチームの雰囲気をより深く知ることが出来ます。駅伝部をより深く知ることで、箱根駅伝など晴れの舞台での応援も一層楽しめればなによりです。"
                         )
                       ]),
                       _vm._v(" "),
@@ -33962,9 +33960,7 @@ var render = function() {
                           [
                             _c(
                               "div",
-                              {
-                                staticClass: "button is-medium custom-btn test"
-                              },
+                              { staticClass: "button custom-btn test" },
                               [
                                 _vm._v(
                                   "\n                    この寄付を選ぶ\n                  "
@@ -33977,7 +33973,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("div", { staticClass: "content" }, [
                         _vm._v(
-                          "これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。"
+                          "箱根駅伝など東海大学の学生を応援するときに持っておくとより学生にエネルギーを届けられる東海大学フラッグです。学生が駆け抜けるレース会場を東海大学のフラッグで埋め尽くしましょう。"
                         )
                       ]),
                       _vm._v(" "),
@@ -34001,9 +33997,7 @@ var render = function() {
                           [
                             _c(
                               "div",
-                              {
-                                staticClass: "button is-medium custom-btn test"
-                              },
+                              { staticClass: "button custom-btn test" },
                               [
                                 _vm._v(
                                   "\n                    この寄付を選ぶ\n                  "
@@ -34016,7 +34010,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("div", { staticClass: "content" }, [
                         _vm._v(
-                          "これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。"
+                          "東海大学オリジナルの手ぬぐいです。学生も使用している手ぬぐいと同じモデルであり、ご自身の生活やトレーニングにご活用いただくき、学生と一緒に自分の限界を越えていきましょう。"
                         )
                       ]),
                       _vm._v(" "),
@@ -34040,9 +34034,7 @@ var render = function() {
                           [
                             _c(
                               "div",
-                              {
-                                staticClass: "button is-medium custom-btn test"
-                              },
+                              { staticClass: "button custom-btn test" },
                               [
                                 _vm._v(
                                   "\n                    この寄付を選ぶ\n                  "
@@ -34055,7 +34047,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("div", { staticClass: "content" }, [
                         _vm._v(
-                          "これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。 これは、近畿大学ラグビー部の寄付返礼サンプルテキストです。"
+                          "東海大学競走部の学生がランニング講座を開催します。学生トップレベルのランナーと一緒に走ることができ、かつ、ランニングについて指導させていただきます。"
                         )
                       ]),
                       _vm._v(" "),
@@ -34149,7 +34141,8 @@ var staticRenderFns = [
       _c("figure", { staticClass: "image is-4by3" }, [
         _c("img", {
           attrs: {
-            src: "https://bulma.io/images/placeholders/1280x960.png",
+            src:
+              "https://cdn.mainichi.jp/vol1/2019/01/03/20190103k0000m050077000p/6.jpg?1",
             alt: "Placeholder image"
           }
         })
@@ -34186,7 +34179,8 @@ var staticRenderFns = [
       _c("figure", { staticClass: "image is-4by3" }, [
         _c("img", {
           attrs: {
-            src: "https://bulma.io/images/placeholders/1280x960.png",
+            src:
+              "https://twave.tokai-eic.co.jp/upload/save_image/0228114056_5c774a385ae28.jpg",
             alt: "Placeholder image"
           }
         })
@@ -34223,7 +34217,8 @@ var staticRenderFns = [
       _c("figure", { staticClass: "image is-4by3" }, [
         _c("img", {
           attrs: {
-            src: "https://bulma.io/images/placeholders/1280x960.png",
+            src:
+              "https://twave.tokai-eic.co.jp/upload/save_image/komonoNo16.jpg",
             alt: "Placeholder image"
           }
         })
@@ -34260,7 +34255,8 @@ var staticRenderFns = [
       _c("figure", { staticClass: "image is-4by3" }, [
         _c("img", {
           attrs: {
-            src: "https://bulma.io/images/placeholders/1280x960.png",
+            src:
+              "http://daigaku-ekiden.com/syutsujyou/images/40dfcd39e8d2f42bafeabcc095bfdd84a28db5f2.jpg",
             alt: "Placeholder image"
           }
         })
