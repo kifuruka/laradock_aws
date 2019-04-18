@@ -1,12 +1,29 @@
 <template>
-  <section>
+  <section >
     <div class="tile is-ancestor">
+
       <!-- 左 -->
       <div class="tile is-parent parent-frame">
         <div class="tile is-child">
-          <router-link to="/Donation">
+          <div class="card">
+            <div calss="card_image_container" style="position: relative;">
+              <div class="card-image item item--first">
+                <figure class="image">
+                  <router-link to="/Donation">
+                    <img :src="Homeimg1" class="u-img" alt="#">
+                  </router-link>
+                  <!-- <img :src="school.school_img" class="card-img-top" alt="Placeholder image"> -->
+                </figure>
+              </div>
+              <div class="school_msg has-text-centered">
+                <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
+                <p class="subtitle is-6 is-size-7-mobile school_message">全国制覇したい</p>
+              </div>
+            </div>
+          </div>
+          <!-- <router-link to="/Donation">
             <img :src="Homeimg1" class="u-img" alt="#">
-          </router-link>
+          </router-link> -->
         </div>
       </div>
       <!-- 右 -->
@@ -14,23 +31,65 @@
         <div class="tile is-child is-vertical">
           <div class="tile is-ancestor">
             <div class="tile is-parent upper-frame">
-              <div class="tile is-child is-6 grandson-frame" style="margin-bottom:0;">
-                <router-link to="/Donation">
-                <img :src="Homeimg2" class="u-img" alt>
-                </router-link>
+              <div class="tile is-child is-6 grandson-frame left-grandson" style="margin-bottom:0;">
+
+                <div class="card">
+                  <div calss="card_image_container" style="position: relative;">
+                    <div class="card-image item item--first">
+                      <figure class="image">
+                        <router-link to="/Donation">
+                        <img :src="Homeimg2" class="u-img" alt>
+                        </router-link>
+                        <!-- <img :src="school.school_img" class="card-img-top" alt="Placeholder image"> -->
+                      </figure>
+                    </div>
+                    <div class="school_msg has-text-centered">
+                      <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
+                      <p class="subtitle is-6 is-size-7-mobile school_message">全国制覇したい</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="tileis-child is-6">
-                <router-link to="/Donation">
-                <img :src="Homeimg3" class="u-img" alt="#">
-                </router-link>
+              <div class="tile is-child is-6 grandson-frame right-grandson">
+
+                <div class="card">
+                  <div calss="card_image_container" style="position: relative;">
+                    <div class="card-image item item--first">
+                      <figure class="image">
+                        <router-link to="/Donation">
+                          <img :src="Homeimg3" class="u-img" alt="#">
+                        </router-link>
+                        <!-- <img :src="school.school_img" class="card-img-top" alt="Placeholder image"> -->
+                      </figure>
+                    </div>
+                    <div class="school_msg has-text-centered">
+                      <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
+                      <p class="subtitle is-6 is-size-7-mobile school_message">全国制覇したい</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="tile child-flame">
-            <router-link to="/Donation">
-            <img :src="Homeimg4" class="u-img" alt="#">
-            </router-link>
+
+            <div class="card">
+              <div calss="card_image_container" style="position: relative;">
+                <div class="card-image item item--first">
+                  <figure class="image">
+                    <router-link to="/Donation">
+                    <img :src="Homeimg4" class="u-img" alt="#">
+                    </router-link>
+                    <!-- <img :src="school.school_img" class="card-img-top" alt="Placeholder image"> -->
+                  </figure>
+                </div>
+                <div class="school_msg has-text-centered">
+                  <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
+                  <p class="subtitle is-6 is-size-7-mobile school_message">全国制覇したい</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -43,7 +102,7 @@ import { mapGetters, mapMutations, mapActions } from "vuex";
 import Homeimg1 from "../../images/topvisual/top001.jpg";
 import Homeimg2 from "../../images/topvisual/top002.jpg";
 import Homeimg3 from "../../images/topvisual/top003.jpg";
-import Homeimg4 from "../../images/topvisual/top4.jpg";
+import Homeimg4 from "../../images/topvisual/top04_w583.jpg";
 
 export default {
   // あとでデータを引っ張ってくるまで載せておく
@@ -76,7 +135,7 @@ export default {
 section {
   max-width: 1160px;
   margin: 0 auto;
-  padding-top: 81px;
+  padding-top: 7%;
 
   .parent-frame {
     padding: 6px !important;
@@ -87,11 +146,80 @@ section {
       padding-bottom: 0px;
 
       .grandson-frame {
-        margin-right: 12px !important;
+        // margin-right: 12px !important;
         max-width: 370px;
         max-height: 250px;
       }
+      .left-grandson{
+        padding-right: 6px;
+      }
+      .right-grandson{
+        padding-left: 6px;
+      }
     }
+  }
+  .card_image_container {
+  position: relative;
+}
+
+  .item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .item:after {
+    /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5; /*下に配置する画像が見えるよう、疑似要素は透過しておく*/
+  }
+
+  .item--first:after {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 10%,
+      #212529
+    );
+  }
+
+  .school_msg {
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+  }
+
+  .school_name {
+    position: relative;
+    display: inline-block;
+    color: white;
+    border-bottom-style: solid;
+    border-bottom-color: #ffe035;
+    padding-bottom: 2%;
+    margin-bottom: 3em;
+    font-size: 0.5rem;
+  }
+
+  .school_message {
+    color: white;
+  }
+  .card {
+    background-color: white;
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0px rgba(0, 0, 0, 0);
+
   }
   .child-flame {
     // margin-top: 12px !important;
