@@ -2311,10 +2311,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMain.vue?vue&type=script&lang=js&":
-/*!******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationMain.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMainDemo.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationMainDemo.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2569,6 +2569,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2578,7 +2587,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     return {
       DonationImg: _images_donation_d_kin_rag_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
       DonationImg2: _images_donation_d_kin_rag2_jpg__WEBPACK_IMPORTED_MODULE_1___default.a,
-      DonationImg3: _images_donation_d_kin_rag3_jpg__WEBPACK_IMPORTED_MODULE_2___default.a
+      DonationImg3: _images_donation_d_kin_rag3_jpg__WEBPACK_IMPORTED_MODULE_2___default.a,
+      sub_title1: '箱根駅伝で優勝したい',
+      sub_title2: '箱根駅伝で優勝したい',
+      sub_title3: '箱根駅伝で優勝したい',
+      sub_contents1: '「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      sub_contents2: '「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      sub_contents3: '「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。' // activity_name:'陸上部',
+      // top_contents:'「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      // total_donation:'10,000,000',
+      // fans:'98',
+
     };
   },
   computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_3__["mapGetters"])({
@@ -2675,10 +2694,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTop.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationTop.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTopDemo.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationTopDemo.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2770,12 +2789,24 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      DonationImg: _images_donation_d_kin_rag_top_jpg__WEBPACK_IMPORTED_MODULE_0___default.a
+      DonationImg: _images_donation_d_kin_rag_top_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
+      title: '箱根駅伝優勝したい',
+      name: '東海大学',
+      activity_name: '陸上部',
+      top_contents: '「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      total_donation: '10,000,000',
+      fans: '98'
     };
   },
   computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapGetters"])({
@@ -3993,8 +4024,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_DonationTop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/DonationTop */ "./resources/assets/js/components/DonationTop.vue");
-/* harmony import */ var _components_DonationMain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/DonationMain */ "./resources/assets/js/components/DonationMain.vue");
+/* harmony import */ var _components_DonationTopDemo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/DonationTopDemo */ "./resources/assets/js/components/DonationTopDemo.vue");
+/* harmony import */ var _components_DonationMainDemo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/DonationMainDemo */ "./resources/assets/js/components/DonationMainDemo.vue");
 /* harmony import */ var _components_SchoolSubInfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SchoolSubInfo */ "./resources/assets/js/components/SchoolSubInfo.vue");
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
@@ -4015,8 +4046,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    DonationTop: _components_DonationTop__WEBPACK_IMPORTED_MODULE_0__["default"],
-    DonationMain: _components_DonationMain__WEBPACK_IMPORTED_MODULE_1__["default"],
+    DonationTop: _components_DonationTopDemo__WEBPACK_IMPORTED_MODULE_0__["default"],
+    DonationMain: _components_DonationMainDemo__WEBPACK_IMPORTED_MODULE_1__["default"],
     SchoolSubInfo: _components_SchoolSubInfo__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   data: function data() {
@@ -4796,31 +4827,31 @@ exports.push([module.i, "section .container[data-v-79d7a1ee] {\n  max-width: 116
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true&":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-8e3066bc] {\n  margin-top: 80px;\n  margin: 80px 5% 0 5%;\n}\nsection .container[data-v-8e3066bc] {\n  max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-8e3066bc] {\n  padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-8e3066bc] {\n  margin-bottom: 32px;\n}\n.u-img[data-v-8e3066bc] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-8e3066bc] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-8e3066bc] {\n  margin-bottom: 100px;\n}\n.child-flame .content-flame h1[data-v-8e3066bc] {\n  font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n  font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-8e3066bc] {\n  margin-top: 32px;\n}\n.company-card[data-v-8e3066bc] {\n  background-color: #828282;\n}\n.company-card p[data-v-8e3066bc] {\n  text-align: center;\n  font-size: 1.6rem;\n  margin-top: 16px;\n  color: white;\n}\n.company-card .company-btn-flame[data-v-8e3066bc] {\n  margin-top: 32px;\n  margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-8e3066bc] {\n  background-color: #db6b6b;\n  border-color: #db6b6b;\n  color: white;\n}\n.modal-content[data-v-8e3066bc], .modal-card[data-v-8e3066bc] {\n  width: 40%;\n  border-radius: 1%;\n}\n.test[data-v-8e3066bc] {\n  font-weight: bold;\n}\n.kessai[data-v-8e3066bc] {\n  display: block;\n  cursor: pointer;\n  margin: 1em auto;\n  border-radius: 4px;\n  box-sizing: border-box;\n  color: #4a4a4a;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: inherit;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s, -webkit-transform 0.3s;\n}\n.kessai[data-v-8e3066bc]:hover {\n  -webkit-animation: flash-data-v-8e3066bc 1s both;\n          animation: flash-data-v-8e3066bc 1s both;\n}\n.kessai[data-v-8e3066bc]:active {\n  color: #ddd;\n  background: #ffea73;\n  transition-duration: 0.1s;\n}\n@-webkit-keyframes flash-data-v-8e3066bc {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@keyframes flash-data-v-8e3066bc {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@media screen and (max-width: 768px) {\n.modal-content[data-v-8e3066bc], .modal-card[data-v-8e3066bc] {\n    width: 80%;\n    border-radius: 1%;\n}\n}", ""]);
+exports.push([module.i, "section[data-v-e3cd1fb6] {\n  margin-top: 80px;\n  margin: 80px 5% 0 5%;\n}\nsection .container[data-v-e3cd1fb6] {\n  max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-e3cd1fb6] {\n  padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-e3cd1fb6] {\n  margin-bottom: 32px;\n}\n.u-img[data-v-e3cd1fb6] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-e3cd1fb6] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-e3cd1fb6] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-e3cd1fb6] {\n  margin-bottom: 100px;\n}\n.child-flame .content-flame h1[data-v-e3cd1fb6] {\n  font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-e3cd1fb6] {\n  margin-top: 16px;\n  font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-e3cd1fb6] {\n  margin-top: 32px;\n}\n.company-card[data-v-e3cd1fb6] {\n  background-color: #828282;\n}\n.company-card p[data-v-e3cd1fb6] {\n  text-align: center;\n  font-size: 1.6rem;\n  margin-top: 16px;\n  color: white;\n}\n.company-card .company-btn-flame[data-v-e3cd1fb6] {\n  margin-top: 32px;\n  margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-e3cd1fb6] {\n  background-color: #db6b6b;\n  border-color: #db6b6b;\n  color: white;\n}\n.modal-content[data-v-e3cd1fb6], .modal-card[data-v-e3cd1fb6] {\n  width: 40%;\n  border-radius: 1%;\n}\n.test[data-v-e3cd1fb6] {\n  font-weight: bold;\n}\n.kessai[data-v-e3cd1fb6] {\n  display: block;\n  cursor: pointer;\n  margin: 1em auto;\n  border-radius: 4px;\n  box-sizing: border-box;\n  color: #4a4a4a;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: inherit;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s, -webkit-transform 0.3s;\n}\n.kessai[data-v-e3cd1fb6]:hover {\n  -webkit-animation: flash-data-v-e3cd1fb6 1s both;\n          animation: flash-data-v-e3cd1fb6 1s both;\n}\n.kessai[data-v-e3cd1fb6]:active {\n  color: #ddd;\n  background: #ffea73;\n  transition-duration: 0.1s;\n}\n@-webkit-keyframes flash-data-v-e3cd1fb6 {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@keyframes flash-data-v-e3cd1fb6 {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@media screen and (max-width: 768px) {\n.modal-content[data-v-e3cd1fb6], .modal-card[data-v-e3cd1fb6] {\n    width: 80%;\n    border-radius: 1%;\n}\n}", ""]);
 
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true&":
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true& ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-9d156b08] {\n  padding-top: 63px;\n  background-color: #fffdf3;\n}\nsection .container[data-v-9d156b08] {\n  max-width: 1160px;\n}\nsection .container .donation-title[data-v-9d156b08] {\n  margin-top: 32px;\n}\nsection .container .donation-title h1[data-v-9d156b08] {\n  font-weight: bold;\n  font-size: 2rem;\n}\nsection .child-flame .donaition-text-flame[data-v-9d156b08] {\n  margin-top: 16px;\n  font-size: 1.3rem;\n}\nsection .child-flame .donaition-text-flame h1[data-v-9d156b08] {\n  font-size: 2rem;\n  font-weight: bold;\n  padding-bottom: 24px;\n}\nsection .child-flame .donaition-text-flame p[data-v-9d156b08] {\n  padding-bottom: 32px;\n}\nsection .child-flame .donaition-img-flame[data-v-9d156b08] {\n  margin-top: 32px;\n}\nsection .top-right-flame[data-v-9d156b08] {\n  margin-top: 32px;\n  padding: 16px;\n}\nsection .top-right-flame .top-title[data-v-9d156b08] {\n  font-size: 1.6rem;\n}\nsection .top-right-flame .top-contents[data-v-9d156b08] {\n  font-weight: bold;\n  font-size: 3rem;\n  text-align: right;\n}\nsection .top-right-flame .top-subtitle[data-v-9d156b08] {\n  font-weight: bold;\n  font-size: 1.8rem;\n  text-align: right;\n}\nsection .top-right-flame .top-subtitle .top-contents-data[data-v-9d156b08] {\n  font-weight: bold;\n  font-size: 3rem;\n}\n.btn-flame[data-v-9d156b08] {\n  text-align: center;\n  margin-top: 24px;\n}\n.btn-flame .custom-btn[data-v-9d156b08] {\n  background-color: #ffe035;\n  color: #333333;\n  height: 4rem;\n  font-weight: bold;\n  font-size: 1.6rem;\n  width: 100%;\n  border-color: #ffe035;\n}\n.web-link-flame[data-v-9d156b08] {\n  margin-top: 16px;\n}\n.web-link-flame a[data-v-9d156b08] {\n  font-size: 1.2rem;\n  padding: 8px;\n}\n.sns-link-flame[data-v-9d156b08] {\n  margin-top: 40px;\n}\n.sns-link-flame .fb-btn[data-v-9d156b08],\n.sns-link-flame .tw-btn[data-v-9d156b08],\n.sns-link-flame .li-btn[data-v-9d156b08] {\n  color: white;\n  height: 4rem;\n  font-weight: bold;\n  font-size: 1rem;\n  width: 90%;\n}\n.sns-link-flame .fb-btn[data-v-9d156b08] {\n  border-color: #3b5998;\n  background-color: #3b5998;\n}\n.sns-link-flame .tw-btn[data-v-9d156b08] {\n  border-color: #55acee;\n  background-color: #55acee;\n}\n.sns-link-flame .li-btn[data-v-9d156b08] {\n  border-color: #00b900;\n  background-color: #00b900;\n}", ""]);
+exports.push([module.i, "section[data-v-65a070ff] {\n  padding-top: 63px;\n  background-color: #fffdf3;\n}\nsection .container[data-v-65a070ff] {\n  max-width: 1160px;\n}\nsection .container .donation-title[data-v-65a070ff] {\n  margin-top: 32px;\n}\nsection .container .donation-title h1[data-v-65a070ff] {\n  font-weight: bold;\n  font-size: 2rem;\n}\nsection .child-flame .donaition-text-flame[data-v-65a070ff] {\n  margin-top: 16px;\n  font-size: 1.3rem;\n}\nsection .child-flame .donaition-text-flame h1[data-v-65a070ff] {\n  font-size: 2rem;\n  font-weight: bold;\n  padding-bottom: 24px;\n}\nsection .child-flame .donaition-text-flame p[data-v-65a070ff] {\n  padding-bottom: 32px;\n}\nsection .child-flame .donaition-img-flame[data-v-65a070ff] {\n  margin-top: 32px;\n}\nsection .top-right-flame[data-v-65a070ff] {\n  margin-top: 32px;\n  padding: 16px;\n}\nsection .top-right-flame .top-title[data-v-65a070ff] {\n  font-size: 1.6rem;\n}\nsection .top-right-flame .top-contents[data-v-65a070ff] {\n  font-weight: bold;\n  font-size: 3rem;\n  text-align: right;\n}\nsection .top-right-flame .top-subtitle[data-v-65a070ff] {\n  font-weight: bold;\n  font-size: 1.8rem;\n  text-align: right;\n}\nsection .top-right-flame .top-subtitle .top-contents-data[data-v-65a070ff] {\n  font-weight: bold;\n  font-size: 3rem;\n}\n.btn-flame[data-v-65a070ff] {\n  text-align: center;\n  margin-top: 24px;\n}\n.btn-flame .custom-btn[data-v-65a070ff] {\n  background-color: #ffe035;\n  color: #333333;\n  height: 4rem;\n  font-weight: bold;\n  font-size: 1.6rem;\n  width: 100%;\n  border-color: #ffe035;\n}\n.web-link-flame[data-v-65a070ff] {\n  margin-top: 16px;\n}\n.web-link-flame a[data-v-65a070ff] {\n  font-size: 1.2rem;\n  padding: 8px;\n}\n.sns-link-flame[data-v-65a070ff] {\n  margin-top: 40px;\n}\n.sns-link-flame .fb-btn[data-v-65a070ff],\n.sns-link-flame .tw-btn[data-v-65a070ff],\n.sns-link-flame .li-btn[data-v-65a070ff] {\n  color: white;\n  height: 4rem;\n  font-weight: bold;\n  font-size: 1rem;\n  width: 90%;\n}\n.sns-link-flame .fb-btn[data-v-65a070ff] {\n  border-color: #3b5998;\n  background-color: #3b5998;\n}\n.sns-link-flame .tw-btn[data-v-65a070ff] {\n  border-color: #55acee;\n  background-color: #55acee;\n}\n.sns-link-flame .li-btn[data-v-65a070ff] {\n  border-color: #00b900;\n  background-color: #00b900;\n}", ""]);
 
 
 
@@ -23765,15 +23796,15 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true&":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true&");
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -23795,15 +23826,15 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true&":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true&");
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -33975,10 +34006,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMain.vue?vue&type=template&id=8e3066bc&scoped=true&":
-/*!**********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationMain.vue?vue&type=template&id=8e3066bc&scoped=true& ***!
-  \**********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMainDemo.vue?vue&type=template&id=e3cd1fb6&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationMainDemo.vue?vue&type=template&id=e3cd1fb6&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -33990,245 +34021,46 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm.isActivity
-    ? _c("section", [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent" }, [
-              _c("div", { staticClass: "tile is-child is-8 child-flame" }, [
-                _c("div", { staticClass: "content-flame" }, [
-                  _c("h1", [_vm._v(_vm._s(_vm.activity.sub_title1))]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "donaition-text-flame" }, [
-                    _c("p", [_vm._v(_vm._s(_vm.activity.sub_contents1))])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "donaition-img-flame" }, [
-                    _c("img", {
-                      staticClass: "u-img",
-                      attrs: { src: _vm.activity.sub_image1, alt: "#" }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "content-flame" }, [
-                  _c("h1", [_vm._v(_vm._s(_vm.activity.sub_title2))]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "donaition-text-flame" }, [
-                    _c("p", [_vm._v(_vm._s(_vm.activity.sub_contents2))])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "donaition-img-flame" }, [
-                    _c("img", {
-                      staticClass: "u-img",
-                      attrs: { src: _vm.activity.sub_image2, alt: "#" }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "content-flame" }, [
-                  _c("h1", [_vm._v(_vm._s(_vm.activity.sub_title3))]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "donaition-text-flame" }, [
-                    _c("p", [_vm._v(_vm._s(_vm.activity.sub_contents3))])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "donaition-img-flame" }, [
-                    _c("img", {
-                      staticClass: "u-img",
-                      attrs: { src: _vm.activity.sub_image3, alt: "#" }
-                    })
-                  ])
-                ])
+  return _c("section", [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "tile is-ancestor" }, [
+        _c("div", { staticClass: "tile is-parent" }, [
+          _c("div", { staticClass: "tile is-child is-8 child-flame" }, [
+            _c("div", { staticClass: "content-flame" }, [
+              _c("h1", [_vm._v(_vm._s(_vm.sub_title1))]),
+              _vm._v(" "),
+              _c("div", { staticClass: "donaition-text-flame" }, [
+                _c("p", [_vm._v(_vm._s(_vm.sub_contents1))])
               ]),
               _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "tile is-child is-4 child-right-flame" },
-                [
-                  _c("div", { staticClass: "card card-margin" }, [
-                    _c("div", { staticClass: "card-content" }, [
-                      _vm._m(0),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "media card-flame" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "media-content",
-                            on: { click: _vm.fireParentEvent }
-                          },
-                          [
-                            _c(
-                              "div",
-                              { staticClass: "button custom-btn test" },
-                              [
-                                _vm._v(
-                                  "\n                    この寄付を選ぶ\n                  "
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "content" }, [
-                        _vm._v(
-                          "東海大学駅伝部の月次活動報告メールマガジンで送らせていただきます。学生の日々の取り組みやチームの雰囲気をより深く知ることが出来ます。駅伝部をより深く知ることで、箱根駅伝など晴れの舞台での応援も一層楽しめればなによりです。"
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _vm._m(1),
-                      _vm._v(" "),
-                      _vm._m(2)
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card card-margin" }, [
-                    _c("div", { staticClass: "card-content" }, [
-                      _vm._m(3),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "media card-flame" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "media-content",
-                            on: { click: _vm.fireParentEvent }
-                          },
-                          [
-                            _c(
-                              "div",
-                              { staticClass: "button custom-btn test" },
-                              [
-                                _vm._v(
-                                  "\n                    この寄付を選ぶ\n                  "
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "content" }, [
-                        _vm._v(
-                          "箱根駅伝など東海大学の学生を応援するときに持っておくとより学生にエネルギーを届けられる東海大学フラッグです。学生が駆け抜けるレース会場を東海大学のフラッグで埋め尽くしましょう。"
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _vm._m(4),
-                      _vm._v(" "),
-                      _vm._m(5)
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card card-margin" }, [
-                    _c("div", { staticClass: "card-content" }, [
-                      _vm._m(6),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "media card-flame" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "media-content",
-                            on: { click: _vm.fireParentEvent }
-                          },
-                          [
-                            _c(
-                              "div",
-                              { staticClass: "button custom-btn test" },
-                              [
-                                _vm._v(
-                                  "\n                    この寄付を選ぶ\n                  "
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "content" }, [
-                        _vm._v(
-                          "東海大学オリジナルの手ぬぐいです。学生も使用している手ぬぐいと同じモデルであり、ご自身の生活やトレーニングにご活用いただくき、学生と一緒に自分の限界を越えていきましょう。"
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _vm._m(7),
-                      _vm._v(" "),
-                      _vm._m(8)
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card card-margin" }, [
-                    _c("div", { staticClass: "card-content" }, [
-                      _vm._m(9),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "media card-flame" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "media-content",
-                            on: { click: _vm.fireParentEvent }
-                          },
-                          [
-                            _c(
-                              "div",
-                              { staticClass: "button custom-btn test" },
-                              [
-                                _vm._v(
-                                  "\n                    この寄付を選ぶ\n                  "
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _vm._m(10),
-                      _vm._v(" "),
-                      _vm._m(11),
-                      _vm._v(" "),
-                      _vm._m(12)
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card card-margin" }, [
-                    _c("div", { staticClass: "card-content company-card" }, [
-                      _vm._m(13),
-                      _vm._v(" "),
-                      _vm._m(14),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "media-content company-btn-flame" },
-                        [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass: "button is-medium custom-btn",
-                              attrs: { to: "/" }
-                            },
-                            [_c("strong", [_vm._v("法人寄付")])]
-                          )
-                        ],
-                        1
-                      )
-                    ])
-                  ])
-                ]
-              )
+              _vm._m(0)
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content-flame" }, [
+              _c("h1", [_vm._v(_vm._s(_vm.sub_title2))]),
+              _vm._v(" "),
+              _c("div", { staticClass: "donaition-text-flame" }, [
+                _c("p", [_vm._v(_vm._s(_vm.sub_contents2))])
+              ]),
+              _vm._v(" "),
+              _vm._m(1)
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content-flame" }, [
+              _c("h1", [_vm._v(_vm._s(_vm.sub_title3))]),
+              _vm._v(" "),
+              _c("div", { staticClass: "donaition-text-flame" }, [
+                _c("p", [_vm._v(_vm._s(_vm.sub_contents3))])
+              ]),
+              _vm._v(" "),
+              _vm._m(2)
             ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "modal" }, [
-          _c("div", {
-            staticClass: "modal-background",
-            on: { click: _vm.closeModal }
-          }),
+          ]),
           _vm._v(" "),
-          _c("div", { staticClass: "modal-content" }, [
-            _c("div", { staticClass: "card card-modal" }, [
+          _c("div", { staticClass: "tile is-child is-4 child-right-flame" }, [
+            _c("div", { staticClass: "card card-margin" }, [
               _c("div", { staticClass: "card-content" }, [
-                _vm._m(15),
+                _vm._m(3),
                 _vm._v(" "),
                 _c("div", { staticClass: "media card-flame" }, [
                   _c(
@@ -34238,40 +34070,232 @@ var render = function() {
                       on: { click: _vm.fireParentEvent }
                     },
                     [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "button is-medium custom-btn test kessai"
-                        },
-                        [
-                          _vm._v(
-                            "\n                    決済\n                  "
-                          )
-                        ]
-                      )
+                      _c("div", { staticClass: "button custom-btn test" }, [
+                        _vm._v(
+                          "\n                    この寄付を選ぶ\n                  "
+                        )
+                      ])
                     ]
                   )
                 ]),
                 _vm._v(" "),
+                _c("div", { staticClass: "content" }, [
+                  _vm._v(
+                    "東海大学駅伝部の月次活動報告メールマガジンで送らせていただきます。学生の日々の取り組みやチームの雰囲気をより深く知ることが出来ます。駅伝部をより深く知ることで、箱根駅伝など晴れの舞台での応援も一層楽しめればなによりです。"
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(4),
+                _vm._v(" "),
+                _vm._m(5)
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card card-margin" }, [
+              _c("div", { staticClass: "card-content" }, [
+                _vm._m(6),
+                _vm._v(" "),
+                _c("div", { staticClass: "media card-flame" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "media-content",
+                      on: { click: _vm.fireParentEvent }
+                    },
+                    [
+                      _c("div", { staticClass: "button custom-btn test" }, [
+                        _vm._v(
+                          "\n                    この寄付を選ぶ\n                  "
+                        )
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "content" }, [
+                  _vm._v(
+                    "箱根駅伝など東海大学の学生を応援するときに持っておくとより学生にエネルギーを届けられる東海大学フラッグです。学生が駆け抜けるレース会場を東海大学のフラッグで埋め尽くしましょう。"
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(7),
+                _vm._v(" "),
+                _vm._m(8)
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card card-margin" }, [
+              _c("div", { staticClass: "card-content" }, [
+                _vm._m(9),
+                _vm._v(" "),
+                _c("div", { staticClass: "media card-flame" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "media-content",
+                      on: { click: _vm.fireParentEvent }
+                    },
+                    [
+                      _c("div", { staticClass: "button custom-btn test" }, [
+                        _vm._v(
+                          "\n                    この寄付を選ぶ\n                  "
+                        )
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "content" }, [
+                  _vm._v(
+                    "東海大学オリジナルの手ぬぐいです。学生も使用している手ぬぐいと同じモデルであり、ご自身の生活やトレーニングにご活用いただくき、学生と一緒に自分の限界を越えていきましょう。"
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(10),
+                _vm._v(" "),
+                _vm._m(11)
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card card-margin" }, [
+              _c("div", { staticClass: "card-content" }, [
+                _vm._m(12),
+                _vm._v(" "),
+                _c("div", { staticClass: "media card-flame" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "media-content",
+                      on: { click: _vm.fireParentEvent }
+                    },
+                    [
+                      _c("div", { staticClass: "button custom-btn test" }, [
+                        _vm._v(
+                          "\n                    この寄付を選ぶ\n                  "
+                        )
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(13),
+                _vm._v(" "),
+                _vm._m(14),
+                _vm._v(" "),
+                _vm._m(15)
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card card-margin" }, [
+              _c("div", { staticClass: "card-content company-card" }, [
                 _vm._m(16),
                 _vm._v(" "),
                 _vm._m(17),
                 _vm._v(" "),
-                _vm._m(18)
+                _c(
+                  "div",
+                  { staticClass: "media-content company-btn-flame" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "button is-medium custom-btn",
+                        attrs: { to: "/" }
+                      },
+                      [_c("strong", [_vm._v("法人寄付")])]
+                    )
+                  ],
+                  1
+                )
               ])
             ])
-          ]),
-          _vm._v(" "),
-          _c("button", {
-            staticClass: "modal-close is-large",
-            attrs: { "aria-label": "close" },
-            on: { click: _vm.closeModal }
-          })
+          ])
         ])
       ])
-    : _vm._e()
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "modal" }, [
+      _c("div", {
+        staticClass: "modal-background",
+        on: { click: _vm.closeModal }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "modal-content" }, [
+        _c("div", { staticClass: "card card-modal" }, [
+          _c("div", { staticClass: "card-content" }, [
+            _vm._m(18),
+            _vm._v(" "),
+            _c("div", { staticClass: "media card-flame" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "media-content",
+                  on: { click: _vm.fireParentEvent }
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "button is-medium custom-btn test kessai" },
+                    [_vm._v("\n                    決済\n                  ")]
+                  )
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(19),
+            _vm._v(" "),
+            _vm._m(20),
+            _vm._v(" "),
+            _vm._m(21)
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("button", {
+        staticClass: "modal-close is-large",
+        attrs: { "aria-label": "close" },
+        on: { click: _vm.closeModal }
+      })
+    ])
+  ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "donaition-img-flame" }, [
+      _c("img", {
+        attrs: {
+          src:
+            "https://www.u-tokai.ac.jp/campus_life/tokai_sports/%E7%AE%B1%E6%A0%B9%E9%A7%85%E4%BC%9D1%E5%8C%BA_1100.jpg"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "donaition-img-flame" }, [
+      _c("img", {
+        attrs: {
+          src:
+            "https://www.u-tokai.ac.jp/campus_life/tokai_sports/%E7%AE%B1%E6%A0%B9%E9%A7%85%E4%BC%9D%E8%A8%98%E8%80%85%E4%BC%9A%E8%A6%8B1_1100.jpg"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "donaition-img-flame" }, [
+      _c("img", {
+        attrs: { src: "https://hamarepo.com/story/images/7048/large_image.jpg" }
+      })
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -34516,10 +34540,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTop.vue?vue&type=template&id=9d156b08&scoped=true&":
-/*!*********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationTop.vue?vue&type=template&id=9d156b08&scoped=true& ***!
-  \*********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTopDemo.vue?vue&type=template&id=65a070ff&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/components/DonationTopDemo.vue?vue&type=template&id=65a070ff&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -34535,23 +34559,18 @@ var render = function() {
     ? _c("section", [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "donation-title" }, [
-            _c("h1", [_vm._v(_vm._s(_vm.activity.title))])
+            _c("h1", [_vm._v(_vm._s(_vm.title))])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "tile is-ancestor" }, [
             _c("div", { staticClass: "tile is-parent" }, [
               _c("div", { staticClass: "tile is-child is-8 child-flame" }, [
-                _c("div", { staticClass: "donaition-img-flame" }, [
-                  _c("img", {
-                    staticClass: "u-img",
-                    attrs: { src: _vm.activity.activity_img, alt: "#" }
-                  })
-                ]),
+                _vm._m(0),
                 _vm._v(" "),
                 _c("div", { staticClass: "donaition-text-flame" }, [
-                  _c("h1", [_vm._v(_vm._s(_vm.activity.activity_name))]),
+                  _c("h1", [_vm._v(_vm._s(_vm.activity_name))]),
                   _vm._v(" "),
-                  _c("p", [_vm._v(_vm._s(_vm.activity.top_contents))])
+                  _c("p", [_vm._v(_vm._s(_vm.top_contents))])
                 ])
               ]),
               _vm._v(" "),
@@ -34568,7 +34587,7 @@ var render = function() {
                       _c("p", { staticClass: "top-contents" }, [
                         _vm._v(
                           "\n                " +
-                            _vm._s(_vm.activity.total_donation) +
+                            _vm._s(_vm.total_donation) +
                             "\n                "
                         ),
                         _c("span", [_vm._v("円")])
@@ -34582,13 +34601,13 @@ var render = function() {
                       _vm._v(" "),
                       _c("p", { staticClass: "top-subtitle" }, [
                         _c("span", { staticClass: "top-contents-data" }, [
-                          _vm._v(_vm._s(_vm.activity.fans))
+                          _vm._v(_vm._s(_vm.fans))
                         ]),
                         _vm._v(" 人\n              ")
                       ])
                     ]),
                     _vm._v(" "),
-                    _vm._m(0),
+                    _vm._m(1),
                     _vm._v(" "),
                     _c("div", { staticClass: "media-content btn-flame" }, [
                       _c(
@@ -34607,7 +34626,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "web-link-flame" }),
                     _vm._v(" "),
-                    _vm._m(1)
+                    _vm._m(2)
                   ])
                 ]
               )
@@ -34618,6 +34637,19 @@ var render = function() {
     : _vm._e()
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "donaition-img-flame" }, [
+      _c("img", {
+        attrs: {
+          src:
+            "https://number.ismcdn.jp/mwimgs/1/b/-/img_1babe2dc9b3a5be60aa17ca4da08b19f198166.jpg"
+        }
+      })
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -36303,13 +36335,7 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "allstyle" },
-    [
-      _c("donation-top"),
-      _vm._v(" "),
-      _c("donation-main"),
-      _vm._v(" "),
-      _c("school-sub-info")
-    ],
+    [_c("donation-top"), _vm._v(" "), _c("donation-main")],
     1
   )
 }
@@ -54109,18 +54135,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/DonationMain.vue":
-/*!*********************************************************!*\
-  !*** ./resources/assets/js/components/DonationMain.vue ***!
-  \*********************************************************/
+/***/ "./resources/assets/js/components/DonationMainDemo.vue":
+/*!*************************************************************!*\
+  !*** ./resources/assets/js/components/DonationMainDemo.vue ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _DonationMain_vue_vue_type_template_id_8e3066bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DonationMain.vue?vue&type=template&id=8e3066bc&scoped=true& */ "./resources/assets/js/components/DonationMain.vue?vue&type=template&id=8e3066bc&scoped=true&");
-/* harmony import */ var _DonationMain_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DonationMain.vue?vue&type=script&lang=js& */ "./resources/assets/js/components/DonationMain.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _DonationMain_vue_vue_type_style_index_0_id_8e3066bc_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true& */ "./resources/assets/js/components/DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true&");
+/* harmony import */ var _DonationMainDemo_vue_vue_type_template_id_e3cd1fb6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DonationMainDemo.vue?vue&type=template&id=e3cd1fb6&scoped=true& */ "./resources/assets/js/components/DonationMainDemo.vue?vue&type=template&id=e3cd1fb6&scoped=true&");
+/* harmony import */ var _DonationMainDemo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DonationMainDemo.vue?vue&type=script&lang=js& */ "./resources/assets/js/components/DonationMainDemo.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _DonationMainDemo_vue_vue_type_style_index_0_id_e3cd1fb6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true& */ "./resources/assets/js/components/DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -54131,83 +54157,83 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _DonationMain_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _DonationMain_vue_vue_type_template_id_8e3066bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _DonationMain_vue_vue_type_template_id_8e3066bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _DonationMainDemo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _DonationMainDemo_vue_vue_type_template_id_e3cd1fb6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _DonationMainDemo_vue_vue_type_template_id_e3cd1fb6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  "8e3066bc",
+  "e3cd1fb6",
   null
   
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/assets/js/components/DonationMain.vue"
+component.options.__file = "resources/assets/js/components/DonationMainDemo.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/DonationMain.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************!*\
-  !*** ./resources/assets/js/components/DonationMain.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************/
+/***/ "./resources/assets/js/components/DonationMainDemo.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./resources/assets/js/components/DonationMainDemo.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMain_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationMain.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMain.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMain_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMainDemo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationMainDemo.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMainDemo.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMainDemo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true&":
-/*!*******************************************************************************************************************!*\
-  !*** ./resources/assets/js/components/DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true& ***!
-  \*******************************************************************************************************************/
+/***/ "./resources/assets/js/components/DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true&":
+/*!***********************************************************************************************************************!*\
+  !*** ./resources/assets/js/components/DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true& ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMain_vue_vue_type_style_index_0_id_8e3066bc_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMain.vue?vue&type=style&index=0&id=8e3066bc&lang=scss&scoped=true&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMain_vue_vue_type_style_index_0_id_8e3066bc_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMain_vue_vue_type_style_index_0_id_8e3066bc_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMain_vue_vue_type_style_index_0_id_8e3066bc_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMain_vue_vue_type_style_index_0_id_8e3066bc_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMain_vue_vue_type_style_index_0_id_8e3066bc_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMainDemo_vue_vue_type_style_index_0_id_e3cd1fb6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMainDemo.vue?vue&type=style&index=0&id=e3cd1fb6&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMainDemo_vue_vue_type_style_index_0_id_e3cd1fb6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMainDemo_vue_vue_type_style_index_0_id_e3cd1fb6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMainDemo_vue_vue_type_style_index_0_id_e3cd1fb6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMainDemo_vue_vue_type_style_index_0_id_e3cd1fb6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMainDemo_vue_vue_type_style_index_0_id_e3cd1fb6_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/DonationMain.vue?vue&type=template&id=8e3066bc&scoped=true&":
-/*!****************************************************************************************************!*\
-  !*** ./resources/assets/js/components/DonationMain.vue?vue&type=template&id=8e3066bc&scoped=true& ***!
-  \****************************************************************************************************/
+/***/ "./resources/assets/js/components/DonationMainDemo.vue?vue&type=template&id=e3cd1fb6&scoped=true&":
+/*!********************************************************************************************************!*\
+  !*** ./resources/assets/js/components/DonationMainDemo.vue?vue&type=template&id=e3cd1fb6&scoped=true& ***!
+  \********************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMain_vue_vue_type_template_id_8e3066bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationMain.vue?vue&type=template&id=8e3066bc&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMain.vue?vue&type=template&id=8e3066bc&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMain_vue_vue_type_template_id_8e3066bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMainDemo_vue_vue_type_template_id_e3cd1fb6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationMainDemo.vue?vue&type=template&id=e3cd1fb6&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationMainDemo.vue?vue&type=template&id=e3cd1fb6&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMainDemo_vue_vue_type_template_id_e3cd1fb6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMain_vue_vue_type_template_id_8e3066bc_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationMainDemo_vue_vue_type_template_id_e3cd1fb6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/DonationTop.vue":
-/*!********************************************************!*\
-  !*** ./resources/assets/js/components/DonationTop.vue ***!
-  \********************************************************/
+/***/ "./resources/assets/js/components/DonationTopDemo.vue":
+/*!************************************************************!*\
+  !*** ./resources/assets/js/components/DonationTopDemo.vue ***!
+  \************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _DonationTop_vue_vue_type_template_id_9d156b08_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DonationTop.vue?vue&type=template&id=9d156b08&scoped=true& */ "./resources/assets/js/components/DonationTop.vue?vue&type=template&id=9d156b08&scoped=true&");
-/* harmony import */ var _DonationTop_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DonationTop.vue?vue&type=script&lang=js& */ "./resources/assets/js/components/DonationTop.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _DonationTop_vue_vue_type_style_index_0_id_9d156b08_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true& */ "./resources/assets/js/components/DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true&");
+/* harmony import */ var _DonationTopDemo_vue_vue_type_template_id_65a070ff_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DonationTopDemo.vue?vue&type=template&id=65a070ff&scoped=true& */ "./resources/assets/js/components/DonationTopDemo.vue?vue&type=template&id=65a070ff&scoped=true&");
+/* harmony import */ var _DonationTopDemo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DonationTopDemo.vue?vue&type=script&lang=js& */ "./resources/assets/js/components/DonationTopDemo.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _DonationTopDemo_vue_vue_type_style_index_0_id_65a070ff_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true& */ "./resources/assets/js/components/DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -54218,66 +54244,66 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _DonationTop_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _DonationTop_vue_vue_type_template_id_9d156b08_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _DonationTop_vue_vue_type_template_id_9d156b08_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _DonationTopDemo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _DonationTopDemo_vue_vue_type_template_id_65a070ff_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _DonationTopDemo_vue_vue_type_template_id_65a070ff_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  "9d156b08",
+  "65a070ff",
   null
   
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/assets/js/components/DonationTop.vue"
+component.options.__file = "resources/assets/js/components/DonationTopDemo.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/DonationTop.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************!*\
-  !*** ./resources/assets/js/components/DonationTop.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************/
+/***/ "./resources/assets/js/components/DonationTopDemo.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************!*\
+  !*** ./resources/assets/js/components/DonationTopDemo.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTop_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationTop.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTop.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTop_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTopDemo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationTopDemo.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTopDemo.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTopDemo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true&":
-/*!******************************************************************************************************************!*\
-  !*** ./resources/assets/js/components/DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true& ***!
-  \******************************************************************************************************************/
+/***/ "./resources/assets/js/components/DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true&":
+/*!**********************************************************************************************************************!*\
+  !*** ./resources/assets/js/components/DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true& ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTop_vue_vue_type_style_index_0_id_9d156b08_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTop.vue?vue&type=style&index=0&id=9d156b08&lang=scss&scoped=true&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTop_vue_vue_type_style_index_0_id_9d156b08_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTop_vue_vue_type_style_index_0_id_9d156b08_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTop_vue_vue_type_style_index_0_id_9d156b08_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTop_vue_vue_type_style_index_0_id_9d156b08_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTop_vue_vue_type_style_index_0_id_9d156b08_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTopDemo_vue_vue_type_style_index_0_id_65a070ff_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTopDemo.vue?vue&type=style&index=0&id=65a070ff&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTopDemo_vue_vue_type_style_index_0_id_65a070ff_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTopDemo_vue_vue_type_style_index_0_id_65a070ff_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTopDemo_vue_vue_type_style_index_0_id_65a070ff_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTopDemo_vue_vue_type_style_index_0_id_65a070ff_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTopDemo_vue_vue_type_style_index_0_id_65a070ff_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/DonationTop.vue?vue&type=template&id=9d156b08&scoped=true&":
-/*!***************************************************************************************************!*\
-  !*** ./resources/assets/js/components/DonationTop.vue?vue&type=template&id=9d156b08&scoped=true& ***!
-  \***************************************************************************************************/
+/***/ "./resources/assets/js/components/DonationTopDemo.vue?vue&type=template&id=65a070ff&scoped=true&":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/assets/js/components/DonationTopDemo.vue?vue&type=template&id=65a070ff&scoped=true& ***!
+  \*******************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTop_vue_vue_type_template_id_9d156b08_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationTop.vue?vue&type=template&id=9d156b08&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTop.vue?vue&type=template&id=9d156b08&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTop_vue_vue_type_template_id_9d156b08_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTopDemo_vue_vue_type_template_id_65a070ff_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./DonationTopDemo.vue?vue&type=template&id=65a070ff&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/components/DonationTopDemo.vue?vue&type=template&id=65a070ff&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTopDemo_vue_vue_type_template_id_65a070ff_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTop_vue_vue_type_template_id_9d156b08_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DonationTopDemo_vue_vue_type_template_id_65a070ff_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
