@@ -41,6 +41,7 @@
                     <img
                       src="https://cdn.mainichi.jp/vol1/2019/01/03/20190103k0000m050077000p/6.jpg?1"
                       alt="Placeholder image"
+                      class="contentsImg"
                     >
                   </figure>
                 </div>
@@ -72,7 +73,8 @@
                   <figure class="image is-4by3">
                     <img
                       src="https://twave.tokai-eic.co.jp/upload/save_image/0228114056_5c774a385ae28.jpg"
-                      alt="Placeholder image"
+                      alt="Placeholder image" 
+                      class="contentsImg"
                     >
                   </figure>
                 </div>
@@ -105,6 +107,7 @@
                     <img
                       src="https://twave.tokai-eic.co.jp/upload/save_image/komonoNo16.jpg"
                       alt="Placeholder image"
+                      class="contentsImg"
                     >
                   </figure>
                 </div>
@@ -137,6 +140,7 @@
                     <img
                       src="http://daigaku-ekiden.com/syutsujyou/images/40dfcd39e8d2f42bafeabcc095bfdd84a28db5f2.jpg"
                       alt="Placeholder image"
+                      class="contentsImg"
                     >
                   </figure>
                 </div>
@@ -147,7 +151,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="content">東海大学競走部の学生がランニング講座を開催します。学生トップレベルのランナーと一緒に走ることができ、かつ、ランニングについて指導させていただきます。</div>
+                <div class="content-p">
+                  <span class="content">東海大学競走部の学生がランニング講座を開催します。学生トップレベルのランナーと一緒に走ることができ、かつ、ランニングについて指導させていただきます。</span>
+                </div>
                 <div>
                   <p>
                     寄付金額
@@ -189,8 +195,17 @@
     <div class="modal">
       <div class="modal-background" v-on:click="closeModal"></div>
       <div class="modal-content">
-            <div class="card card-margin">
+            <div class="card card-modal">
               <div class="card-content">
+                <div class="card-image">
+                  <figure class="image">
+                    <img
+                      src="https://twave.tokai-eic.co.jp/upload/save_image/komonoNo16.jpg"
+                      alt="Placeholder image"
+                      class="contentsImg"
+                    >
+                  </figure>
+                </div>
                 <div class="media card-flame">
                   <div class="media-content" v-on:click="fireParentEvent">
                     <div class="button is-medium custom-btn test kessai">
@@ -198,10 +213,19 @@
                     </div>
                   </div>
                 </div>
+                <div class="content-p">
+                  <span class="content">東海大学競走部の学生がランニング講座を開催します。学生トップレベルのランナーと一緒に走ることができ、かつ、ランニングについて指導させていただきます。</span>
+                </div>
                 <div>
                   <p class="price-p">
                     寄付金額
                     <span class="price">¥8,000</span>
+                  </p>
+                </div>
+                <div>
+                  <p class="day-p">
+                    掲載期間
+                    <span class="day">2019/04/19</span>
                   </p>
                 </div>
               </div>
@@ -246,23 +270,56 @@ export default {
       console.log(Array.prototype.indexOf.call(btn, event.target));
       const btnNum = (Array.prototype.indexOf.call(btn, event.target));
 
+      //寄付カードの各種取得
       let priceArray = document.getElementsByClassName('price'); 
-      const dayArray = document.getElementsByClassName('day'); 
-      const cardArray = document.getElementsByClassName('card'); 
+      let dayArray = document.getElementsByClassName('day'); 
+      let contentArray = document.getElementsByClassName('content'); 
+      let imageArray = document.getElementsByClassName('contentsImg'); 
+      // const cardArray = document.getElementsByClassName('card'); 
       const modalContent = document.getElementsByClassName('modal-content'); 
-      console.log(priceArray[btnNum]);
-      let priceClone = priceArray[btnNum].cloneNode(true);
+      console.log(imageArray[btnNum]);
+
+      let priceClone = priceArray[btnNum].cloneNode(true);//価格のhtmlクローン
       console.log("priceClone");
+      let dayClone = dayArray[btnNum].cloneNode(true);//掲載期間のhtmlクローン
+      console.log("dayClone");
+      let contentClone = contentArray[btnNum].cloneNode(true);//説明文のhtmlクローン
+      console.log("contentClone");
+      let imageClone = imageArray[btnNum].cloneNode(true);//画像のhtmlクローン
+      console.log("imageClone");
       console.log(priceClone);
+      console.log(dayClone);
+      console.log(contentClone);
+      console.log(imageClone);
+      console.log(priceArray[btnNum]);
       console.log(dayArray[btnNum]);
-      console.log(cardArray[btnNum]);
-      const modalContentPrice = modalContent[0].getElementsByClassName('price'); 
+      console.log(contentArray[btnNum]);
+      console.log(imageArray[btnNum]);
+      // console.log(cardArray[btnNum]);
+
+      const modalContentPrice = modalContent[0].getElementsByClassName('price'); //modalのpriceクラス取得
             console.log(modalContentPrice);
+      const modalContentDay = modalContent[0].getElementsByClassName('day'); //modalのdayクラス取得
+            console.log(modalContentDay);
+      const modalContentContents = modalContent[0].getElementsByClassName('content'); //modalのcontentクラス取得
+            console.log(modalContentContents);
+      const modalContentImage = modalContent[0].getElementsByClassName('contentsImg'); //modalのcontentsImgクラス取得
+            console.log(modalContentContents);
+
       const modalContentPriceP = modalContent[0].getElementsByClassName('price-p'); 
             console.log(modalContentPriceP);
+      const modalContentDayP = modalContent[0].getElementsByClassName('day-p'); 
+            console.log(modalContentDayP);
+      const modalContentContentsP = modalContent[0].getElementsByClassName('content-p'); 
+            console.log(modalContentContentsP);
+      const modalContentImageP = modalContent[0].getElementsByClassName('image'); 
+            console.log(modalContentImageP);
 
       // console.log(modalContent);
       modalContentPriceP[0].replaceChild(priceClone,modalContentPrice[0]);
+      modalContentDayP[0].replaceChild(dayClone,modalContentDay[0]);
+      modalContentContentsP[0].replaceChild(contentClone,modalContentContents[0]);
+      modalContentImageP[0].replaceChild(imageClone,modalContentImage[0]);
       // console.log(modalContent);
        
 
@@ -378,9 +435,14 @@ section {
 }
 
 .modal-content, .modal-card {
-    width: 80%;
+    width: 40%;
     border-radius: 1%;
 }
+
+// .card-modal{
+//     width: 50%;
+//     margin: auto;
+// }
 
 .test{
   font-weight: bold;
@@ -418,6 +480,15 @@ section {
 	0% { background: #ffea73; }
 	10% { background: #fdf1aa; }
 	100% { background: #ffea73; }
+}
+
+@media screen and (max-width: 768px){
+
+  .modal-content, .modal-card {
+      width: 80%;
+      border-radius: 1%;
+  }
+
 }
 
 </style>

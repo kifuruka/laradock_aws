@@ -2545,6 +2545,30 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2570,23 +2594,61 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       console.log(btn);
       console.log(btn.length);
       console.log(Array.prototype.indexOf.call(btn, event.target));
-      var btnNum = Array.prototype.indexOf.call(btn, event.target);
+      var btnNum = Array.prototype.indexOf.call(btn, event.target); //寄付カードの各種取得
+
       var priceArray = document.getElementsByClassName('price');
       var dayArray = document.getElementsByClassName('day');
-      var cardArray = document.getElementsByClassName('card');
-      var modalContent = document.getElementsByClassName('modal-content');
-      console.log(priceArray[btnNum]);
-      var priceClone = priceArray[btnNum].cloneNode(true);
-      console.log("priceClone");
-      console.log(priceClone);
-      console.log(dayArray[btnNum]);
-      console.log(cardArray[btnNum]);
-      var modalContentPrice = modalContent[0].getElementsByClassName('price');
-      console.log(modalContentPrice);
-      var modalContentPriceP = modalContent[0].getElementsByClassName('price-p');
-      console.log(modalContentPriceP); // console.log(modalContent);
+      var contentArray = document.getElementsByClassName('content');
+      var imageArray = document.getElementsByClassName('contentsImg'); // const cardArray = document.getElementsByClassName('card'); 
 
-      modalContentPriceP[0].replaceChild(priceClone, modalContentPrice[0]); // console.log(modalContent);
+      var modalContent = document.getElementsByClassName('modal-content');
+      console.log(imageArray[btnNum]);
+      var priceClone = priceArray[btnNum].cloneNode(true); //価格のhtmlクローン
+
+      console.log("priceClone");
+      var dayClone = dayArray[btnNum].cloneNode(true); //掲載期間のhtmlクローン
+
+      console.log("dayClone");
+      var contentClone = contentArray[btnNum].cloneNode(true); //説明文のhtmlクローン
+
+      console.log("contentClone");
+      var imageClone = imageArray[btnNum].cloneNode(true); //画像のhtmlクローン
+
+      console.log("imageClone");
+      console.log(priceClone);
+      console.log(dayClone);
+      console.log(contentClone);
+      console.log(imageClone);
+      console.log(priceArray[btnNum]);
+      console.log(dayArray[btnNum]);
+      console.log(contentArray[btnNum]);
+      console.log(imageArray[btnNum]); // console.log(cardArray[btnNum]);
+
+      var modalContentPrice = modalContent[0].getElementsByClassName('price'); //modalのpriceクラス取得
+
+      console.log(modalContentPrice);
+      var modalContentDay = modalContent[0].getElementsByClassName('day'); //modalのdayクラス取得
+
+      console.log(modalContentDay);
+      var modalContentContents = modalContent[0].getElementsByClassName('content'); //modalのcontentクラス取得
+
+      console.log(modalContentContents);
+      var modalContentImage = modalContent[0].getElementsByClassName('contentsImg'); //modalのcontentsImgクラス取得
+
+      console.log(modalContentContents);
+      var modalContentPriceP = modalContent[0].getElementsByClassName('price-p');
+      console.log(modalContentPriceP);
+      var modalContentDayP = modalContent[0].getElementsByClassName('day-p');
+      console.log(modalContentDayP);
+      var modalContentContentsP = modalContent[0].getElementsByClassName('content-p');
+      console.log(modalContentContentsP);
+      var modalContentImageP = modalContent[0].getElementsByClassName('image');
+      console.log(modalContentImageP); // console.log(modalContent);
+
+      modalContentPriceP[0].replaceChild(priceClone, modalContentPrice[0]);
+      modalContentDayP[0].replaceChild(dayClone, modalContentDay[0]);
+      modalContentContentsP[0].replaceChild(contentClone, modalContentContents[0]);
+      modalContentImageP[0].replaceChild(imageClone, modalContentImage[0]); // console.log(modalContent);
 
       console.log("console_fireParentEvent"); // this.$emit("click");
 
@@ -3877,6 +3939,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3891,17 +3965,21 @@ __webpack_require__.r(__webpack_exports__);
       Homeimg3: _images_topvisual_top003_jpg__WEBPACK_IMPORTED_MODULE_3___default.a,
       Homeimg4: _images_topvisual_top04_w583_jpg__WEBPACK_IMPORTED_MODULE_4___default.a
     };
-  } // mounted: function() {
+  },
+  // mounted: function() {
   //   // `this` は vm インスタンスを指します
   //   getimages();
   // },
   // created() {
   //   this.fetchPostTopVisual();
   // },
-  // methods: {
-  //   ...mapActions(["fetchPostTopVisual"])
-  // }
-
+  methods: {
+    routerPush: function routerPush(router) {
+      // 画面丈夫へ移動するためのもの
+      window.scrollTo(0, 0);
+      this.$router.push(router);
+    }
+  }
 });
 
 /***/ }),
@@ -4727,7 +4805,7 @@ exports.push([module.i, "section .container[data-v-79d7a1ee] {\n  max-width: 116
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-8e3066bc] {\n  margin-top: 80px;\n  margin: 80px 5% 0 5%;\n}\nsection .container[data-v-8e3066bc] {\n  max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-8e3066bc] {\n  padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-8e3066bc] {\n  margin-bottom: 32px;\n}\n.u-img[data-v-8e3066bc] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-8e3066bc] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-8e3066bc] {\n  margin-bottom: 100px;\n}\n.child-flame .content-flame h1[data-v-8e3066bc] {\n  font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n  font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-8e3066bc] {\n  margin-top: 32px;\n}\n.company-card[data-v-8e3066bc] {\n  background-color: #828282;\n}\n.company-card p[data-v-8e3066bc] {\n  text-align: center;\n  font-size: 1.6rem;\n  margin-top: 16px;\n  color: white;\n}\n.company-card .company-btn-flame[data-v-8e3066bc] {\n  margin-top: 32px;\n  margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-8e3066bc] {\n  background-color: #db6b6b;\n  border-color: #db6b6b;\n  color: white;\n}\n.modal-content[data-v-8e3066bc], .modal-card[data-v-8e3066bc] {\n  width: 80%;\n  border-radius: 1%;\n}\n.test[data-v-8e3066bc] {\n  font-weight: bold;\n}\n.kessai[data-v-8e3066bc] {\n  display: block;\n  cursor: pointer;\n  margin: 1em auto;\n  border-radius: 4px;\n  box-sizing: border-box;\n  color: #4a4a4a;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: inherit;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s, -webkit-transform 0.3s;\n}\n.kessai[data-v-8e3066bc]:hover {\n  -webkit-animation: flash-data-v-8e3066bc 1s both;\n          animation: flash-data-v-8e3066bc 1s both;\n}\n.kessai[data-v-8e3066bc]:active {\n  color: #ddd;\n  background: #ffea73;\n  transition-duration: 0.1s;\n}\n@-webkit-keyframes flash-data-v-8e3066bc {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@keyframes flash-data-v-8e3066bc {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}", ""]);
+exports.push([module.i, "section[data-v-8e3066bc] {\n  margin-top: 80px;\n  margin: 80px 5% 0 5%;\n}\nsection .container[data-v-8e3066bc] {\n  max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-8e3066bc] {\n  padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-8e3066bc] {\n  margin-bottom: 32px;\n}\n.u-img[data-v-8e3066bc] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-8e3066bc] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-8e3066bc] {\n  margin-bottom: 100px;\n}\n.child-flame .content-flame h1[data-v-8e3066bc] {\n  font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n  font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-8e3066bc] {\n  margin-top: 32px;\n}\n.company-card[data-v-8e3066bc] {\n  background-color: #828282;\n}\n.company-card p[data-v-8e3066bc] {\n  text-align: center;\n  font-size: 1.6rem;\n  margin-top: 16px;\n  color: white;\n}\n.company-card .company-btn-flame[data-v-8e3066bc] {\n  margin-top: 32px;\n  margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-8e3066bc] {\n  background-color: #db6b6b;\n  border-color: #db6b6b;\n  color: white;\n}\n.modal-content[data-v-8e3066bc], .modal-card[data-v-8e3066bc] {\n  width: 40%;\n  border-radius: 1%;\n}\n.test[data-v-8e3066bc] {\n  font-weight: bold;\n}\n.kessai[data-v-8e3066bc] {\n  display: block;\n  cursor: pointer;\n  margin: 1em auto;\n  border-radius: 4px;\n  box-sizing: border-box;\n  color: #4a4a4a;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: inherit;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s, -webkit-transform 0.3s;\n}\n.kessai[data-v-8e3066bc]:hover {\n  -webkit-animation: flash-data-v-8e3066bc 1s both;\n          animation: flash-data-v-8e3066bc 1s both;\n}\n.kessai[data-v-8e3066bc]:active {\n  color: #ddd;\n  background: #ffea73;\n  transition-duration: 0.1s;\n}\n@-webkit-keyframes flash-data-v-8e3066bc {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@keyframes flash-data-v-8e3066bc {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@media screen and (max-width: 768px) {\n.modal-content[data-v-8e3066bc], .modal-card[data-v-8e3066bc] {\n    width: 80%;\n    border-radius: 1%;\n}\n}", ""]);
 
 
 
@@ -34104,23 +34182,19 @@ var render = function() {
                         )
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "content" }, [
-                        _vm._v(
-                          "東海大学競走部の学生がランニング講座を開催します。学生トップレベルのランナーと一緒に走ることができ、かつ、ランニングについて指導させていただきます。"
-                        )
-                      ]),
-                      _vm._v(" "),
                       _vm._m(10),
                       _vm._v(" "),
-                      _vm._m(11)
+                      _vm._m(11),
+                      _vm._v(" "),
+                      _vm._m(12)
                     ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "card card-margin" }, [
                     _c("div", { staticClass: "card-content company-card" }, [
-                      _vm._m(12),
-                      _vm._v(" "),
                       _vm._m(13),
+                      _vm._v(" "),
+                      _vm._m(14),
                       _vm._v(" "),
                       _c(
                         "div",
@@ -34152,8 +34226,10 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("div", { staticClass: "modal-content" }, [
-            _c("div", { staticClass: "card card-margin" }, [
+            _c("div", { staticClass: "card card-modal" }, [
               _c("div", { staticClass: "card-content" }, [
+                _vm._m(15),
+                _vm._v(" "),
                 _c("div", { staticClass: "media card-flame" }, [
                   _c(
                     "div",
@@ -34177,7 +34253,11 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _vm._m(14)
+                _vm._m(16),
+                _vm._v(" "),
+                _vm._m(17),
+                _vm._v(" "),
+                _vm._m(18)
               ])
             ])
           ]),
@@ -34199,6 +34279,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "card-image" }, [
       _c("figure", { staticClass: "image is-4by3" }, [
         _c("img", {
+          staticClass: "contentsImg",
           attrs: {
             src:
               "https://cdn.mainichi.jp/vol1/2019/01/03/20190103k0000m050077000p/6.jpg?1",
@@ -34237,6 +34318,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "card-image" }, [
       _c("figure", { staticClass: "image is-4by3" }, [
         _c("img", {
+          staticClass: "contentsImg",
           attrs: {
             src:
               "https://twave.tokai-eic.co.jp/upload/save_image/0228114056_5c774a385ae28.jpg",
@@ -34275,6 +34357,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "card-image" }, [
       _c("figure", { staticClass: "image is-4by3" }, [
         _c("img", {
+          staticClass: "contentsImg",
           attrs: {
             src:
               "https://twave.tokai-eic.co.jp/upload/save_image/komonoNo16.jpg",
@@ -34313,12 +34396,25 @@ var staticRenderFns = [
     return _c("div", { staticClass: "card-image" }, [
       _c("figure", { staticClass: "image is-4by3" }, [
         _c("img", {
+          staticClass: "contentsImg",
           attrs: {
             src:
               "http://daigaku-ekiden.com/syutsujyou/images/40dfcd39e8d2f42bafeabcc095bfdd84a28db5f2.jpg",
             alt: "Placeholder image"
           }
         })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content-p" }, [
+      _c("span", { staticClass: "content" }, [
+        _vm._v(
+          "東海大学競走部の学生がランニング講座を開催します。学生トップレベルのランナーと一緒に走ることができ、かつ、ランニングについて指導させていただきます。"
+        )
       ])
     ])
   },
@@ -34366,10 +34462,50 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-image" }, [
+      _c("figure", { staticClass: "image" }, [
+        _c("img", {
+          staticClass: "contentsImg",
+          attrs: {
+            src:
+              "https://twave.tokai-eic.co.jp/upload/save_image/komonoNo16.jpg",
+            alt: "Placeholder image"
+          }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content-p" }, [
+      _c("span", { staticClass: "content" }, [
+        _vm._v(
+          "東海大学競走部の学生がランニング講座を開催します。学生トップレベルのランナーと一緒に走ることができ、かつ、ランニングについて指導させていただきます。"
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", [
       _c("p", { staticClass: "price-p" }, [
         _vm._v("\n                  寄付金額\n                  "),
         _c("span", { staticClass: "price" }, [_vm._v("¥8,000")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("p", { staticClass: "day-p" }, [
+        _vm._v("\n                  掲載期間\n                  "),
+        _c("span", { staticClass: "day" }, [_vm._v("2019/04/19")])
       ])
     ])
   }
@@ -34454,29 +34590,24 @@ var render = function() {
                     _vm._v(" "),
                     _vm._m(0),
                     _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "media-content btn-flame" },
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass: "button is-medium custom-btn",
-                            attrs: { to: "/" }
-                          },
-                          [_c("strong", [_vm._v("この活動を応援")])]
-                        )
-                      ],
-                      1
-                    ),
+                    _c("div", { staticClass: "media-content btn-flame" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "button is-medium custom-btn",
+                          attrs: { href: _vm.activity.school.url }
+                        },
+                        [
+                          _c("strong", [
+                            _vm._v(_vm._s(_vm.activity.school.school_name))
+                          ])
+                        ]
+                      )
+                    ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "web-link-flame" }, [
-                      _c("p", { staticClass: "top-title" }, [
-                        _vm._v("公式WEBサイト")
-                      ]),
-                      _vm._v(" "),
-                      _c("a", { attrs: { href: _vm.activity.school.url } })
-                    ])
+                    _c("div", { staticClass: "web-link-flame" }),
+                    _vm._v(" "),
+                    _vm._m(1)
                   ])
                 ]
               )
@@ -34498,6 +34629,30 @@ var staticRenderFns = [
         _vm._v("\n                あと\n                "),
         _c("span", { staticClass: "top-contents-data" }, [_vm._v("244")]),
         _vm._v("日\n              ")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "sns-link-flame" }, [
+      _c("div", { staticClass: "media-content btn-flame" }, [
+        _c("a", { staticClass: "button is-medium fb-btn" }, [
+          _c("strong", [_vm._v("Facebookでシェア")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "media-content btn-flame" }, [
+        _c("a", { staticClass: "button is-medium tw-btn" }, [
+          _c("strong", [_vm._v("Twitterでシェア")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "media-content btn-flame" }, [
+        _c("a", { staticClass: "button is-medium li-btn" }, [
+          _c("strong", [_vm._v("LINEでシェア")])
+        ])
       ])
     ])
   }
@@ -35837,34 +35992,48 @@ var render = function() {
     _c("div", { staticClass: "tile is-ancestor" }, [
       _c("div", { staticClass: "tile is-parent parent-frame" }, [
         _c("div", { staticClass: "tile is-child" }, [
-          _c("div", { staticClass: "card" }, [
-            _c(
-              "div",
-              {
-                staticStyle: { position: "relative" },
-                attrs: { calss: "card_image_container" }
-              },
-              [
-                _c("div", { staticClass: "card-image item item--first" }, [
-                  _c(
-                    "figure",
-                    { staticClass: "image" },
-                    [
-                      _c("router-link", { attrs: { to: "/Donation" } }, [
-                        _c("img", {
-                          staticClass: "u-img",
-                          attrs: { src: _vm.Homeimg1, alt: "#" }
-                        })
-                      ])
-                    ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _vm._m(0)
-              ]
-            )
-          ])
+          _c(
+            "div",
+            {
+              staticClass: "card",
+              on: {
+                click: function($event) {
+                  return _vm.routerPush({
+                    name: "DetailActivity",
+                    params: { id: 1 }
+                  })
+                }
+              }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticStyle: { position: "relative" },
+                  attrs: { calss: "card_image_container" }
+                },
+                [
+                  _c("div", { staticClass: "card-image item item--first" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "image" },
+                      [
+                        _c("router-link", { attrs: { to: "/activity/1" } }, [
+                          _c("img", {
+                            staticClass: "u-img",
+                            attrs: { src: _vm.Homeimg1, alt: "#" }
+                          })
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(0)
+                ]
+              )
+            ]
+          )
         ])
       ]),
       _vm._v(" "),
@@ -35880,42 +36049,56 @@ var render = function() {
                   staticStyle: { "margin-bottom": "0" }
                 },
                 [
-                  _c("div", { staticClass: "card" }, [
-                    _c(
-                      "div",
-                      {
-                        staticStyle: { position: "relative" },
-                        attrs: { calss: "card_image_container" }
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "card-image item item--first" },
-                          [
-                            _c(
-                              "figure",
-                              { staticClass: "image" },
-                              [
-                                _c(
-                                  "router-link",
-                                  { attrs: { to: "/Donation" } },
-                                  [
-                                    _c("img", {
-                                      staticClass: "u-img",
-                                      attrs: { src: _vm.Homeimg2, alt: "" }
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _vm._m(1)
-                      ]
-                    )
-                  ])
+                  _c(
+                    "div",
+                    {
+                      staticClass: "card",
+                      on: {
+                        click: function($event) {
+                          return _vm.routerPush({
+                            name: "DetailActivity",
+                            params: { id: 1 }
+                          })
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticStyle: { position: "relative" },
+                          attrs: { calss: "card_image_container" }
+                        },
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "card-image item item--first" },
+                            [
+                              _c(
+                                "figure",
+                                { staticClass: "image" },
+                                [
+                                  _c(
+                                    "router-link",
+                                    { attrs: { to: "/activity/1" } },
+                                    [
+                                      _c("img", {
+                                        staticClass: "u-img",
+                                        attrs: { src: _vm.Homeimg2, alt: "" }
+                                      })
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _vm._m(1)
+                        ]
+                      )
+                    ]
+                  )
                 ]
               ),
               _vm._v(" "),
@@ -35926,76 +36109,104 @@ var render = function() {
                     "tile is-child is-6 grandson-frame right-grandson"
                 },
                 [
-                  _c("div", { staticClass: "card" }, [
-                    _c(
-                      "div",
-                      {
-                        staticStyle: { position: "relative" },
-                        attrs: { calss: "card_image_container" }
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "card-image item item--first" },
-                          [
-                            _c(
-                              "figure",
-                              { staticClass: "image" },
-                              [
-                                _c(
-                                  "router-link",
-                                  { attrs: { to: "/Donation" } },
-                                  [
-                                    _c("img", {
-                                      staticClass: "u-img",
-                                      attrs: { src: _vm.Homeimg3, alt: "#" }
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _vm._m(2)
-                      ]
-                    )
-                  ])
+                  _c(
+                    "div",
+                    {
+                      staticClass: "card",
+                      on: {
+                        click: function($event) {
+                          return _vm.routerPush({
+                            name: "DetailActivity",
+                            params: { id: 1 }
+                          })
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticStyle: { position: "relative" },
+                          attrs: { calss: "card_image_container" }
+                        },
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "card-image item item--first" },
+                            [
+                              _c(
+                                "figure",
+                                { staticClass: "image" },
+                                [
+                                  _c(
+                                    "router-link",
+                                    { attrs: { to: "/activity/1" } },
+                                    [
+                                      _c("img", {
+                                        staticClass: "u-img",
+                                        attrs: { src: _vm.Homeimg3, alt: "#" }
+                                      })
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _vm._m(2)
+                        ]
+                      )
+                    ]
+                  )
                 ]
               )
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "tile child-flame" }, [
-            _c("div", { staticClass: "card" }, [
-              _c(
-                "div",
-                {
-                  staticStyle: { position: "relative" },
-                  attrs: { calss: "card_image_container" }
-                },
-                [
-                  _c("div", { staticClass: "card-image item item--first" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "image" },
-                      [
-                        _c("router-link", { attrs: { to: "/Donation" } }, [
-                          _c("img", {
-                            staticClass: "u-img",
-                            attrs: { src: _vm.Homeimg4, alt: "#" }
-                          })
-                        ])
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(3)
-                ]
-              )
-            ])
+            _c(
+              "div",
+              {
+                staticClass: "card",
+                on: {
+                  click: function($event) {
+                    return _vm.routerPush({
+                      name: "DetailActivity",
+                      params: { id: 1 }
+                    })
+                  }
+                }
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticStyle: { position: "relative" },
+                    attrs: { calss: "card_image_container" }
+                  },
+                  [
+                    _c("div", { staticClass: "card-image item item--first" }, [
+                      _c(
+                        "figure",
+                        { staticClass: "image" },
+                        [
+                          _c("router-link", { attrs: { to: "/Donation" } }, [
+                            _c("img", {
+                              staticClass: "u-img",
+                              attrs: { src: _vm.Homeimg4, alt: "#" }
+                            })
+                          ])
+                        ],
+                        1
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(3)
+                  ]
+                )
+              ]
+            )
           ])
         ])
       ])

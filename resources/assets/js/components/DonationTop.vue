@@ -40,17 +40,17 @@
                   <span class="top-contents-data">244</span>日
                 </p>
               </div>
-              <div class="media-content btn-flame">
-                <router-link to="/" class="button is-medium custom-btn">
-                  <strong>この活動を応援</strong>
-                </router-link>
+              <div class="media-content btn-flame" >
+                <!-- <router-link to="/" class="button is-medium custom-btn" > -->
+                  <a v-bind:href="activity.school.url" class="button is-medium custom-btn"><strong>{{activity.school.school_name}}</strong></a>
+                <!-- </router-link> -->
               </div>
 
-              <div class="web-link-flame">
-                <p class="top-title">公式WEBサイト</p>
-                <a v-bind:href="activity.school.url"></a>
+              <div class="web-link-flame" >
+                <!-- <p class="top-title">公式WEBサイト</p> -->
+                
               </div>
-              <!-- <div class="sns-link-flame">
+              <div class="sns-link-flame">
                 <div class="media-content btn-flame">
                   <a class="button is-medium fb-btn">
                     <strong>Facebookでシェア</strong>
@@ -68,7 +68,7 @@
                     <strong>LINEでシェア</strong>
                   </a>
                 </div>
-              </div>-->
+              </div>
             </div>
           </div>
         </div>

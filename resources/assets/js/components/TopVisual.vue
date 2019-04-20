@@ -5,11 +5,14 @@
       <!-- 左 -->
       <div class="tile is-parent parent-frame">
         <div class="tile is-child">
-          <div class="card">
+          <div class="card" @click="routerPush({
+                name:'DetailActivity',
+                params:{id:1}
+                })">
             <div calss="card_image_container" style="position: relative;">
               <div class="card-image item item--first">
                 <figure class="image">
-                  <router-link to="/Donation">
+                  <router-link to="/activity/1">
                     <img :src="Homeimg1" class="u-img" alt="#">
                   </router-link>
                   <!-- <img :src="school.school_img" class="card-img-top" alt="Placeholder image"> -->
@@ -21,7 +24,7 @@
               </div>
             </div>
           </div>
-          <!-- <router-link to="/Donation">
+          <!-- <router-link to="/activity/1">
             <img :src="Homeimg1" class="u-img" alt="#">
           </router-link> -->
         </div>
@@ -33,11 +36,14 @@
             <div class="tile is-parent upper-frame">
               <div class="tile is-child is-6 grandson-frame left-grandson" style="margin-bottom:0;">
 
-                <div class="card">
+                <div class="card" @click="routerPush({
+                name:'DetailActivity',
+                params:{id:1}
+                })" >
                   <div calss="card_image_container" style="position: relative;">
                     <div class="card-image item item--first">
                       <figure class="image">
-                        <router-link to="/Donation">
+                        <router-link to="/activity/1">
                         <img :src="Homeimg2" class="u-img" alt>
                         </router-link>
                         <!-- <img :src="school.school_img" class="card-img-top" alt="Placeholder image"> -->
@@ -52,11 +58,14 @@
               </div>
               <div class="tile is-child is-6 grandson-frame right-grandson">
 
-                <div class="card">
+                <div class="card" @click="routerPush({
+                name:'DetailActivity',
+                params:{id:1}
+                })">
                   <div calss="card_image_container" style="position: relative;">
                     <div class="card-image item item--first">
                       <figure class="image">
-                        <router-link to="/Donation">
+                        <router-link to="/activity/1">
                           <img :src="Homeimg3" class="u-img" alt="#">
                         </router-link>
                         <!-- <img :src="school.school_img" class="card-img-top" alt="Placeholder image"> -->
@@ -74,7 +83,10 @@
 
           <div class="tile child-flame">
 
-            <div class="card">
+            <div class="card" @click="routerPush({
+                name:'DetailActivity',
+                params:{id:1}
+                })">
               <div calss="card_image_container" style="position: relative;">
                 <div class="card-image item item--first">
                   <figure class="image">
@@ -113,7 +125,7 @@ export default {
       Homeimg3,
       Homeimg4
     };
-  }
+  },
 
   // mounted: function() {
   //   // `this` は vm インスタンスを指します
@@ -124,10 +136,15 @@ export default {
   //   this.fetchPostTopVisual();
 
   // },
-  // methods: {
+  methods: {
 
-  //   ...mapActions(["fetchPostTopVisual"])
-  // }
+    routerPush(router) {
+      // 画面丈夫へ移動するためのもの
+      window.scrollTo(0, 0);
+      this.$router.push(router);
+    },
+
+  }
 };
 </script>
 
