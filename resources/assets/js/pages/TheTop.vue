@@ -13,7 +13,7 @@
 
 <script>
 import TopVisual from "../components/TopVisual";
-import Search from "../components/Search";
+import Search from "../components/SearchDemo";
 import ActivityCard from "../components/ActivityCard";
 // import ButtonMore from "../components/ButtonMore";
 import TopMessage from "../components/TopMessage";

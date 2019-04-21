@@ -50,8 +50,8 @@
                       </figure>
                     </div>
                     <div class="school_msg has-text-centered">
-                      <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
-                      <p class="subtitle is-6 is-size-7-mobile school_message">全国制覇したい</p>
+                      <p class="title is-7 is-size-7-mobile school_name">早稲田大学</p>
+                      <p class="subtitle is-6 is-size-7-mobile school_message">国体に出たい</p>
                     </div>
                   </div>
                 </div>
@@ -72,8 +72,8 @@
                       </figure>
                     </div>
                     <div class="school_msg has-text-centered">
-                      <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
-                      <p class="subtitle is-6 is-size-7-mobile school_message">全国制覇したい</p>
+                      <p class="title is-7 is-size-7-mobile school_name">東海大学</p>
+                      <p class="subtitle is-6 is-size-7-mobile school_message">箱根駅伝で優勝したい</p>
                     </div>
                   </div>
                 </div>
@@ -97,8 +97,8 @@
                   </figure>
                 </div>
                 <div class="school_msg has-text-centered">
-                  <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
-                  <p class="subtitle is-6 is-size-7-mobile school_message">全国制覇したい</p>
+                  <p class="title is-7 is-size-7-mobile school_name">海洋大学</p>
+                  <p class="subtitle is-6 is-size-7-mobile school_message">ナマズの研究がしたい</p>
                 </div>
               </div>
             </div>
