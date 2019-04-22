@@ -12,6 +12,7 @@ class CreateActivitiesTable extends Migration
      * @return void
      */
     public function up()
+
     {
         Schema::create('activities', function (Blueprint $table) {
             $table->increments('id');    
@@ -21,9 +22,8 @@ class CreateActivitiesTable extends Migration
             $table->text('top_contents')->nullable();
             $table->integer('total_donation')->nullable();
             $table->integer('fans')->nullable();
+            $table->string('zanday')->nullable();
             $table->string('activity_img',255)->nullable();
-            $table->text('url')->nullable();
-            
             $table->string('sub_title1',255);
             $table->text('sub_contents1');
             $table->string('sub_image1',255)->nullable();
@@ -33,7 +33,7 @@ class CreateActivitiesTable extends Migration
             $table->string('sub_title3',255);
             $table->text('sub_contents3');
             $table->string('sub_image3',255)->nullable();
-
+            $table->text('url')->nullable();
             $table->timestamps();
 
             $table->foreign('school_id')

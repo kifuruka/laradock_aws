@@ -17,7 +17,7 @@ class CreateDonationsTable extends Migration
             $table->increments('id');
             $table->integer('activity_id')->unsigned();
             $table->string('title',100);
-            $table->text('contents')->nullable();
+            // $table->text('contents')->nullable();
             $table->integer('price')->nullable();
             $table->string('donation_img',255)->nullable();
             $table->timestamp('period_at')->nullable();
