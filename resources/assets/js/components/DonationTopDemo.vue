@@ -2,18 +2,22 @@
   <section v-if="isActivity">
     <div class="container">
       <div class="donation-title">
-        <h1>{{activity.title}}</h1>
+        <!-- <h1>{{activity.title}}</h1> -->
+        <h1>{{title}}</h1>
       </div>
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <!-- 左側 -->
           <div class="tile is-child is-8 child-flame">
             <div class="donaition-img-flame">
-              <img :src="activity.activity_img" class="u-img" alt="#">
+              <!-- <img :src="activity.activity_img" class="u-img" alt="#"> -->
+              <img src="https://number.ismcdn.jp/mwimgs/1/b/-/img_1babe2dc9b3a5be60aa17ca4da08b19f198166.jpg">
             </div>
             <div class="donaition-text-flame">
-              <h1>{{activity.activity_name}}</h1>
-              <p>{{activity.top_contents}}</p>
+              <!-- <h1>{{activity.activity_name}}</h1> -->
+              <h1>{{activity_name}}</h1>
+              <p>{{top_contents}}</p>
+              <!-- <p>{{activity.top_contents}}</p> -->
             </div>
           </div>
 
@@ -23,14 +27,16 @@
               <div>
                 <p class="top-title">寄付総額</p>
                 <p class="top-contents">
-                  {{activity.total_donation}}
+                  <!-- {{activity.total_donation}} -->
+                  {{total_donation}}
                   <span>円</span>
                 </p>
               </div>
               <div>
                 <p class="top-title">応援者数</p>
                 <p class="top-subtitle">
-                  <span class="top-contents-data">{{activity.fans}}</span> 人
+                  <!-- <span class="top-contents-data">{{activity.fans}}</span> 人 -->
+                  <span class="top-contents-data">{{fans}}</span> 人
                 </p>
               </div>
               <div>
@@ -84,7 +90,14 @@ import { mapGetters } from "vuex";
 export default {
   data() {
     return {
-      DonationImg
+      DonationImg,
+      title:'箱根駅伝優勝したい',
+      name:'東海大学',
+      activity_name:'陸上部',
+      top_contents:'「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      total_donation:'10,000,000',
+      fans:'98',
+
     };
   },
   computed: {

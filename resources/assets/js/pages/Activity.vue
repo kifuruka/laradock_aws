@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import DonationTop from "../components/DonationTop";
-import DonationMain from "../components/DonationMain";
+import DonationTop from "../components/DonationTopDemo";
+import DonationMain from "../components/DonationMainDemo";
 import SchoolSubInfo from "../components/SchoolSubInfo";
 import { mapGetters, mapActions } from "vuex";
 

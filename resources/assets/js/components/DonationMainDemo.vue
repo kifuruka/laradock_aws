@@ -1,34 +1,43 @@
 <template>
-  <section v-if="isActivity">
+  <section >
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <div class="tile is-child is-8 child-flame">
             <div class="content-flame">
-              <h1>{{activity.sub_title1}}</h1>
+              <!-- <h1>{{activity.sub_title1}}</h1> -->
+              <h1>{{sub_title1}}</h1>
               <div class="donaition-text-flame">
-                <p>{{activity.sub_contents1}}</p>
+                <!-- <p>{{activity.sub_contents1}}</p> -->
+                <p>{{sub_contents1}}</p>
               </div>
               <div class="donaition-img-flame">
-                <img :src="activity.sub_image1" class="u-img" alt="#">
+                <!-- <img :src="activity.sub_image1" class="u-img" alt="#"> -->
+                <img src="https://www.u-tokai.ac.jp/campus_life/tokai_sports/%E7%AE%B1%E6%A0%B9%E9%A7%85%E4%BC%9D1%E5%8C%BA_1100.jpg">
               </div>
             </div>
             <div class="content-flame">
-              <h1>{{activity.sub_title2}}</h1>
+              <!-- <h1>{{activity.sub_title2}}</h1> -->
+              <h1>{{sub_title2}}</h1>
               <div class="donaition-text-flame">
-                <p>{{activity.sub_contents2}}</p>
+                <!-- <p>{{activity.sub_contents2}}</p> -->
+                <p>{{sub_contents2}}</p>
               </div>
               <div class="donaition-img-flame">
-                <img :src="activity.sub_image2" class="u-img" alt="#">
+                <!-- <img :src="activity.sub_image2" class="u-img" alt="#"> -->
+                <img src="https://www.u-tokai.ac.jp/campus_life/tokai_sports/%E7%AE%B1%E6%A0%B9%E9%A7%85%E4%BC%9D%E8%A8%98%E8%80%85%E4%BC%9A%E8%A6%8B1_1100.jpg">
               </div>
             </div>
             <div class="content-flame">
-              <h1>{{activity.sub_title3}}</h1>
+              <!-- <h1>{{activity.sub_title3}}</h1> -->
+              <h1>{{sub_title3}}</h1>
               <div class="donaition-text-flame">
-                <p>{{activity.sub_contents3}}</p>
+                <!-- <p>{{activity.sub_contents3}}</p> -->
+                <p>{{sub_contents3}}</p>
               </div>
               <div class="donaition-img-flame">
-                <img :src="activity.sub_image3" class="u-img" alt="#">
+                <!-- <img :src="activity.sub_image3" class="u-img" alt="#"> -->
+                <img src="https://hamarepo.com/story/images/7048/large_image.jpg">
               </div>
             </div>
           </div>
@@ -250,7 +259,17 @@ export default {
     return {
       DonationImg,
       DonationImg2,
-      DonationImg3
+      DonationImg3,
+      sub_title1:'箱根駅伝で優勝したい',
+      sub_title2:'箱根駅伝で優勝したい',
+      sub_title3:'箱根駅伝で優勝したい',
+      sub_contents1:'「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      sub_contents2:'「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      sub_contents3:'「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      // activity_name:'陸上部',
+      // top_contents:'「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      // total_donation:'10,000,000',
+      // fans:'98',
     };
   },
   computed: {

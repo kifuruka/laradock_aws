@@ -20,8 +20,8 @@
           <div class="tile is-child is-4">
             <div class="school-right-flame">
               <h1>{{activity.school.school_name}}</h1>
-              <p>公式SNS</p>
-              <div class="sns-link">
+              <!-- <p>公式SNS</p> -->
+              <!-- <div class="sns-link">
                 <a href>Facebook</a>
               </div>
               <div class="sns-link">
@@ -29,7 +29,27 @@
               </div>
               <div class="sns-link">
                 <a href>Instagram</a>
+              </div> -->
+              <div class="sns-link-flame">
+                <div class="media-content btn-flame">
+                  <a class="button is-medium fb-btn">
+                    <strong>Facebookでシェア</strong>
+                  </a>
+                </div>
+
+                <div class="media-content btn-flame">
+                  <a class="button is-medium tw-btn">
+                    <strong>Twitterでシェア</strong>
+                  </a>
+                </div>
+
+                <div class="media-content btn-flame">
+                  <a class="button is-medium li-btn">
+                    <strong>LINEでシェア</strong>
+                  </a>
+                </div>
               </div>
+              
             </div>
             <div class="media-content btn-flame">
               <a
@@ -100,7 +120,7 @@ section {
   h1 {
     font-size: 3rem;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
     padding-bottom: 16px;
   }
 
@@ -108,7 +128,7 @@ section {
     font-size: 1.8rem;
   }
   div {
-    text-align: right;
+    text-align: center;
     a {
       font-weight: bold;
       font-size: 1.6rem;
@@ -132,6 +152,33 @@ section {
 
 .img-flame {
   padding: 24px;
+}
+
+.sns-link-flame {
+  margin-top: 40px;
+
+  .fb-btn,
+  .tw-btn,
+  .li-btn {
+    color: white;
+    height: 4rem;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .fb-btn {
+    border-color: #3b5998;
+    background-color: #3b5998;
+  }
+  .tw-btn {
+    border-color: #55acee;
+    background-color: #55acee;
+  }
+  .li-btn {
+    border-color: #00b900;
+    background-color: #00b900;
+  }
 }
 
 @media screen and (max-width: 768px) {

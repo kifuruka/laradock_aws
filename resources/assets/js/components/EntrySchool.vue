@@ -104,7 +104,8 @@ section {
       font-weight: bolder;
     }
     h2 {
-      font-size: 1.7rem;
+      color: white;
+      font-size: 1.5rem;
       font-weight: bolder;
     }
     .feature {
