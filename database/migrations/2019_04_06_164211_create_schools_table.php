@@ -27,20 +27,19 @@ class CreateSchoolsTable extends Migration
             $table->string('sub_title3',255);
             $table->text('sub_contents3');
             $table->string('sub_image3',255)->nullable();
-            $table->string('tel',20)->nullable();
+            $table->text('url')->nullable();
             $table->string('school_img')->nullable();
             $table->string('school_logo')->nullable();
-            $table->text('url')->nullable();
-            $table->string('postal_code',10)->nullable();
-            $table->string('s_state',50)->nullable();
-            $table->string('s_city',50)->nullable();
-            $table->string('s_address1',100)->nullable();
-            $table->string('s_address2',100)->nullable();
-            $table->integer('school_type');
-            $table->boolean('is_agreement')->default(0);
             $table->timestamps();
-
-
+            
+            // $table->string('tel',20)->nullable();
+            // $table->string('postal_code',10)->nullable();
+            // $table->string('s_state',50)->nullable();
+            // $table->string('s_city',50)->nullable();
+            // $table->string('s_address1',100)->nullable();
+            // $table->string('s_address2',100)->nullable();
+            // $table->integer('school_type');
+            // $table->boolean('is_agreement')->default(0);
         });
     }
 
