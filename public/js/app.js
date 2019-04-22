@@ -1891,6 +1891,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1900,7 +1902,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   data: function data() {
     return {
       info: null,
-      count: 3
+      count: 3,
+      show: true,
+      ok: true
     };
   },
   computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])({
@@ -3042,6 +3046,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3522,6 +3543,26 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // Vuexの読み込み
 
  // import router from "../router";
@@ -3886,6 +3927,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -3908,6 +3951,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_topvisual_top003_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_topvisual_top003_jpg__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _images_topvisual_top04_w583_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/topvisual/top04_w583.jpg */ "./resources/assets/images/topvisual/top04_w583.jpg");
 /* harmony import */ var _images_topvisual_top04_w583_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_topvisual_top04_w583_jpg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_topvisual_joanna_kosinska_129039_unsplash_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/topvisual/joanna-kosinska-129039-unsplash.jpg */ "./resources/assets/images/topvisual/joanna-kosinska-129039-unsplash.jpg");
+/* harmony import */ var _images_topvisual_joanna_kosinska_129039_unsplash_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_topvisual_joanna_kosinska_129039_unsplash_jpg__WEBPACK_IMPORTED_MODULE_5__);
 //
 //
 //
@@ -4019,6 +4064,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
@@ -4738,7 +4803,7 @@ __webpack_require__.r(__webpack_exports__);
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\nimg[data-v-5e0b4614] {\n  border-radius: 1%;\n}\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n  margin-bottom: 5rem;\n}\n.title[data-v-5e0b4614] {\n  text-align: center;\n}\n.title h2[data-v-5e0b4614] {\n  font-size: 1.7rem;\n  font-weight: bolder;\n}\n.title span[data-v-5e0b4614] {\n  background: linear-gradient(transparent 80%, #ffe035 70%);\n}\n.container[data-v-5e0b4614] {\n  width: 100%;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  flex-wrap: wrap;\n}\n.card-box[data-v-5e0b4614] {\n  background-color: #fff;\n  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\n}\n.column[data-v-5e0b4614] {\n  padding: 0;\n  padding-bottom: 0.75rem;\n  margin: 1%;\n  border-radius: 1%;\n}\n.column.is-one-third[data-v-5e0b4614],\n.column.is-one-third-tablet[data-v-5e0b4614] {\n  flex: none;\n  width: 31.3333%;\n}\n.card[data-v-5e0b4614] {\n  border-radius: 1%;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n    padding-top: 0;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.column[data-v-5e0b4614] {\n    padding: 0;\n    padding-bottom: 0.75rem;\n    margin: 0;\n    border-radius: 1%;\n}\n.column.is-one-third[data-v-5e0b4614],\n.column.is-one-third-tablet[data-v-5e0b4614] {\n    flex: none;\n    width: 100%;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n    border-radius: 1%;\n}\n.mediasize[data-v-5e0b4614] {\n    padding: 0;\n}\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\nimg[data-v-5e0b4614] {\n  border-radius: 1%;\n}\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n  margin-bottom: 5rem;\n}\n.title[data-v-5e0b4614] {\n  text-align: center;\n}\n.title h2[data-v-5e0b4614] {\n  font-size: 1.7rem;\n  font-weight: bolder;\n}\n.title span[data-v-5e0b4614] {\n  background: linear-gradient(transparent 80%, #ffe035 70%);\n}\n.container[data-v-5e0b4614] {\n  width: 100%;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  flex-wrap: wrap;\n}\n.card-box[data-v-5e0b4614] {\n  background-color: #fff;\n  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\n}\n.column[data-v-5e0b4614] {\n  padding: 0;\n  padding-bottom: 0.75rem;\n  margin: 1%;\n  border-radius: 1%;\n}\n.column.is-one-third[data-v-5e0b4614],\n.column.is-one-third-tablet[data-v-5e0b4614] {\n  flex: none;\n  width: 31.3333%;\n}\n.card[data-v-5e0b4614] {\n  border-radius: 1%;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 1rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n.fade-enter-active[data-v-5e0b4614], .fade-leave-active[data-v-5e0b4614] {\n  transition: opacity 0.3s;\n}\n.fade-enter[data-v-5e0b4614], .fade-leave[data-v-5e0b4614] {\n  opacity: 0;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n    padding-top: 0;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.column[data-v-5e0b4614] {\n    padding: 0;\n    padding-bottom: 0.75rem;\n    margin: 0;\n    border-radius: 1%;\n}\n.column.is-one-third[data-v-5e0b4614],\n.column.is-one-third-tablet[data-v-5e0b4614] {\n    flex: none;\n    width: 100%;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n    border-radius: 1%;\n}\n.mediasize[data-v-5e0b4614] {\n    padding: 0;\n}\n}", ""]);
 
 
 
@@ -4873,7 +4938,7 @@ exports.push([module.i, "section .container[data-v-79d7a1ee] {\n  max-width: 116
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-e3cd1fb6] {\n  margin-top: 80px;\n  margin: 80px 5% 0 5%;\n}\nsection .container[data-v-e3cd1fb6] {\n  max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-e3cd1fb6] {\n  padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-e3cd1fb6] {\n  margin-bottom: 32px;\n}\n.u-img[data-v-e3cd1fb6] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-e3cd1fb6] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-e3cd1fb6] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-e3cd1fb6] {\n  margin-bottom: 100px;\n}\n.child-flame .content-flame h1[data-v-e3cd1fb6] {\n  font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-e3cd1fb6] {\n  margin-top: 16px;\n  font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-e3cd1fb6] {\n  margin-top: 32px;\n}\n.company-card[data-v-e3cd1fb6] {\n  background-color: #828282;\n}\n.company-card p[data-v-e3cd1fb6] {\n  text-align: center;\n  font-size: 1.6rem;\n  margin-top: 16px;\n  color: white;\n}\n.company-card .company-btn-flame[data-v-e3cd1fb6] {\n  margin-top: 32px;\n  margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-e3cd1fb6] {\n  background-color: #db6b6b;\n  border-color: #db6b6b;\n  color: white;\n}\n.modal-content[data-v-e3cd1fb6], .modal-card[data-v-e3cd1fb6] {\n  width: 40%;\n  border-radius: 1%;\n}\n.test[data-v-e3cd1fb6] {\n  font-weight: bold;\n}\n.kessai[data-v-e3cd1fb6] {\n  display: block;\n  cursor: pointer;\n  margin: 1em auto;\n  border-radius: 4px;\n  box-sizing: border-box;\n  color: #4a4a4a;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: inherit;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s, -webkit-transform 0.3s;\n}\n.kessai[data-v-e3cd1fb6]:hover {\n  -webkit-animation: flash-data-v-e3cd1fb6 1s both;\n          animation: flash-data-v-e3cd1fb6 1s both;\n}\n.kessai[data-v-e3cd1fb6]:active {\n  color: #ddd;\n  background: #ffea73;\n  transition-duration: 0.1s;\n}\n@-webkit-keyframes flash-data-v-e3cd1fb6 {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@keyframes flash-data-v-e3cd1fb6 {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@media screen and (max-width: 768px) {\n.modal-content[data-v-e3cd1fb6], .modal-card[data-v-e3cd1fb6] {\n    width: 80%;\n    border-radius: 1%;\n}\n}", ""]);
+exports.push([module.i, "section[data-v-e3cd1fb6] {\n  margin-top: 80px;\n  margin: 80px 5% 0 5%;\n}\nsection .container[data-v-e3cd1fb6] {\n  max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-e3cd1fb6] {\n  padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-e3cd1fb6] {\n  margin-bottom: 32px;\n}\n.u-img[data-v-e3cd1fb6] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-e3cd1fb6] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-e3cd1fb6] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-e3cd1fb6] {\n  margin-bottom: 5%;\n}\n.child-flame .content-flame h1[data-v-e3cd1fb6] {\n  font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-e3cd1fb6] {\n  margin-top: 16px;\n  font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-e3cd1fb6] {\n  margin-top: 32px;\n}\n.company-card[data-v-e3cd1fb6] {\n  background-color: #828282;\n}\n.company-card p[data-v-e3cd1fb6] {\n  text-align: center;\n  font-size: 1.6rem;\n  margin-top: 16px;\n  color: white;\n}\n.company-card .company-btn-flame[data-v-e3cd1fb6] {\n  margin-top: 32px;\n  margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-e3cd1fb6] {\n  background-color: #db6b6b;\n  border-color: #db6b6b;\n  color: white;\n}\n.modal-content[data-v-e3cd1fb6], .modal-card[data-v-e3cd1fb6] {\n  width: 40%;\n  border-radius: 1%;\n}\n.test[data-v-e3cd1fb6] {\n  font-weight: bold;\n}\n.kessai[data-v-e3cd1fb6] {\n  display: block;\n  cursor: pointer;\n  margin: 1em auto;\n  border-radius: 4px;\n  box-sizing: border-box;\n  color: #4a4a4a;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: inherit;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s;\n  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s, -webkit-transform 0.3s;\n}\n.kessai[data-v-e3cd1fb6]:hover {\n  -webkit-animation: flash-data-v-e3cd1fb6 1s both;\n          animation: flash-data-v-e3cd1fb6 1s both;\n}\n.kessai[data-v-e3cd1fb6]:active {\n  color: #ddd;\n  background: #ffea73;\n  transition-duration: 0.1s;\n}\n@-webkit-keyframes flash-data-v-e3cd1fb6 {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@keyframes flash-data-v-e3cd1fb6 {\n0% {\n    background: #ffea73;\n}\n10% {\n    background: #fdf1aa;\n}\n100% {\n    background: #ffea73;\n}\n}\n@media screen and (max-width: 768px) {\n.modal-content[data-v-e3cd1fb6], .modal-card[data-v-e3cd1fb6] {\n    width: 80%;\n    border-radius: 1%;\n}\n}", ""]);
 
 
 
@@ -4903,7 +4968,7 @@ exports.push([module.i, "section[data-v-65a070ff] {\n  padding-top: 63px;\n  bac
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-5f0c731f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 40px;\n}\nsection div[data-v-5f0c731f] {\n  text-align: center;\n  background-color: #333333;\n}\nsection div h1[data-v-5f0c731f] {\n  font-size: 2rem;\n  font-weight: bolder;\n}\nsection div h2[data-v-5f0c731f] {\n  font-size: 1.7rem;\n  font-weight: bolder;\n}\nsection div .feature[data-v-5f0c731f] {\n  margin: 5% 0%;\n  padding: 5%;\n  background-color: #333333;\n}\nsection div .container_feature[data-v-5f0c731f] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\nsection div .container h2[data-v-5f0c731f] {\n  /* webcreatorbox.com\n  Webクリエイターボックス\n  WebデザインやWebサイト制作、最新のWeb業界情報などを紹介していくサイト。 */\n  position: relative;\n  display: inline-block;\n  margin-bottom: 2em;\n  color: white;\n}\nsection div .container h2[data-v-5f0c731f]:before {\n  content: \"\";\n  position: absolute;\n  bottom: -15px;\n  display: inline-block;\n  width: 2.5rem;\n  height: 0.2rem;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n  transform: translateX(-50%);\n  background-color: #ffe65d;\n  border-radius: 2px;\n}\nsection div .container h3[data-v-5f0c731f] {\n  font-size: 1rem;\n}\nsection div .container h4[data-v-5f0c731f] {\n  font-size: 0.8rem;\n}\nsection div .item[data-v-5f0c731f] {\n  margin-bottom: 1%;\n}\nsection div .item a[data-v-5f0c731f] {\n  text-decoration: none;\n}\nsection div .card[data-v-5f0c731f] {\n  width: 200px;\n  margin-right: 10px;\n  box-shadow: none;\n  background-color: #333333;\n}\nsection div .card-img[data-v-5f0c731f] {\n  border-radius: 0 0 0 0;\n  max-width: 100%;\n  height: auto;\n}\nsection div .card-content[data-v-5f0c731f] {\n  padding: 1px;\n}\nsection div h2 a[data-v-5f0c731f] {\n  text-decoration: none;\n}\nsection div .card-title[data-v-5f0c731f] {\n  text-decoration: none;\n  color: #ffffff;\n  font-size: 1rem;\n  text-align: left;\n}\nsection div .card-title a[data-v-5f0c731f] {\n  text-decoration: none;\n}\nsection div .card-text[data-v-5f0c731f] {\n  color: #777;\n  font-size: 14px;\n  line-height: 1.5;\n}\nsection div .card-link[data-v-5f0c731f] {\n  text-align: center;\n  border-top: 1px solid #eee;\n  padding: 20px;\n}\nsection div .card-link a[data-v-5f0c731f] {\n  text-decoration: none;\n  color: #ffffff;\n  margin: 0 10px;\n}\nsection div .card-link a[data-v-5f0c731f]:hover {\n  color: #0090aa;\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-5f0c731f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 40px;\n}\nsection div[data-v-5f0c731f] {\n  text-align: center;\n  background-color: #333333;\n}\nsection div h1[data-v-5f0c731f] {\n  font-size: 2rem;\n  font-weight: bolder;\n}\nsection div h2[data-v-5f0c731f] {\n  color: white;\n  font-size: 1.5rem;\n  font-weight: bolder;\n}\nsection div .feature[data-v-5f0c731f] {\n  margin: 5% 0%;\n  padding: 5%;\n  background-color: #333333;\n}\nsection div .container_feature[data-v-5f0c731f] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\nsection div .container h2[data-v-5f0c731f] {\n  /* webcreatorbox.com\n  Webクリエイターボックス\n  WebデザインやWebサイト制作、最新のWeb業界情報などを紹介していくサイト。 */\n  position: relative;\n  display: inline-block;\n  margin-bottom: 2em;\n  color: white;\n}\nsection div .container h2[data-v-5f0c731f]:before {\n  content: \"\";\n  position: absolute;\n  bottom: -15px;\n  display: inline-block;\n  width: 2.5rem;\n  height: 0.2rem;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n  transform: translateX(-50%);\n  background-color: #ffe65d;\n  border-radius: 2px;\n}\nsection div .container h3[data-v-5f0c731f] {\n  font-size: 1rem;\n}\nsection div .container h4[data-v-5f0c731f] {\n  font-size: 0.8rem;\n}\nsection div .item[data-v-5f0c731f] {\n  margin-bottom: 1%;\n}\nsection div .item a[data-v-5f0c731f] {\n  text-decoration: none;\n}\nsection div .card[data-v-5f0c731f] {\n  width: 200px;\n  margin-right: 10px;\n  box-shadow: none;\n  background-color: #333333;\n}\nsection div .card-img[data-v-5f0c731f] {\n  border-radius: 0 0 0 0;\n  max-width: 100%;\n  height: auto;\n}\nsection div .card-content[data-v-5f0c731f] {\n  padding: 1px;\n}\nsection div h2 a[data-v-5f0c731f] {\n  text-decoration: none;\n}\nsection div .card-title[data-v-5f0c731f] {\n  text-decoration: none;\n  color: #ffffff;\n  font-size: 1rem;\n  text-align: left;\n}\nsection div .card-title a[data-v-5f0c731f] {\n  text-decoration: none;\n}\nsection div .card-text[data-v-5f0c731f] {\n  color: #777;\n  font-size: 14px;\n  line-height: 1.5;\n}\nsection div .card-link[data-v-5f0c731f] {\n  text-align: center;\n  border-top: 1px solid #eee;\n  padding: 20px;\n}\nsection div .card-link a[data-v-5f0c731f] {\n  text-decoration: none;\n  color: #ffffff;\n  margin: 0 10px;\n}\nsection div .card-link a[data-v-5f0c731f]:hover {\n  color: #0090aa;\n}", ""]);
 
 
 
@@ -4918,7 +4983,7 @@ exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-5f0c731f] {\n  max-
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-8d3e665e] {\n  margin-bottom: 80px;\n  margin: 0 5%;\n}\nsection .container[data-v-8d3e665e] {\n  max-width: 1160px;\n}\nsection .container .info-title[data-v-8d3e665e] {\n  max-width: 1120px;\n  margin: 0 auto;\n  margin-top: 56px;\n  font-size: 2rem;\n}\nsection .container .info-title h1[data-v-8d3e665e] {\n  text-align: center;\n}\nsection .container .info-flame[data-v-8d3e665e] {\n  max-width: 1120px;\n  margin: 0 auto;\n  margin-top: 32px;\n  font-size: 1.4rem;\n}\nsection .story-flame[data-v-8d3e665e] {\n  margin-top: 32px;\n  font-size: 1.4rem;\n}\nsection .story-flame div .flame[data-v-8d3e665e] {\n  margin: 0 auto;\n}\nsection .story-flame div .flame div .u-img[data-v-8d3e665e] {\n  width: 100%;\n  height: 100% !important;\n}\nsection .u-img-p[data-v-8d3e665e] {\n  display: none;\n}\n@media screen and (max-width: 768px) {\n.u-img-p[data-v-8d3e665e] {\n    display: block;\n}\n.u-img-p-pc[data-v-8d3e665e] {\n    display: none;\n}\np[data-v-8d3e665e] {\n    font-size: 1.2rem;\n}\n}", ""]);
+exports.push([module.i, "section[data-v-8d3e665e] {\n  margin: 0 5% 80px;\n}\nsection .container[data-v-8d3e665e] {\n  max-width: 1160px;\n}\nsection .container .info-title[data-v-8d3e665e] {\n  max-width: 1120px;\n  margin: 0 auto;\n  margin-top: 56px;\n  font-size: 2rem;\n}\nsection .container .info-title h1[data-v-8d3e665e] {\n  text-align: center;\n  font-size: 1.5rem;\n  font-weight: bolder;\n}\nsection .container .info-title h1 span[data-v-8d3e665e] {\n  background: linear-gradient(transparent 70%, #ffe035 70%);\n}\nsection .container .info-flame[data-v-8d3e665e] {\n  max-width: 1120px;\n  margin: 0 auto;\n  margin-top: 32px;\n  font-size: 1rem;\n}\nsection .info-flame-title[data-v-8d3e665e] {\n  font-weight: bolder;\n}\nsection .story-flame[data-v-8d3e665e] {\n  margin-top: 32px;\n  font-size: 1rem;\n}\nsection .story-flame div .flame[data-v-8d3e665e] {\n  margin: 0 auto;\n}\nsection .story-flame div .flame div .u-img[data-v-8d3e665e] {\n  width: 100%;\n  height: 100% !important;\n}\n.u-img-p[data-v-8d3e665e] {\n  display: none;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-8d3e665e] {\n    margin: 0 5%;\n}\n.u-img-p[data-v-8d3e665e] {\n    display: block;\n}\n.u-img-p-pc[data-v-8d3e665e] {\n    display: none;\n}\np[data-v-8d3e665e] {\n    font-size: 1.2rem;\n}\n}", ""]);
 
 
 
@@ -4978,7 +5043,7 @@ exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-1f48781a] {\n  padd
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section .container[data-v-087cd353] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 160px;\n}\n.school-right-flame[data-v-087cd353] {\n  padding: 16px;\n}\n.school-right-flame h1[data-v-087cd353] {\n  font-size: 3rem;\n  font-weight: bold;\n  text-align: right;\n  padding-bottom: 16px;\n}\n.school-right-flame p[data-v-087cd353] {\n  font-size: 1.8rem;\n}\n.school-right-flame div[data-v-087cd353] {\n  text-align: right;\n}\n.school-right-flame div a[data-v-087cd353] {\n  font-weight: bold;\n  font-size: 1.6rem;\n}\n.btn-flame[data-v-087cd353] {\n  text-align: center;\n  margin-top: 16px;\n}\n.btn-flame .custom-btn[data-v-087cd353] {\n  background-color: #ffe035;\n  color: #333333;\n  height: 4rem;\n  font-weight: bold;\n  font-size: 1.6rem;\n  width: 100%;\n  border-color: #ffe035;\n}\n.img-flame[data-v-087cd353] {\n  padding: 24px;\n}\n@media screen and (max-width: 768px) {\n.school-right-flame[data-v-087cd353] {\n    display: flex;\n}\n.school-right-flame h1[data-v-087cd353] {\n    display: none;\n}\n.school-right-flame p[data-v-087cd353] {\n    display: none;\n}\n.school-right-flame .sns-link[data-v-087cd353] {\n    width: 33%;\n    text-align: center;\n}\n}", ""]);
+exports.push([module.i, "section .container[data-v-087cd353] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 160px;\n}\n.school-right-flame[data-v-087cd353] {\n  padding: 16px;\n}\n.school-right-flame h1[data-v-087cd353] {\n  font-size: 3rem;\n  font-weight: bold;\n  text-align: center;\n  padding-bottom: 16px;\n}\n.school-right-flame p[data-v-087cd353] {\n  font-size: 1.8rem;\n}\n.school-right-flame div[data-v-087cd353] {\n  text-align: center;\n}\n.school-right-flame div a[data-v-087cd353] {\n  font-weight: bold;\n  font-size: 1.6rem;\n}\n.btn-flame[data-v-087cd353] {\n  text-align: center;\n  margin-top: 16px;\n}\n.btn-flame .custom-btn[data-v-087cd353] {\n  background-color: #ffe035;\n  color: #333333;\n  height: 4rem;\n  font-weight: bold;\n  font-size: 1.6rem;\n  width: 100%;\n  border-color: #ffe035;\n}\n.img-flame[data-v-087cd353] {\n  padding: 24px;\n}\n.sns-link-flame[data-v-087cd353] {\n  margin-top: 40px;\n}\n.sns-link-flame .fb-btn[data-v-087cd353],\n.sns-link-flame .tw-btn[data-v-087cd353],\n.sns-link-flame .li-btn[data-v-087cd353] {\n  color: white;\n  height: 4rem;\n  font-weight: bold;\n  font-size: 1rem;\n  width: 90%;\n}\n.sns-link-flame .fb-btn[data-v-087cd353] {\n  border-color: #3b5998;\n  background-color: #3b5998;\n}\n.sns-link-flame .tw-btn[data-v-087cd353] {\n  border-color: #55acee;\n  background-color: #55acee;\n}\n.sns-link-flame .li-btn[data-v-087cd353] {\n  border-color: #00b900;\n  background-color: #00b900;\n}\n@media screen and (max-width: 768px) {\n.school-right-flame[data-v-087cd353] {\n    display: flex;\n}\n.school-right-flame h1[data-v-087cd353] {\n    display: none;\n}\n.school-right-flame p[data-v-087cd353] {\n    display: none;\n}\n.school-right-flame .sns-link[data-v-087cd353] {\n    width: 33%;\n    text-align: center;\n}\n}", ""]);
 
 
 
@@ -5008,7 +5073,7 @@ exports.push([module.i, "@charset \"UTF-8\";\nimg[data-v-74c5315c] {\n  border-r
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-e27578bc] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 56px;\n}\nsection .has-addons[data-v-e27578bc] {\n  max-width: 560px;\n  height: 56px;\n  margin: 0 auto;\n}\nsection .has-addons .find-frame[data-v-e27578bc] {\n  width: 448px;\n}\nsection .has-addons .find-frame input[data-v-e27578bc] {\n  height: 56px;\n  font-size: 1.5rem;\n  background-color: #f2f2f2;\n}\nsection .has-addons .button-frame a[data-v-e27578bc] {\n  width: 112px;\n  height: 56px;\n  background-color: #ffe035;\n  font-size: 1.5rem;\n  color: #222222;\n}\n.container[data-v-e27578bc] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-e27578bc] {\n  width: 80%;\n}\n.test1[data-v-e27578bc] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.thiscontainer[data-v-e27578bc] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.mobile-container[data-v-e27578bc] {\n  margin: auto;\n}\n.topspace[data-v-e27578bc] {\n  margin-top: 30px;\n}\n.test2[data-v-e27578bc] {\n  width: 100%;\n  margin: auto;\n}\n.is-multiline[data-v-e27578bc] {\n  flex-wrap: wrap;\n}\n@media screen and (max-width: 768px) {\nsection .has-addons[data-v-e27578bc] {\n    padding: 0 1rem;\n}\ninput[data-v-e27578bc] {\n    font-size: 1.2rem !important;\n}\n.media_a[data-v-e27578bc] {\n    font-size: 1.2rem !important;\n}\n}", ""]);
+exports.push([module.i, "section[data-v-e27578bc] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 56px;\n}\nsection .has-addons[data-v-e27578bc] {\n  max-width: 560px;\n  height: 56px;\n  margin: 0 auto;\n}\nsection .has-addons .find-frame[data-v-e27578bc] {\n  width: 448px;\n}\nsection .has-addons .find-frame input[data-v-e27578bc] {\n  height: 56px;\n  font-size: 1.5rem;\n  background-color: #f2f2f2;\n}\nsection .has-addons .button-frame a[data-v-e27578bc] {\n  width: 112px;\n  height: 56px;\n  background-color: #ffe035;\n  font-size: 1.5rem;\n  color: #222222;\n}\n.container[data-v-e27578bc] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-e27578bc] {\n  width: 80%;\n}\n.test1[data-v-e27578bc] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.thiscontainer[data-v-e27578bc] {\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.mobile-container[data-v-e27578bc] {\n  margin: auto;\n}\n.topspace[data-v-e27578bc] {\n  margin-top: 30px;\n}\n.test2[data-v-e27578bc] {\n  width: 100%;\n  margin: auto;\n}\n.is-multiline[data-v-e27578bc] {\n  flex-wrap: wrap;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-e27578bc] {\n    margin-top: 5%;\n    margin-bottom: 5%;\n}\nsection .has-addons[data-v-e27578bc] {\n    padding: 0 1rem;\n}\ninput[data-v-e27578bc] {\n    font-size: 1.2rem !important;\n}\n.media_a[data-v-e27578bc] {\n    font-size: 1.2rem !important;\n}\n}", ""]);
 
 
 
@@ -5053,7 +5118,7 @@ exports.push([module.i, "/* .main-color {\n  border-color: #ffe035;\n} */\nheade
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "section[data-v-2b942169] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 40px;\n}\nsection div[data-v-2b942169] {\n  text-align: center;\n}\nsection div h1[data-v-2b942169] {\n  font-size: 2rem;\n  font-weight: bolder;\n}\nsection div h2[data-v-2b942169] {\n  font-size: 1.7rem;\n  font-weight: bolder;\n}", ""]);
+exports.push([module.i, "section[data-v-2b942169] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 40px;\n}\nsection div[data-v-2b942169] {\n  text-align: center;\n}\nsection div h1[data-v-2b942169] {\n  font-size: 2rem;\n  font-weight: bolder;\n}\n@media screen and (max-width: 768px) {\nsection div h1[data-v-2b942169] {\n    font-size: 1.5rem;\n    font-weight: bolder;\n    line-height: 0.7;\n}\n}\nsection div h2[data-v-2b942169] {\n  font-size: 1.7rem;\n  font-weight: bolder;\n}\n@media screen and (max-width: 768px) {\nsection div h2[data-v-2b942169] {\n    font-size: 1rem;\n    font-weight: bolder;\n    line-height: 0.7;\n}\n}\nsection div .br-sp[data-v-2b942169] {\n  display: none;\n}\n@media screen and (max-width: 768px) {\nsection div .br-sp[data-v-2b942169] {\n    display: block;\n}\n}", ""]);
 
 
 
@@ -5068,7 +5133,7 @@ exports.push([module.i, "section[data-v-2b942169] {\n  max-width: 1160px;\n  mar
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-3a435e4e] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 7%;\n}\nsection .parent-frame[data-v-3a435e4e] {\n  padding: 6px !important;\n  max-width: 752px;\n  max-height: 642px;\n}\nsection .parent-frame .upper-frame[data-v-3a435e4e] {\n  padding-bottom: 0px;\n}\nsection .parent-frame .upper-frame .grandson-frame[data-v-3a435e4e] {\n  max-width: 370px;\n  max-height: 250px;\n}\nsection .parent-frame .upper-frame .left-grandson[data-v-3a435e4e] {\n  padding-right: 6px;\n}\nsection .parent-frame .upper-frame .right-grandson[data-v-3a435e4e] {\n  padding-left: 6px;\n}\nsection .card_image_container[data-v-3a435e4e] {\n  position: relative;\n}\nsection .item[data-v-3a435e4e] {\n  position: relative;\n  overflow: hidden;\n  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);\n}\nsection .item[data-v-3a435e4e]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\nsection .item--first[data-v-3a435e4e]:after {\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\nsection .school_msg[data-v-3a435e4e] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\nsection .school_name[data-v-3a435e4e] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\nsection .school_message[data-v-3a435e4e] {\n  color: white;\n}\nsection .card[data-v-3a435e4e] {\n  background-color: white;\n  box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0px rgba(0, 0, 0, 0);\n}\nsection .child-flame[data-v-3a435e4e] {\n  padding-top: 0 !important;\n  max-width: 752px !important;\n  height: 250px !important;\n}\nsection .u-img[data-v-3a435e4e] {\n  width: 100%;\n  height: 100% !important;\n}\n@media screen and (max-width: 768px) {\n.tile[data-v-3a435e4e]:not(.is-child) {\n    display: flex;\n}\n.tile.is-6[data-v-3a435e4e] {\n    flex: none;\n    width: 50%;\n}\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\nsection[data-v-3a435e4e] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 7%;\n}\nsection .parent-frame[data-v-3a435e4e] {\n  padding: 6px !important;\n  max-width: 752px;\n  max-height: 642px;\n}\nsection .parent-frame .upper-frame[data-v-3a435e4e] {\n  padding-bottom: 0px;\n}\nsection .parent-frame .upper-frame .grandson-frame[data-v-3a435e4e] {\n  max-width: 370px;\n  max-height: 250px;\n}\nsection .parent-frame .upper-frame .left-grandson[data-v-3a435e4e] {\n  padding-right: 6px;\n}\nsection .parent-frame .upper-frame .right-grandson[data-v-3a435e4e] {\n  padding-left: 6px;\n}\nsection .card_image_container[data-v-3a435e4e] {\n  position: relative;\n}\nsection .item[data-v-3a435e4e] {\n  position: relative;\n  overflow: hidden;\n  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);\n}\nsection .item[data-v-3a435e4e]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\nsection .item--first[data-v-3a435e4e]:after {\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\nsection .school_msg[data-v-3a435e4e] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\nsection .school_name[data-v-3a435e4e] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\nsection .school_message[data-v-3a435e4e] {\n  color: white;\n}\nsection .card[data-v-3a435e4e] {\n  background-color: white;\n  box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0px rgba(0, 0, 0, 0);\n}\nsection .child-flame[data-v-3a435e4e] {\n  padding-top: 0 !important;\n  max-width: 752px !important;\n  height: 250px !important;\n}\nsection .u-img[data-v-3a435e4e] {\n  width: 100%;\n  height: 100% !important;\n}\n.top .top-image[data-v-3a435e4e] {\n  display: none;\n}\n@media screen and (max-width: 768px) {\n.tile[data-v-3a435e4e] {\n    display: none;\n}\n.tile[data-v-3a435e4e]:not(.is-child) {\n    display: flex;\n}\n.tile.is-6[data-v-3a435e4e] {\n    flex: none;\n    width: 50%;\n}\n.top .top-image[data-v-3a435e4e] {\n    display: block;\n    width: 100%;\n    height: auto;\n    z-index: 99;\n}\n.progressive-image[data-v-3a435e4e] {\n    position: relative;\n    overflow: hidden;\n    width: 100%;\n    display: inline-block;\n}\n.progressive-image-main[data-v-3a435e4e] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: auto;\n    z-index: 1;\n    transition-duration: 0.3s;\n    transition-property: all;\n    transition-timing-function: ease-out;\n    -webkit-transform: translateZ(0);\n            transform: translateZ(0);\n}\n}", ""]);
 
 
 
@@ -33491,7 +33556,9 @@ var render = function() {
   return _c(
     "section",
     [
-      _vm._m(0),
+      _c("div", { staticClass: "title" }, [
+        _c("h2", [_vm.show ? _c("span", [_vm._v("活動内容")]) : _vm._e()])
+      ]),
       _vm._v(" "),
       _c(
         "div",
@@ -33546,7 +33613,7 @@ var render = function() {
                             "p",
                             {
                               staticClass:
-                                "title is-7 is-size-7-mobile school_name"
+                                "title is-3 is-size-7-mobile school_name"
                             },
                             [_vm._v(_vm._s(value.school.school_name))]
                           ),
@@ -33555,7 +33622,7 @@ var render = function() {
                             "p",
                             {
                               staticClass:
-                                "subtitle is-6 is-size-7-mobile school_message"
+                                "subtitle is-5 is-size-7-mobile school_message"
                             },
                             [_vm._v(_vm._s(value.activity_name))]
                           )
@@ -33567,7 +33634,7 @@ var render = function() {
               ),
               _vm._v(" "),
               _c("div", { staticClass: "card-content mediasize" }, [
-                _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
+                _c("p", { staticClass: "subtitle is-3 has-text-centered" }, [
                   _vm._v(_vm._s(value.school_name))
                 ])
               ]),
@@ -33607,7 +33674,7 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _vm._m(1, true)
+                _vm._m(0, true)
               ])
             ]
           )
@@ -33621,14 +33688,6 @@ var render = function() {
   )
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "title" }, [
-      _c("h2", [_c("span", [_vm._v("活動内容")])])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -33733,7 +33792,10 @@ var staticRenderFns = [
                   "a",
                   {
                     staticClass: "button is-medium custom-btn",
-                    attrs: { href: "https://www.shigaku.go.jp/" }
+                    attrs: {
+                      href: "https://www.shigaku.go.jp/",
+                      target: "_blank"
+                    }
                   },
                   [_c("strong", [_vm._v("法人寄付")])]
                 )
@@ -34860,6 +34922,8 @@ var render = function() {
           _c("div", { staticClass: "tile is-vertical is-12 flame" }, [
             _c("div", { staticClass: "tile" }, [
               _c("div", { staticClass: "tile is-parent" }, [
+                _vm._m(2),
+                _vm._v(" "),
                 _c("img", {
                   staticClass: "u-img",
                   attrs: { src: _vm.Message1, alt: "#" }
@@ -34873,6 +34937,8 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "tile is-parent" }, [
+                _vm._m(3),
+                _vm._v(" "),
                 _c("img", {
                   staticClass: "u-img",
                   attrs: { src: _vm.Message2, alt: "#" }
@@ -34886,6 +34952,8 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "tile is-parent" }, [
+                _vm._m(4),
+                _vm._v(" "),
                 _c("img", {
                   staticClass: "u-img",
                   attrs: { src: _vm.Message3, alt: "#" }
@@ -34902,7 +34970,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(2)
+      _vm._m(5)
     ])
   ])
 }
@@ -34912,7 +34980,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "info-title" }, [
-      _c("h1", [_vm._v("きふるかとは")])
+      _c("h1", [_c("span", [_vm._v("きふるかとは")])])
     ])
   },
   function() {
@@ -34921,20 +34989,76 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "info-flame" }, [
       _c("p", [
+        _c("span", { staticClass: "info-flame-title" }, [
+          _vm._v("学生の活動から応援できる")
+        ]),
+        _c("br"),
+        _c("br"),
         _vm._v(
           "\n        スポーツや芸術、音楽、日本の未来を担う研究、地域と連携した社会貢献、そういった活動を行\n        う学生を見た時、みなさんの中には応援したい気持ちが生まれてきませんか？\n        "
         ),
         _c("br"),
-        _vm._v(
-          "そういった応援したいと思う気持ちを持った方々と、実際に活動する学生や大学を寄付という形\n        でつなぐプラットフォームを私たちは実現したいと考えております。きふるかを使うことで、寄付\n        者は、活動団体を選択して寄付をすることができ、ダイレクトに活動を行う学生や学校の事業に、\n        寄付という支援を届けることができます。\n        "
-        ),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "info-flame-title" }, [
+          _vm._v("学生や学校にダイレクトに寄付できる")
+        ]),
+        _c("br"),
         _c("br"),
         _vm._v(
-          "寄付を掲載する活動団体は、それぞれの活動に沿ったお礼の品を用意し、より寄付者と学生がお\n        互いに協力し繋がることのできるコミュニティの実現と、既存の税控除制度を利用し、手続きをす\n        ることで所得税や住民税の還付・控除が受けられるようにします。\n        "
+          "\n        そういった応援したいと思う気持ちを持った方々と、実際に活動する学生や大学を寄付という形\n        でつなぐプラットフォームを私たちは実現したいと考えております。きふるかを使うことで、寄付\n        者は、活動団体を選択して寄付をすることができ、ダイレクトに活動を行う学生や学校の事業に、\n        寄付という支援を届けることができます。\n        "
         ),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "info-flame-title" }, [
+          _vm._v("返礼・税控除制度が適用されます")
+        ]),
+        _c("br"),
+        _c("br"),
+        _vm._v(
+          "\n        寄付を掲載する活動団体は、それぞれの活動に沿ったお礼の品を用意し、より寄付者と学生がお\n        互いに協力し繋がることのできるコミュニティの実現と、既存の税控除制度を利用し、手続きをす\n        ることで所得税や住民税の還付・控除が受けられるようにします。\n        "
+        ),
+        _c("br"),
         _c("br"),
         _vm._v("学校寄附のあらたな世界をきふるかは提供いたします。\n      ")
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "u-img-p" }, [
+      _c("span", { staticClass: "info-flame-title" }, [
+        _vm._v("応援したい活動を選び寄付できる")
+      ]),
+      _c("br"),
+      _c("br")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "u-img-p" }, [
+      _c("span", { staticClass: "info-flame-title" }, [
+        _vm._v("寄付が直接、学生学校に届く")
+      ]),
+      _c("br"),
+      _c("br")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "u-img-p" }, [
+      _c("span", { staticClass: "info-flame-title" }, [
+        _vm._v("学生からの返礼と寄付控除の適用")
+      ]),
+      _c("br"),
+      _c("br")
     ])
   },
   function() {
@@ -34947,6 +35071,10 @@ var staticRenderFns = [
           _c("div", { staticClass: "tile" }, [
             _c("div", { staticClass: "tile is-parent" }, [
               _c("p", { staticClass: "u-img-p-pc" }, [
+                _c("span", { staticClass: "info-flame-title" }, [
+                  _vm._v("応援したい活動を選び寄付できる")
+                ]),
+                _c("br"),
                 _vm._v(
                   "\n                きふるかには、登録学校の活動ご\n                との寄付が掲載されています。\n                寄付者は、自分の卒業校の活動を\n                常に検索することができ、卒業校\n                だけでなく自分の応援したい活動\n                を選び寄付することができます。\n              "
                 )
@@ -34955,6 +35083,10 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", { staticClass: "tile is-parent" }, [
               _c("p", { staticClass: "u-img-p-pc" }, [
+                _c("span", { staticClass: "info-flame-title" }, [
+                  _vm._v("寄付が直接、学生学校に届く")
+                ]),
+                _c("br"),
                 _vm._v(
                   "\n                寄付者が行った寄付は、各学校を\n                経由して、学生が行う活動団体の\n                支援のために使われる寄付として\n                直接届きます。これにより寄付者\n                が応援したい活動にダイレクトに\n                寄付を届けることが可能となりま\n                す。\n              "
                 )
@@ -34963,6 +35095,10 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", { staticClass: "tile is-parent" }, [
               _c("p", { staticClass: "u-img-p-pc" }, [
+                _c("span", { staticClass: "info-flame-title" }, [
+                  _vm._v("学生からの返礼と寄付控除の適用")
+                ]),
+                _c("br"),
                 _vm._v(
                   "\n                寄付を受け取った各団体は、それ\n                ぞれ、活動に沿ったお礼を寄付者\n                に届けます。こうすることで、き\n                ふるかを通して、寄付者と学生そ\n                れぞれがつながることができます。\n                また、寄付を行うことで、学校か\n                らの寄付控除を受けられます。\n              "
                 )
@@ -35486,13 +35622,7 @@ var render = function() {
                 _c("div", { staticClass: "school-right-flame" }, [
                   _c("h1", [_vm._v(_vm._s(_vm.activity.school.school_name))]),
                   _vm._v(" "),
-                  _c("p", [_vm._v("公式SNS")]),
-                  _vm._v(" "),
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _vm._m(1),
-                  _vm._v(" "),
-                  _vm._m(2)
+                  _vm._m(0)
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "media-content btn-flame" }, [
@@ -35532,24 +35662,24 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "sns-link" }, [
-      _c("a", { attrs: { href: "" } }, [_vm._v("Facebook")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "sns-link" }, [
-      _c("a", { attrs: { href: "" } }, [_vm._v("Twitter")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "sns-link" }, [
-      _c("a", { attrs: { href: "" } }, [_vm._v("Instagram")])
+    return _c("div", { staticClass: "sns-link-flame" }, [
+      _c("div", { staticClass: "media-content btn-flame" }, [
+        _c("a", { staticClass: "button is-medium fb-btn" }, [
+          _c("strong", [_vm._v("Facebookでシェア")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "media-content btn-flame" }, [
+        _c("a", { staticClass: "button is-medium tw-btn" }, [
+          _c("strong", [_vm._v("Twitterでシェア")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "media-content btn-flame" }, [
+        _c("a", { staticClass: "button is-medium li-btn" }, [
+          _c("strong", [_vm._v("LINEでシェア")])
+        ])
+      ])
     ])
   }
 ]
@@ -36025,12 +36155,20 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("section", [
       _c("div", [
-        _c("h1", [_vm._v("大学生のチャレンジをあなたの寄付で応援しよう。")]),
+        _c("h1", [
+          _vm._v("大学生のチャレンジを"),
+          _c("span", { staticClass: "br-sp" }, [_c("br")]),
+          _vm._v("あなたの寄付で応援しよう。")
+        ]),
+        _vm._v(" "),
+        _c("span", { staticClass: "br-sp" }, [_c("br")]),
+        _vm._v(" "),
+        _c("span", { staticClass: "br-sp" }, [_c("br")]),
         _vm._v(" "),
         _c("h2", [
-          _vm._v(
-            "あなたの気持ちを寄付に変えて、大学で活動する学生の皆様にお届けします。"
-          )
+          _vm._v("あなたの気持ちを寄付に変えて、"),
+          _c("span", { staticClass: "br-sp" }, [_c("br")]),
+          _vm._v("大学で活動する学生の皆様にお届けします。")
         ])
       ])
     ])
@@ -36058,6 +36196,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("section", [
+    _vm._m(0),
+    _vm._v(" "),
     _c("div", { staticClass: "tile is-ancestor" }, [
       _c("div", { staticClass: "tile is-parent parent-frame" }, [
         _c("div", { staticClass: "tile is-child" }, [
@@ -36098,7 +36238,7 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
-                  _vm._m(0)
+                  _vm._m(1)
                 ]
               )
             ]
@@ -36163,7 +36303,7 @@ var render = function() {
                             ]
                           ),
                           _vm._v(" "),
-                          _vm._m(1)
+                          _vm._m(2)
                         ]
                       )
                     ]
@@ -36223,7 +36363,7 @@ var render = function() {
                             ]
                           ),
                           _vm._v(" "),
-                          _vm._m(2)
+                          _vm._m(3)
                         ]
                       )
                     ]
@@ -36271,7 +36411,7 @@ var render = function() {
                       )
                     ]),
                     _vm._v(" "),
-                    _vm._m(3)
+                    _vm._m(4)
                   ]
                 )
               ]
@@ -36283,6 +36423,39 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "top" }, [
+      _c(
+        "div",
+        {
+          staticClass: "top-image progressive-image",
+          staticStyle: { "max-width": "1280px" }
+        },
+        [
+          _c("span", [
+            _c(
+              "div",
+              {
+                staticClass: "progressive-image-wrapper",
+                staticStyle: { "padding-bottom": "44.8438%" }
+              },
+              [
+                _c("img", {
+                  staticClass: "progressive-image-main",
+                  attrs: {
+                    src: __webpack_require__(/*! ../../images/topvisual/kifurukaTopImage_2019-04-22 13.37.50.png */ "./resources/assets/images/topvisual/kifurukaTopImage_2019-04-22 13.37.50.png")
+                  }
+                })
+              ]
+            )
+          ])
+        ]
+      )
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -36372,7 +36545,13 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "allstyle" },
-    [_c("donation-top"), _vm._v(" "), _c("donation-main")],
+    [
+      _c("donation-top"),
+      _vm._v(" "),
+      _c("donation-main"),
+      _vm._v(" "),
+      _c("school-sub-info")
+    ],
     1
   )
 }
@@ -53164,6 +53343,28 @@ module.exports = "/images/aoyama_logo.png?f064887c274a05111aeff26665cc6fe0";
 /***/ (function(module, exports) {
 
 module.exports = "/images/kinkiuniv.jpg?259fa1b434deac79e289e0853348a326";
+
+/***/ }),
+
+/***/ "./resources/assets/images/topvisual/joanna-kosinska-129039-unsplash.jpg":
+/*!*******************************************************************************!*\
+  !*** ./resources/assets/images/topvisual/joanna-kosinska-129039-unsplash.jpg ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/joanna-kosinska-129039-unsplash.jpg?d083c301eedc84a8024e48c449182df1";
+
+/***/ }),
+
+/***/ "./resources/assets/images/topvisual/kifurukaTopImage_2019-04-22 13.37.50.png":
+/*!************************************************************************************!*\
+  !*** ./resources/assets/images/topvisual/kifurukaTopImage_2019-04-22 13.37.50.png ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/kifurukaTopImage_2019-04-22 13.37.50.png?76feea432ddef732169353ee0ee4049a";
 
 /***/ }),
 

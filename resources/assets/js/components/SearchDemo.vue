@@ -157,6 +157,8 @@ section {
 
 @media screen and (max-width: 768px) {
   section {
+      margin-top: 5%;
+      margin-bottom: 5%;
     .has-addons {
       padding: 0 1rem;
     }

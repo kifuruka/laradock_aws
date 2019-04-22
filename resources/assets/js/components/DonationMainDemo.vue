@@ -415,7 +415,7 @@ section {
 
 .child-flame {
   .content-flame {
-    margin-bottom: 100px;
+    margin-bottom: 5%;
 
     h1 {
       font-size: 2rem;

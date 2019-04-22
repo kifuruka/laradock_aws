@@ -1,6 +1,25 @@
 <template>
   <section >
+    <div class="top">
+      <div class="top-image progressive-image" style="max-width: 1280px;">
+        <span>
+          <!---->
+          <div class="progressive-image-wrapper" style="padding-bottom: 44.8438%;">
+            <img class="progressive-image-main" style="" src="../../images/topvisual/kifurukaTopImage_2019-04-22 13.37.50.png">
+            <!---->
+          </div>
+        </span>
+      </div>
+      <!-- <div class="top__content content_all_center">
+        <h1 class="app__title top_content_title_color">子供の好奇心に火をつけよう！</h1>
+        <p class="top__content--detail">こどもの「やりたい」を好きなだけ体験できる新しい学びスタイル</p>
+        <a href="https://line.me/R/ti/p/%40bzy5124u" class="button button__top">
+          <strong class="button_top_text_color">LINE友達登録で限定クーポンをゲット！</strong>
+        </a>
+      </div> -->
+    </div>
     <div class="tile is-ancestor">
+
 
       <!-- 左 -->
       <div class="tile is-parent parent-frame">
@@ -115,6 +134,7 @@ import Homeimg1 from "../../images/topvisual/top001.jpg";
 import Homeimg2 from "../../images/topvisual/top002.jpg";
 import Homeimg3 from "../../images/topvisual/top003.jpg";
 import Homeimg4 from "../../images/topvisual/top04_w583.jpg";
+import Homeimg5 from "../../images/topvisual/joanna-kosinska-129039-unsplash.jpg";
 
 export default {
   // あとでデータを引っ張ってくるまで載せておく
@@ -250,7 +270,14 @@ section {
   }
 }
 
+.top .top-image{
+  display: none;
+}
+
 @media screen and (max-width: 768px){
+  .tile{
+    display: none;
+  }
   .tile:not(.is-child) {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -262,7 +289,36 @@ section {
     flex: none;
     width: 50%;
   }
+
+    .top .top-image {
+    display: block;
+      width: 100%;
+      height: auto;
+      z-index: 99;
+      
+  }
+
+  .progressive-image {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      display: inline-block;
+  }
+
+  .progressive-image-main {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: 1;
+      transition-duration: .3s;
+      transition-property: all;
+      transition-timing-function: ease-out;
+      transform: translateZ(0);
+  }
 }
+
 
 
 </style>
