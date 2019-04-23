@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="title" >
+    <div class="title">
       <h2>
         <span v-if="show">活動内容</span>
       </h2>
@@ -8,7 +8,6 @@
 
     <div class="container columns is-multiline">
       <div v-for="value in sliceValues" :key="value.id" class="card-box column is-one-third">
-        
         <div
           class="card"
           @click="routerPush({
@@ -74,7 +73,7 @@ export default {
       info: null,
       count: 3,
       show: true,
-      ok: true,
+      ok: true
     };
   },
   computed: {
@@ -281,13 +280,14 @@ section {
 //   transition: opacity 300ms ease-out;
 // }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .3s
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
 }
-.fade-enter, .fade-leave {
-  opacity: 0
+.fade-enter,
+.fade-leave {
+  opacity: 0;
 }
-
 
 @media screen and (max-width: 768px) {
   section {

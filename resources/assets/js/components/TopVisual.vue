@@ -1,11 +1,15 @@
 <template>
-  <section >
+  <section>
     <div class="top">
       <div class="top-image progressive-image" style="max-width: 1280px;">
         <span>
           <!---->
           <div class="progressive-image-wrapper" style="padding-bottom: 44.8438%;">
-            <img class="progressive-image-main" style="" src="../../images/topvisual/kifurukaTopImage_2019-04-22 13.37.50.png">
+            <img
+              class="progressive-image-main"
+              style
+              src="../../images/topvisual/kifurukaTopImage_2019-04-22 13.37.50.png"
+            >
             <!---->
           </div>
         </span>
@@ -16,24 +20,24 @@
         <a href="https://line.me/R/ti/p/%40bzy5124u" class="button button__top">
           <strong class="button_top_text_color">LINE友達登録で限定クーポンをゲット！</strong>
         </a>
-      </div> -->
+      </div>-->
     </div>
     <div class="tile is-ancestor">
-
-
       <!-- 左 -->
       <div class="tile is-parent parent-frame">
         <div class="tile is-child">
-          <div class="card" @click="routerPush({
+          <div
+            class="card"
+            @click="routerPush({
                 name:'DetailSchool',
                 params:{id:1}
-                })">
+                })"
+          >
             <div calss="card_image_container" style="position: relative;">
               <div class="card-image item item--first">
                 <figure class="image">
-
                   <!-- <router-link to="/detailSchool/1"> -->
-                    <img :src="Homeimg1" class="u-img" alt="#">
+                  <img :src="Homeimg1" class="u-img" alt="#">
                   <!-- </router-link> -->
                   <!-- <img :src="school.school_img" class="card-img-top" alt="Placeholder image"> -->
                 </figure>
@@ -46,7 +50,7 @@
           </div>
           <!-- <router-link to="/activity/1">
             <img :src="Homeimg1" class="u-img" alt="#">
-          </router-link> -->
+          </router-link>-->
         </div>
       </div>
       <!-- 右 -->
@@ -55,16 +59,18 @@
           <div class="tile is-ancestor">
             <div class="tile is-parent upper-frame">
               <div class="tile is-child is-6 grandson-frame left-grandson" style="margin-bottom:0;">
-
-                <div class="card" @click="routerPush({
+                <div
+                  class="card"
+                  @click="routerPush({
                 name:'DetailSchool',
                 params:{id:5}
-                })" >
+                })"
+                >
                   <div calss="card_image_container" style="position: relative;">
                     <div class="card-image item item--first">
                       <figure class="image">
                         <router-link to="/activity/1">
-                        <img :src="Homeimg2" class="u-img" alt>
+                          <img :src="Homeimg2" class="u-img" alt>
                         </router-link>
                         <!-- <img :src="school.school_img" class="card-img-top" alt="Placeholder image"> -->
                       </figure>
@@ -77,11 +83,13 @@
                 </div>
               </div>
               <div class="tile is-child is-6 grandson-frame right-grandson">
-
-                <div class="card" @click="routerPush({
+                <div
+                  class="card"
+                  @click="routerPush({
                 name:'DetailSchool',
                 params:{id:3}
-                })">
+                })"
+                >
                   <div calss="card_image_container" style="position: relative;">
                     <div class="card-image item item--first">
                       <figure class="image">
@@ -102,16 +110,18 @@
           </div>
 
           <div class="tile child-flame">
-
-            <div class="card" @click="routerPush({
+            <div
+              class="card"
+              @click="routerPush({
                 name:'DetailSchool',
                 params:{id:1}
-                })">
+                })"
+            >
               <div calss="card_image_container" style="position: relative;">
                 <div class="card-image item item--first">
                   <figure class="image">
                     <router-link to="/Donation">
-                    <img :src="Homeimg4" class="u-img" alt="#">
+                      <img :src="Homeimg4" class="u-img" alt="#">
                     </router-link>
                     <!-- <img :src="school.school_img" class="card-img-top" alt="Placeholder image"> -->
                   </figure>
@@ -158,13 +168,11 @@ export default {
 
   // },
   methods: {
-
     routerPush(router) {
       // 画面丈夫へ移動するためのもの
       window.scrollTo(0, 0);
       this.$router.push(router);
-    },
-
+    }
   }
 };
 </script>
@@ -188,17 +196,17 @@ section {
         max-width: 370px;
         max-height: 250px;
       }
-      .left-grandson{
+      .left-grandson {
         padding-right: 6px;
       }
-      .right-grandson{
+      .right-grandson {
         padding-left: 6px;
       }
     }
   }
   .card_image_container {
-  position: relative;
-}
+    position: relative;
+  }
 
   .item {
     position: relative;
@@ -257,7 +265,6 @@ section {
     background-color: white;
     -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0px rgba(0, 0, 0, 0);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0px rgba(0, 0, 0, 0);
-
   }
   .child-flame {
     // margin-top: 12px !important;
@@ -271,18 +278,18 @@ section {
   }
 }
 
-.top .top-image{
+.top .top-image {
   display: none;
 }
 
-@media screen and (max-width: 768px){
-  .tile{
+@media screen and (max-width: 768px) {
+  .tile {
     display: none;
   }
   .tile:not(.is-child) {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .tile.is-6 {
     -webkit-box-flex: 0;
@@ -291,36 +298,32 @@ section {
     width: 50%;
   }
 
-    .top .top-image {
+  .top .top-image {
     display: block;
-      width: 100%;
-      height: auto;
-      z-index: 99;
-      
+    width: 100%;
+    height: auto;
+    z-index: 99;
   }
 
   .progressive-image {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
   }
 
   .progressive-image-main {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: auto;
-      z-index: 1;
-      transition-duration: .3s;
-      transition-property: all;
-      transition-timing-function: ease-out;
-      transform: translateZ(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transform: translateZ(0);
   }
 }
-
-
-
 </style>
 

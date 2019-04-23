@@ -2,25 +2,29 @@
   <section>
     <div class="container">
       <div class="info-title">
-        <h1><span>きふるかとは</span></h1>
+        <h1>
+          <span>きふるかとは</span>
+        </h1>
       </div>
       <div class="info-flame">
         <p>
           <!-- <span class="info-flame-title">学生の活動から応援できる</span><br><br> -->
           スポーツや芸術、音楽、日本の未来を担う研究、地域と連携した社会貢献、そういった活動を行
-          う学生を見た時、みなさんの中には応援したい気持ちが生まれてきませんか？<br>
+          う学生を見た時、みなさんの中には応援したい気持ちが生まれてきませんか？
+          <br>
           <!-- <br><br>
-          <span class="info-flame-title">学生や学校にダイレクトに寄付できる</span><br><br> -->
+          <span class="info-flame-title">学生や学校にダイレクトに寄付できる</span><br><br>-->
           そういった応援したいと思う気持ちを持った方々と、実際に活動する学生や大学を寄付という形
           でつなぐプラットフォームを私たちは実現したいと考えております。きふるかを使うことで、寄付
           者は、活動団体を選択して寄付をすることができ、ダイレクトに活動を行う学生や学校の事業に、
-          寄付という支援を届けることができます。<br>
+          寄付という支援を届けることができます。
+          <br>
           <!-- <br><br>
-          <span class="info-flame-title">返礼・税控除制度が適用されます</span><br><br> -->
+          <span class="info-flame-title">返礼・税控除制度が適用されます</span><br><br>-->
           寄付を掲載する活動団体は、それぞれの活動に沿ったお礼の品を用意し、より寄付者と学生がお
           互いに協力し繋がることのできるコミュニティの実現と、既存の税控除制度を利用し、手続きをす
           ることで所得税や住民税の還付・控除が受けられるようにします。
-          <br><br>学校寄附のあらたな世界をきふるかは提供いたします。
+          <br>学校寄附のあらたな世界をきふるかは提供いたします。
         </p>
       </div>
 
@@ -29,9 +33,9 @@
           <div class="tile is-vertical is-12 flame">
             <div class="tile">
               <div class="tile is-parent">
-                  <!-- <p class="u-img-p">
+                <!-- <p class="u-img-p">
                   <span class="info-flame-title">応援したい活動を選び寄付できる</span><br><br>
-                  </p> -->
+                </p>-->
                 <img :src="Message1" class="u-img" alt="#">
                 <p class="u-img-p">
                   きふるかには、登録学校の活動ご
@@ -46,7 +50,7 @@
               <div class="tile is-parent">
                 <!-- <p class="u-img-p">
                   <span class="info-flame-title">寄付が直接、学生学校に届く</span><br><br>
-                 </p> -->
+                </p>-->
                 <img :src="Message2" class="u-img" alt="#">
                 <p class="u-img-p">
                   寄付者が行った寄付は、各学校を
@@ -62,7 +66,7 @@
               <div class="tile is-parent">
                 <!-- <p class="u-img-p">
                   <span class="info-flame-title">学生からの返礼と寄付控除の適用</span><br><br>
-                </p> -->
+                </p>-->
                 <img :src="Message3" class="u-img" alt="#">
                 <p class="u-img-p">
                   寄付を受け取った各団体は、それ
@@ -159,23 +163,20 @@ section {
         text-align: center;
         font-size: 1.5rem;
         font-weight: bolder;
-        span{
+        span {
           background: linear-gradient(transparent 70%, #ffe035 70%);
         }
       }
-
     }
     .info-flame {
       max-width: 1120px;
       margin: 0 auto;
       margin-top: 32px;
-      font-size: 1rem;
-
-
+      font-size: 1.4rem;
     }
   }
 
-  .info-flame-title{
+  .info-flame-title {
     font-weight: bolder;
   }
 
@@ -195,19 +196,21 @@ section {
       }
     }
   }
-
 }
 
 .u-img-p {
   display: none;
 }
 
+.u-img-p-pc {
+  font-size: 1.4rem;
+}
 
 @media screen and (max-width: 768px) {
   section {
-  // background-color: aqua;
-  // margin-bottom: 80px;
-  margin: 0 5%;
+    // background-color: aqua;
+    // margin-bottom: 80px;
+    margin: 0 5%;
   }
   .u-img-p {
     display: block;
