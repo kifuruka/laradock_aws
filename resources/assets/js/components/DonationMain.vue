@@ -38,8 +38,13 @@
               <div class="card-content">
                 <div class="card-image">
                   <figure class="image is-4by3">
-                    <img
+                    <!-- <img
                       src="https://cdn.mainichi.jp/vol1/2019/01/03/20190103k0000m050077000p/6.jpg?1"
+                      alt="Placeholder image"
+                      class="contentsImg"
+                    > -->
+                    <img
+                      src="../../images/donation/sticker.jpg"
                       alt="Placeholder image"
                       class="contentsImg"
                     >
@@ -52,7 +57,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="content">東海大学駅伝部の月次活動報告メールマガジンで送らせていただきます。学生の日々の取り組みやチームの雰囲気をより深く知ることが出来ます。駅伝部をより深く知ることで、箱根駅伝など晴れの舞台での応援も一層楽しめればなによりです。</div>
+                <div class="content">東海大学駅伝部のステッカーを送らせていただきます。</div>
                 <div>
                   <p>
                     寄付金額
@@ -71,9 +76,14 @@
               <div class="card-content">
                 <div class="card-image">
                   <figure class="image is-4by3">
-                    <img
+                    <!-- <img
                       src="https://twave.tokai-eic.co.jp/upload/save_image/0228114056_5c774a385ae28.jpg"
                       alt="Placeholder image" 
+                      class="contentsImg"
+                    > -->
+                    <img
+                      src="../../images/donation/ticket.jpg"
+                      alt="Placeholder image"
                       class="contentsImg"
                     >
                   </figure>
@@ -85,7 +95,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="content">箱根駅伝など東海大学の学生を応援するときに持っておくとより学生にエネルギーを届けられる東海大学フラッグです。学生が駆け抜けるレース会場を東海大学のフラッグで埋め尽くしましょう。</div>
+                <div class="content">東海大学の学生を生で応援できる公式大会のチケットです。学生が駆け抜けるレース会場を東海大学の応援で埋め尽くしましょう。</div>
                 <div>
                   <p>
                     寄付金額
@@ -104,8 +114,13 @@
               <div class="card-content">
                 <div class="card-image">
                   <figure class="image is-4by3">
-                    <img
+                    <!-- <img
                       src="https://twave.tokai-eic.co.jp/upload/save_image/komonoNo16.jpg"
+                      alt="Placeholder image"
+                      class="contentsImg"
+                    > -->
+                    <img
+                      src="../../images/donation/Tshirt.jpg"
                       alt="Placeholder image"
                       class="contentsImg"
                     >
@@ -118,7 +133,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="content">東海大学オリジナルの手ぬぐいです。学生も使用している手ぬぐいと同じモデルであり、ご自身の生活やトレーニングにご活用いただくき、学生と一緒に自分の限界を越えていきましょう。</div>
+                <div class="content">東海大学オリジナルのTシャツです。学生も使用しているTシャツと同じモデルであり、ご自身の生活やトレーニングにご活用いただくき、学生と一緒に自分の限界を越えていきましょう。</div>
                 <div>
                   <p>
                     寄付金額
@@ -137,8 +152,13 @@
               <div class="card-content">
                 <div class="card-image">
                   <figure class="image is-4by3">
-                    <img
+                    <!-- <img
                       src="http://daigaku-ekiden.com/syutsujyou/images/40dfcd39e8d2f42bafeabcc095bfdd84a28db5f2.jpg"
+                      alt="Placeholder image"
+                      class="contentsImg"
+                    > -->
+                    <img
+                      src="../../images/donation/school.jpg"
                       alt="Placeholder image"
                       class="contentsImg"
                     >
@@ -240,6 +260,12 @@
 import DonationImg from "../../images/donation/d_kin_rag.jpg";
 import DonationImg2 from "../../images/donation/d_kin_rag2.jpg";
 import DonationImg3 from "../../images/donation/d_kin_rag3.jpg";
+
+
+import Tshirt from "../../images/donation/Tshirt.jpg";
+import ticket from "../../images/donation/ticket.jpg";
+import sticker from "../../images/donation/sticker.jpg";
+import school from "../../images/donation/school.jpg";
 import { mapGetters } from "vuex";
 
 
@@ -250,7 +276,12 @@ export default {
     return {
       DonationImg,
       DonationImg2,
-      DonationImg3
+      DonationImg3,
+      DonationImg3,
+      Tshirt,
+      school,
+      sticker,
+      ticket,
     };
   },
   computed: {

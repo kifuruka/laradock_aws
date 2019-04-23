@@ -2,13 +2,13 @@
   <div class="allstyle">
     <donation-top/>
     <donation-main/>
-    <school-sub-info/>
+    <!-- <school-sub-info/> -->
   </div>
 </template>
 
 <script>
-import DonationTop from "../components/DonationTopDemo";
-import DonationMain from "../components/DonationMainDemo";
+import DonationTop from "../components/DonationTop";
+import DonationMain from "../components/DonationMain";
 import SchoolSubInfo from "../components/SchoolSubInfo";
 import { mapGetters, mapActions } from "vuex";
 

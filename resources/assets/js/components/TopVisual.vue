@@ -25,15 +25,16 @@
       <div class="tile is-parent parent-frame">
         <div class="tile is-child">
           <div class="card" @click="routerPush({
-                name:'DetailActivity',
+                name:'DetailSchool',
                 params:{id:1}
                 })">
             <div calss="card_image_container" style="position: relative;">
               <div class="card-image item item--first">
                 <figure class="image">
-                  <router-link to="/activity/1">
+
+                  <!-- <router-link to="/detailSchool/1"> -->
                     <img :src="Homeimg1" class="u-img" alt="#">
-                  </router-link>
+                  <!-- </router-link> -->
                   <!-- <img :src="school.school_img" class="card-img-top" alt="Placeholder image"> -->
                 </figure>
               </div>
@@ -56,8 +57,8 @@
               <div class="tile is-child is-6 grandson-frame left-grandson" style="margin-bottom:0;">
 
                 <div class="card" @click="routerPush({
-                name:'DetailActivity',
-                params:{id:1}
+                name:'DetailSchool',
+                params:{id:5}
                 })" >
                   <div calss="card_image_container" style="position: relative;">
                     <div class="card-image item item--first">
@@ -78,8 +79,8 @@
               <div class="tile is-child is-6 grandson-frame right-grandson">
 
                 <div class="card" @click="routerPush({
-                name:'DetailActivity',
-                params:{id:1}
+                name:'DetailSchool',
+                params:{id:3}
                 })">
                   <div calss="card_image_container" style="position: relative;">
                     <div class="card-image item item--first">
@@ -103,7 +104,7 @@
           <div class="tile child-flame">
 
             <div class="card" @click="routerPush({
-                name:'DetailActivity',
+                name:'DetailSchool',
                 params:{id:1}
                 })">
               <div calss="card_image_container" style="position: relative;">
@@ -116,7 +117,7 @@
                   </figure>
                 </div>
                 <div class="school_msg has-text-centered">
-                  <p class="title is-7 is-size-7-mobile school_name">海洋大学</p>
+                  <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
                   <p class="subtitle is-6 is-size-7-mobile school_message">ナマズの研究がしたい</p>
                 </div>
               </div>

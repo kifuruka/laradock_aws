@@ -6,7 +6,7 @@
     <detail-school-main2/>
     <detail-school-main3/>
     <detail-school-active-title/>
-    <activity-card/>
+    <!-- <activity-card/> -->
   </div>
 </template>
 

@@ -14,7 +14,7 @@
           >
             <section class="card">
               <div class="card-content">
-                <h3 class="card-title">{{school.school_name}}学校</h3>
+                <h3 class="card-title">{{school.school_name}}</h3>
                 <h4 class="card-title">活動件数：{{school.activity_count}}</h4>
               </div>
               <img class="card-img" :src="school.school_img" alt="写真">
