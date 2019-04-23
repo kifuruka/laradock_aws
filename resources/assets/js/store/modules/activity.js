@@ -21,7 +21,7 @@ const getters = {
 
     // Activity.vue
     getActivityData(state) {
-        console.log(state.getActivityData, "getter")
+        // console.log(state.getActivityData, "getter")
         return state.getActivityData.data
     },
     isActivity(state) {
@@ -73,7 +73,7 @@ const mutations = {
 
     // Search.vue
     getAllActivities(state, payload) {
-        console.log(payload.data, "mutesyon")
+        // console.log(payload.data, "mutesyon")
         state.getAllActivities = payload.data
     },
     isActivities(state, payload) {
@@ -92,7 +92,7 @@ const actions = {
     // Activity.vue
     getActivityData({ commit }, payload) {
         http.get('/activity/' + payload, res => {
-            console.log(res.data)
+            // console.log(res.data)
             commit('getActivityData', res.data)
             commit('isActivity', res ? true : false)
         }, null)

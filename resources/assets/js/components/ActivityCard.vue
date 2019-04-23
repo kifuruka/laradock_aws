@@ -2,9 +2,10 @@
   <section>
     <div class="title">
       <h2>
-        <span>活動内容</span>
+        <span v-if="show">活動内容</span>
       </h2>
     </div>
+
     <div class="container columns is-multiline">
       <div v-for="value in sliceValues" :key="value.id" class="card-box column is-one-third">
         <div
@@ -21,13 +22,13 @@
               </figure>
             </div>
             <div class="school_msg has-text-centered">
-              <p class="title is-7 is-size-7-mobile school_name">{{value.school.school_name}}</p>
-              <p class="subtitle is-6 is-size-7-mobile school_message">{{value.activity_name}}</p>
+              <p class="title is-3 is-size-7-mobile school_name">{{value.school.school_name}}</p>
+              <p class="subtitle is-5 is-size-7-mobile school_message">{{value.activity_name}}</p>
             </div>
           </div>
         </div>
         <div class="card-content mediasize">
-          <p class="subtitle is-6 has-text-centered">{{value.school_name}}</p>
+          <p class="subtitle is-3 has-text-centered">{{value.school_name}}</p>
         </div>
         <div class="columns detail">
           <div class="column">
@@ -70,7 +71,9 @@ export default {
   data() {
     return {
       info: null,
-      count: 3
+      count: 3,
+      show: true,
+      ok: true
     };
   },
   computed: {
@@ -217,7 +220,7 @@ section {
   border-bottom-color: #ffe035;
   padding-bottom: 2%;
   margin-bottom: 3em;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 .school_message {
   color: white;
@@ -257,6 +260,35 @@ section {
   font-weight: bold;
   padding: 0.3%;
 }
+
+// .v-enter {
+//   opacity: 0;
+// }
+// .v-enter-to {
+//   opacity: 1;
+// }
+// .v-enter-active {
+//   transition: opacity 300ms ease-out;
+// }
+// .v-leave {
+//   opacity: 1;
+// }
+// .v-leave-to {
+//   opacity: 0;
+// }
+// .v-leave-active {
+//   transition: opacity 300ms ease-out;
+// }
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter,
+.fade-leave {
+  opacity: 0;
+}
+
 @media screen and (max-width: 768px) {
   section {
     margin: 0 5%;

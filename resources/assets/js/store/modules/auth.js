@@ -14,11 +14,11 @@ const state = {
 
 const getters = {
     isUserStatus(state) {
-        console.log(state.authStatus, "isstate")
+        // console.log(state.authStatus, "isstate")
         return state.authStatus
     },
     getCurrentUser(state) {
-        console.log(state.currentuser, "ogo")
+        // console.log(state.currentuser, "ogo")
         return state.currentuser
     }
 

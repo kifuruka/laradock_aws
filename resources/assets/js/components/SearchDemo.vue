@@ -2,16 +2,24 @@
   <section>
     <div v-if="isAllStatus" class="field has-addons">
       <div class="control find-frame">
-        <input
+        <!-- <input
           class="input mediainput"
           type="text"
           v-model="searchWord"
           placeholder="キーワードから探す"
           @keyup.enter="setSearchWord(searchWord)"
+        > -->
+        <input
+          class="input mediainput"
+          type="text"
+          v-model="searchWord"
+          placeholder="キーワードから探す"
+          @keyup.enter="setSearchWordDemo()"
         >
       </div>
       <div class="control button-frame">
-        <a class="button media_a" @click="setSearchWord(searchWord)">検索</a>
+        <!-- <a class="button media_a" @click="setSearchWord(searchWord)">検索</a> -->
+        <a class="button media_a" @click="isLength = !isLength">検索</a>
       </div>
     </div>
     <table class="test2">
@@ -27,7 +35,7 @@
           />-->
           <search-card
             class="column column-custom is-one-third"
-            v-for="activity in activities"
+            v-for="activity in demoactivities"
             :activity="activity"
             :key="activity.id"
           />
@@ -39,7 +47,7 @@
 </template>
 
 <script>
-import SearchCard from "./SearchCard";
+import SearchCard from "./SearchCardDemo";
 import { mapGetters, mapMutations } from "vuex";
 export default {
   components: {
@@ -48,7 +56,13 @@ export default {
   data() {
     return {
       searchWord: "",
-      isLength: true
+      isLength: false,
+      demoactivities:[
+                  { id: 1 , activity_img: 'https://number.ismcdn.jp/mwimgs/1/b/-/img_1babe2dc9b3a5be60aa17ca4da08b19f198166.jpg', activity_name: "陸上部" , title:'箱根駅伝で優勝したい', school_name:'東海大学',total_donation:'10,000,000',fans:98},
+                  { id: 2 , activity_img: 'https://tk.ismcdn.jp/mwimgs/4/c/1140/img_4c357994728581027fadfcee89e26ae4300062.jpg', activity_name: "陸上部" , title:'出雲駅伝で優勝したい', school_name:'青山学院大学',total_donation:'1,000,000',fans:67},
+                  { id: 3 , activity_img: 'https://i.ytimg.com/vi/MElslJy_8oA/maxresdefault.jpg', activity_name: "陸上部" , title:'箱根駅伝に出場したい', school_name:'桜美林大学',total_donation:'3,000,000',fans:58},
+
+                  ]
 
       // viewCount: 0,
       // activities1: ""
@@ -64,7 +78,11 @@ export default {
   methods: {
     ...mapMutations({
       setSearchWord: "activity/setSearchWord"
-    })
+    }),
+    setSearchWordDemo() {
+      console.log('test');
+      
+    }
   }
 };
 </script>
@@ -139,8 +157,8 @@ section {
 
 @media screen and (max-width: 768px) {
   section {
-    margin-top: 5%;
-    margin-bottom: 5%;
+      margin-top: 5%;
+      margin-bottom: 5%;
     .has-addons {
       padding: 0 1rem;
     }

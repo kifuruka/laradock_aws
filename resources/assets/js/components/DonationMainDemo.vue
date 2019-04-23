@@ -1,34 +1,43 @@
 <template>
-  <section v-if="isActivity">
+  <section >
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <div class="tile is-child is-8 child-flame">
             <div class="content-flame">
-              <h1>{{activity.sub_title1}}</h1>
+              <!-- <h1>{{activity.sub_title1}}</h1> -->
+              <h1>{{sub_title1}}</h1>
               <div class="donaition-text-flame">
-                <p>{{activity.sub_contents1}}</p>
+                <!-- <p>{{activity.sub_contents1}}</p> -->
+                <p>{{sub_contents1}}</p>
               </div>
               <div class="donaition-img-flame">
-                <img :src="activity.sub_image1" class="u-img" alt="#">
+                <!-- <img :src="activity.sub_image1" class="u-img" alt="#"> -->
+                <img src="https://www.u-tokai.ac.jp/campus_life/tokai_sports/%E7%AE%B1%E6%A0%B9%E9%A7%85%E4%BC%9D1%E5%8C%BA_1100.jpg">
               </div>
             </div>
             <div class="content-flame">
-              <h1>{{activity.sub_title2}}</h1>
+              <!-- <h1>{{activity.sub_title2}}</h1> -->
+              <h1>{{sub_title2}}</h1>
               <div class="donaition-text-flame">
-                <p>{{activity.sub_contents2}}</p>
+                <!-- <p>{{activity.sub_contents2}}</p> -->
+                <p>{{sub_contents2}}</p>
               </div>
               <div class="donaition-img-flame">
-                <img :src="activity.sub_image2" class="u-img" alt="#">
+                <!-- <img :src="activity.sub_image2" class="u-img" alt="#"> -->
+                <img src="https://www.u-tokai.ac.jp/campus_life/tokai_sports/%E7%AE%B1%E6%A0%B9%E9%A7%85%E4%BC%9D%E8%A8%98%E8%80%85%E4%BC%9A%E8%A6%8B1_1100.jpg">
               </div>
             </div>
             <div class="content-flame">
-              <h1>{{activity.sub_title3}}</h1>
+              <!-- <h1>{{activity.sub_title3}}</h1> -->
+              <h1>{{sub_title3}}</h1>
               <div class="donaition-text-flame">
-                <p>{{activity.sub_contents3}}</p>
+                <!-- <p>{{activity.sub_contents3}}</p> -->
+                <p>{{sub_contents3}}</p>
               </div>
               <div class="donaition-img-flame">
-                <img :src="activity.sub_image3" class="u-img" alt="#">
+                <!-- <img :src="activity.sub_image3" class="u-img" alt="#"> -->
+                <img src="https://hamarepo.com/story/images/7048/large_image.jpg">
               </div>
             </div>
           </div>
@@ -38,13 +47,8 @@
               <div class="card-content">
                 <div class="card-image">
                   <figure class="image is-4by3">
-                    <!-- <img
-                      src="https://cdn.mainichi.jp/vol1/2019/01/03/20190103k0000m050077000p/6.jpg?1"
-                      alt="Placeholder image"
-                      class="contentsImg"
-                    > -->
                     <img
-                      src="../../images/donation/sticker.jpg"
+                      src="https://cdn.mainichi.jp/vol1/2019/01/03/20190103k0000m050077000p/6.jpg?1"
                       alt="Placeholder image"
                       class="contentsImg"
                     >
@@ -57,7 +61,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="content">東海大学駅伝部のステッカーを送らせていただきます。</div>
+                <div class="content">東海大学駅伝部の月次活動報告メールマガジンで送らせていただきます。学生の日々の取り組みやチームの雰囲気をより深く知ることが出来ます。駅伝部をより深く知ることで、箱根駅伝など晴れの舞台での応援も一層楽しめればなによりです。</div>
                 <div>
                   <p>
                     寄付金額
@@ -76,14 +80,9 @@
               <div class="card-content">
                 <div class="card-image">
                   <figure class="image is-4by3">
-                    <!-- <img
+                    <img
                       src="https://twave.tokai-eic.co.jp/upload/save_image/0228114056_5c774a385ae28.jpg"
                       alt="Placeholder image" 
-                      class="contentsImg"
-                    > -->
-                    <img
-                      src="../../images/donation/ticket.jpg"
-                      alt="Placeholder image"
                       class="contentsImg"
                     >
                   </figure>
@@ -95,7 +94,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="content">東海大学の学生を生で応援できる公式大会のチケットです。学生が駆け抜けるレース会場を東海大学の応援で埋め尽くしましょう。</div>
+                <div class="content">箱根駅伝など東海大学の学生を応援するときに持っておくとより学生にエネルギーを届けられる東海大学フラッグです。学生が駆け抜けるレース会場を東海大学のフラッグで埋め尽くしましょう。</div>
                 <div>
                   <p>
                     寄付金額
@@ -114,13 +113,8 @@
               <div class="card-content">
                 <div class="card-image">
                   <figure class="image is-4by3">
-                    <!-- <img
-                      src="https://twave.tokai-eic.co.jp/upload/save_image/komonoNo16.jpg"
-                      alt="Placeholder image"
-                      class="contentsImg"
-                    > -->
                     <img
-                      src="../../images/donation/Tshirt.jpg"
+                      src="https://twave.tokai-eic.co.jp/upload/save_image/komonoNo16.jpg"
                       alt="Placeholder image"
                       class="contentsImg"
                     >
@@ -133,7 +127,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="content">東海大学オリジナルのTシャツです。学生も使用しているTシャツと同じモデルであり、ご自身の生活やトレーニングにご活用いただくき、学生と一緒に自分の限界を越えていきましょう。</div>
+                <div class="content">東海大学オリジナルの手ぬぐいです。学生も使用している手ぬぐいと同じモデルであり、ご自身の生活やトレーニングにご活用いただくき、学生と一緒に自分の限界を越えていきましょう。</div>
                 <div>
                   <p>
                     寄付金額
@@ -152,13 +146,8 @@
               <div class="card-content">
                 <div class="card-image">
                   <figure class="image is-4by3">
-                    <!-- <img
-                      src="http://daigaku-ekiden.com/syutsujyou/images/40dfcd39e8d2f42bafeabcc095bfdd84a28db5f2.jpg"
-                      alt="Placeholder image"
-                      class="contentsImg"
-                    > -->
                     <img
-                      src="../../images/donation/school.jpg"
+                      src="http://daigaku-ekiden.com/syutsujyou/images/40dfcd39e8d2f42bafeabcc095bfdd84a28db5f2.jpg"
                       alt="Placeholder image"
                       class="contentsImg"
                     >
@@ -260,12 +249,6 @@
 import DonationImg from "../../images/donation/d_kin_rag.jpg";
 import DonationImg2 from "../../images/donation/d_kin_rag2.jpg";
 import DonationImg3 from "../../images/donation/d_kin_rag3.jpg";
-
-
-import Tshirt from "../../images/donation/Tshirt.jpg";
-import ticket from "../../images/donation/ticket.jpg";
-import sticker from "../../images/donation/sticker.jpg";
-import school from "../../images/donation/school.jpg";
 import { mapGetters } from "vuex";
 
 
@@ -277,11 +260,16 @@ export default {
       DonationImg,
       DonationImg2,
       DonationImg3,
-      DonationImg3,
-      Tshirt,
-      school,
-      sticker,
-      ticket,
+      sub_title1:'箱根駅伝で優勝したい',
+      sub_title2:'箱根駅伝で優勝したい',
+      sub_title3:'箱根駅伝で優勝したい',
+      sub_contents1:'「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      sub_contents2:'「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      sub_contents3:'「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      // activity_name:'陸上部',
+      // top_contents:'「もう一度、箱根駅伝に優勝したい」東海大学はその思いでチーム一丸となり日々のトレーニングに取り組んでいます。2019年の箱根駅伝でいただいたみなさんの熱い応援に来年はより一層の走りで応えられるよう頑張ります。<br>1月2日(水)・3日(木) 第95回東京箱根間往復大学駅伝競走が行われました。東海大学は創部初となる総合優勝を達成しました。',
+      // total_donation:'10,000,000',
+      // fans:'98',
     };
   },
   computed: {

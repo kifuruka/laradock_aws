@@ -10,7 +10,7 @@
                 法人・企業の皆様の寄付はこちらから
                 <span>→</span>
               </p>
-              <a href="https://www.shigaku.go.jp/" class="button is-medium custom-btn">
+              <a href="https://www.shigaku.go.jp/" target="_blank" class="button is-medium custom-btn">
                 <strong>法人寄付</strong>
               </a>
             </div>
